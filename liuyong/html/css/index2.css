@@ -1,0 +1,8 @@
+*{margin:0;padding:0;}
+
+
+.left,.right{width:100px;height:500px;background:red}
+.box{float:left;width:100%;}
+.middle{background:#0f0;height:600px;margin:0 110px;}
+.left{float:left;margin-left:-100%;}
+.right{float:left;margin-left:-100px;}
