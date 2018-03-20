@@ -12,11 +12,13 @@ body{
     min-width: 320px;
     max-width: 640px;
     font-size: 14px;
+    margin: 0 auto;
+    background: #f5f5f5;
+    padding-bottom: 500px;
 }
 .top{
     background: url("../images/new-index_01.jpg") center top no-repeat;
-    background-size: contain;
-    height: 500px;
+    background-size: 100%;
     padding: 20px 10px;
 }
 .top img{
@@ -56,3 +58,249 @@ body{
 .top ul li a img{
     width: 40px;
 }
+.rx-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+.rx-content .rx-left,.rx-right{
+    display: flex;
+    align-items: center;
+}
+.rx-content .rx-left i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/new-index_08.png") center center no-repeat;
+    background-size: 100% 100%;
+    margin-right: 5px;
+}
+.rx-content a{
+    color: #2394da;
+}
+.rx-content .rx-right .add{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px dashed #2394da;
+    margin-right: 5px;
+}
+.rx-content .rx-right i.add:after,.rx-content .rx-right i.add:before{
+    content: " ";
+    position: absolute;
+    top: 5px;
+    left: 9px;
+    height: 10px;
+    width: 2px;
+    background: #2394da;
+    display: block;
+}
+.rx-content .rx-right i.add:after{
+    -webkit-transform: rotate(90deg);
+}
+.brand{
+    margin-top: 10px;
+}
+.brand .title,.quick .title,.often-ill .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.brand .title h2,.quick .title .title-left h2,.often-ill .title h2{
+    font-size: 18px;
+    line-height: 2;
+    color: #444;
+    font-weight: 400;
+}
+.brand .title i.arrow,.quick .title i.title-right{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-right: 1px solid #444;
+    border-top: 1px solid #444;
+    transform: rotate(45deg);
+}
+.brand .brand-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.brand .brand-list li{
+    width: 33%;
+}
+.brand .brand-list li a img{
+    width: 100%;
+}
+.quick .title .title-left{
+    display: flex;
+    align-items: center;
+}
+.quick .title .title-left img{
+    height: 24px;
+    width: auto;
+    margin-left: 5px;
+}
+.quick .title .title-left span:nth-of-type(2n-1){
+    display: inline-block;
+    background: #444444;
+    color: #fff;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+.quick .title .title-left span{
+    margin-left: 5px;
+}
+.quick .quick-list{
+    display: flex;
+    justify-content: space-around;
+}
+.quick .quick-list li{
+    width: 33%;
+}
+.quick .quick-list li:nth-of-type(1) a{
+    display: block;
+}
+.quick .quick-list li~li{
+    border-left: 1px solid #999;
+}
+.quick .quick-list li a img{
+    width: 100%;
+}
+.quick .quick-list li .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quick .quick-list li .price span{
+    color: orangered;
+}
+.quick .quick-list li .price span:nth-of-type(2){
+    display: inline-block;
+    background: orangered;
+    color: #fff;
+    padding: 2px 5px;
+}
+.often-ill .ill-list{
+    padding: 10px 10px;
+    display: flex;
+}
+.often-ill .ill-list .img{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    position: relative;
+    text-align: center;
+    background: url("../images/01190_20150421101949358190000037773.png") center center no-repeat;
+    background-size: 100% 100%;
+}
+.often-ill .ill-list .img span{
+    color: #f58c3b;
+    line-height: 100px;
+}
+.often-ill .ill-list .list-item{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.often-ill .ill-list .list-item li{
+    width: 50%;
+    height: 50px;
+    background: #f5f5db;
+    text-align: center;
+    background-clip: content-box;
+    box-sizing: border-box;
+}
+.often-ill .ill-list .list-item li a{
+    color: #f58c3b;
+    line-height: 50px;
+}
+.often-ill .ill-list .list-item li:nth-of-type(2n-1){
+    padding-right: 5px;
+}
+.often-ill .ill-list .list-item li:nth-of-type(2n){
+    padding-left: 5px;
+}
+.often-ill .ill-list .list-item li:nth-of-type(1),.often-ill .ill-list .list-item li:nth-of-type(2){
+    padding-bottom: 5px;
+}
+.often-ill .ill-list .list-item li:nth-of-type(3),.often-ill .ill-list .list-item li:nth-of-type(4){
+    padding-top: 5px;
+}
+.bottom .tel{
+    width: 100%;
+    padding: 20px 10px;
+    background: #481c87;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-clip: content-box;
+    box-sizing: border-box;
+}
+.bottom .tel img{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+.bottom .tel a{
+    line-height: 35px;
+}
+.bottom .copy-right{
+    text-align: center;
+    color: #666;
+    margin-bottom: 10px;
+}
+.tabbar{
+    width: 100%;
+    background: #cccccc;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.tabbar ul{
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tabbar ul li{
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tabbar ul li i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/qg_toTop.png") no-repeat;
+    background-size: 640% auto;
+    margin-bottom: 2px;
+}
+.tabbar ul li i.home{
+    background-position: 0 top;
+}
+.tabbar ul li i.find{
+    background-position: -22px top;
+}
+.tabbar ul li i.shop{
+    background-position: -44px top;
+}
+.tabbar ul li i.mine{
+    background-position: -64px top;
+}
+.tabbar ul li a {
+    color: #666;
+}
+
+
