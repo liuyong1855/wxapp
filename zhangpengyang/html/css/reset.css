@@ -2,13 +2,261 @@
     padding: 0;
     margin: 0;
 }
+a{
+    text-decoration: none;
+    color: #fff;
+}
 html,body{
-    width: 100%;
-    height: 100%;
+    font-size:14px;
 }
 
 .outerLayer{
+    margin: 0 auto;
+    background: #f5f5f5;
     width: 100%;
-    height: 100%;
+}
+
+.top-search{
+    padding: 20px 10px;
+    background: url(../images/new-index_01.jpg) center top no-repeat;
+    background-size: cover;
+}
+.top-logo{
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+}
+.search{
+    height: 35px;
+    background: #fff url(../images/search.png) 5px center no-repeat;
+    line-height: 35px;
+    padding-left: 35px;
+    margin-top: 20px;
+    background-size: auto 70%;
+    border-radius: 10px;
+}
+.search-button{
+    display: flex;
+    flex-wrap:wrap;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.search-button div{
+    width: 25%;
+    display: block;
+    text-align: center;
+}
+.search-button img{
+    display: block;
+    margin: 0 auto 5px auto;
+}
+.rx-content{
+    height: 40px;
+    padding: 0 10px;
+    line-height: 40px;
+    display: block;
+    font-size: 16px;
+    border-bottom: 1px solid #d4d4d4;
+}
+.rx-content a {
+    color: #2394da;
+}
+.rx-content-left{
+    background: url(../images/new-index_08.png) left center no-repeat;
+    background-size: auto 60%;
+    padding-left: 25px;
+    float: left;
+}
+.rx-content-right{
+    float: right;
+}
+.rx-content-right span{
+    font-size: 18px;
+    font-weight: bold;
+    border:1px dashed #2394da;
+    padding: 0 5px;
+    margin-right: 5px;
+}
+.brand{
+    margin-bottom: 10px;
     background: #fff;
+}
+.brand-title{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px 10px;
+    position: relative;
+    border-bottom:1px solid #d4d4d4;
+}
+.brand-title-name{
+
+}
+.brand-title-fuhao {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    border-left: 5px solid #c9c9c9;
+    border-bottom: 5px solid #c9c9c9;
+    -webkit-transform: translate(0,-50%) rotate(-135deg);
+    transform: translate(0,-50%) rotate(-135deg);
+    right: 18px;
+    top:28px;
+}
+.brand-title a{
+    color: #000;
+}
+.brand-banner{
+    display: flex;
+    flex-wrap:wrap;
+    padding: 10px;
+}
+.brand-banner div{
+    width: 33.3%;
+}
+.brand-banner img{
+    width: 100%;
+}
+
+.timeBox{
+    display: flex;
+    align-items: center;
+}
+.timeBox img{
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.timeBox span{
+    background: #999;
+    border-radius: 10px;
+    padding:0 5px;
+    color: #fff;
+    font-size: 16px;
+}
+.good-list{
+    display: flex;
+}
+.good-detail{
+    border-right: 1px solid #ccc;
+    width: 33%;
+    position: relative;
+    padding-bottom: 5px;
+}
+.good-detail img{
+    width: 100%;
+    margin-bottom: 4px;
+    margin-top: 6px;
+}
+.price{
+    color: #f00;
+}
+.radius{
+    float: right;
+    margin-right: 5px;
+    border-radius: 3px;
+    background: #f00;
+    padding: 0 3px;
+}
+.hot{
+    position: absolute;
+    top:-20px;
+    left: 36px;
+    width: 80px;
+    height: 80px;
+}
+.dcbMainBox{
+    padding: 0 10px;
+}
+.title-left{
+    margin-top: 10px;
+    width: 30%;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    float: left;
+}
+.title-left img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.title-left span{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    line-height: 100px;
+    font-size: 18px;
+    color: #e87816;
+}
+.title-right{
+    color: #e87816;
+    display: flex;
+    flex-wrap: wrap;
+}
+.title-right span{
+    width: 45%;
+    margin-top: 10px;
+    line-height: 45px;
+    background: #f5f5db;
+    text-align: center;
+    height: 45px;
+    margin-left: 4%;
+}
+.bottom{
+    padding: 10px 10px 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bottom span{
+    line-height: 45px;
+    padding-left:46%;
+    background: #481c87 url(../images/call34.png) 40% center  no-repeat;
+    background-size:25px 25px;
+    width: 54%;
+    color: #fff;
+}
+.bottom p{
+    text-align: center;
+    width: 100%;
+    line-height: 20px;
+    margin-top: 8px;
+    margin-bottom: 60px;
+}
+.navigation{
+    width: 100%;
+    height: 50px;
+    background-color: #eee;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    border-top: solid 1px #ddd;
+    display: flex;
+}
+.navigation-title{
+    font-size: 12px;
+    width:25%;
+    text-align: center;
+    margin-top: 5px;
+}
+.navigation-title span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    background: url(../images/qg_toTop.png) no-repeat;
+    background-size: 640% auto
+}
+.two span{
+    background-position: -22px 0;
+
+}
+.three span{
+    background-position: -42px 0;
+}
+.four span{
+    background-position: -62px 0;
 }
