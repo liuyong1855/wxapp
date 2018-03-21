@@ -1,0 +1,11 @@
+body{font-size:14px;}
+a{text-decoration:none;}
+.main{max-width:640px;margin:0 auto;}
+.header{background:url(../images/new-index_01.jpg) no-repeat center center;height:300px;padding:20px 10px 10px;}
+.header .logo{display:block;margin:0 auto 30px;width:40%;}
+.header .search{background:#fff url(../images/search.png) no-repeat 8px center;background-size:30px 30px;padding:10px 10px 10px 45px;border-radius:5px;}
+.header .search input{background:transparent;border:none;height:30px;width:100%;padding:;box-sizing:border-box;}
+.header-menu{display:flex;margin-top:20px;}
+.header-menu a{display:block;color:#fff;flex:1;text-align:center;}
+.header-menu a img{display:block;width:45px;margin:5px auto 10px;}
+.header-menu a span{display:block;text-shadow: 1px 1px 5px #000;font-size:16px;}
