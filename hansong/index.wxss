@@ -1,0 +1,14 @@
+.top{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(http://wap.7lk.com/assets/wap/img/new-index_01.jpg) no-repeat top center;
+  width: 100%;
+  height: 460rpx;
+  text-align: center;
+}
+#loge{
+  width: 284rpx;
+  height: 100rpx;
+  padding: 40rpx 0;
+}

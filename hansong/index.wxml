@@ -1,0 +1,10 @@
+<view id="top" class="top"> 
+  <image src="./images/loge.png" calss="loge" id="loge"></image>
+  <form bindsubmit='formSubmit' bindreset='formReset'>
+    <label>
+      <input placeholder='输入药品名称/疾病名称搜索'>
+      
+      </input> 
+    </label>
+  </form>
+</view>

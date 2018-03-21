@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#481c87",
+    "navigationBarTitleText": "七乐康",
+    "navigationBarTextStyle": "#fff"
+  }
+}
