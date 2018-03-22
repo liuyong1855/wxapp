@@ -33,11 +33,33 @@ table{border-collapse:collapse; border-spacing:0;}
 hr{display:block; height:1px; border:0; border-top:1px solid #cccccc; margin:1em 0; padding:0;}
 input, select{vertical-align:middle;}
 
+li{list-style: none;}
+
 /*
 liuyong add reset
 */
-.clearfix:after{content:'';display:table;clear:both;}
-.clearfix{*zoom:1;}
+.justify{
+    overflow:hidden;
+    text-align:justify;
+    text-align-last:justify;
+    -webkit-text-align-last:justify;
+}
+.justify:after{
+    display:inline-block;
+    content:' ';
+    overflow:hidden;
+    width:100%;
+    height:0;
+}
+.clearfix::before,.clearfix::after{display:table;line-height:0;content:"";}
+.clearfix::after{clear:both;}
+
+.disbox{display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: flex;}
+.disflex{display:-moz-box;display:-webkit-box;display:-ms-box;display: box;}
+.boxflex{-webkit-box-flex:1;-moz-box-flex:1;-ms-box-flex:1;-webkit-flex:1;-moz-flex:1;-ms-flex:1;flex:1;}
+.ellipsis{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.hide{display: none;}
+
 .abs{position:absolute;}
 .rel{position:relative;}
 .fixed{position:fixed;}
