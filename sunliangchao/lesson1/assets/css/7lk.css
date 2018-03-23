@@ -1,0 +1,7 @@
+body{
+    min-width: 320px;
+    max-width: 640px;
+}
+.header{
+    background: url('../image/new-index_01.jpg') center top no-repeat;
+}
