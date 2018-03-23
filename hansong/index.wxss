@@ -12,3 +12,41 @@
   height: 100rpx;
   padding: 40rpx 0;
 }
+.ipt-so{
+  background-color: #fff;
+  height: 80rpx;
+  margin: 0 20rpx; 
+  border-radius: 6rpx;
+  padding-left: 60rpx; 
+  text-align: left;
+  position: relative;
+}
+.pla-so{
+    font-size: 30rpx;  
+    color: #222;
+}
+.ipt-so icon{
+  position: absolute;
+  left: 10rpx;
+  top: 20rpx;
+}
+.nav{
+  display: flex;
+  padding-top: 40rpx; 
+}
+.nav-view{
+  flex: 1;
+}
+.nav-img{
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  margin: 0 auto;
+}
+.nav-text{
+  display: block;
+  font-size: 32rpx;
+  color: #fff;
+  text-shadow: 2rpx 2rpx 8rpx #333;
+  align-items: flex-start;
+}
