@@ -28,6 +28,69 @@
     </view>
   </navigator>
 </view>
-<view>
+<view class='bar'>
+  <text class='bar-left'>我的处方</text>
+  <text class='bar-rig'>添加处方</text>
+</view>
+<view class='barT'>
+  <text class='barTleft'>品牌街</text>
+  <i class='barTrig'></i>
+</view>
+<!--ban+滑动  -->
+<swiper autoplay='true' class='swi'>
+  <swiper-item>
+    <view class='ban'>
+      <view class='ban1'>
+        <navigator>
+          <image src='./images/01195_20150514111943322680000040536.jpg'></image>
+        </navigator>
+        <navigator>
+          <image src='./images/01195_20150514111943322680000040536.jpg'></image>
+        </navigator>
+        <navigator>
+          <image src='./images/01195_20150514111943322680000040536.jpg'></image>
+        </navigator>
+      </view>
+      <view class='ban2'>
+        <navigator>
+          <image src='./images/01195_20150514111943322680000040536.jpg'></image>
+        </navigator>
+        <navigator>
+          <image src='./images/01195_20150514111943322680000040536.jpg'></image>
+        </navigator>
+        <navigator>
+          <image src='./images/01195_20150514111943322680000040536.jpg'></image>
+        </navigator>
+      </view>
+    </view>
+  </swiper-item>
+   <swiper-item>
+    <view class='ban'>
+      <view class='ban1'>
+        <navigator>
+          <image src='./images/01195_20150514111943322680000040536.jpg'></image>
+        </navigator>
+        <navigator>
+          <image src='./images/01195_20150514111943322680000040536.jpg'></image>
+        </navigator>
+        <navigator>
+          <image src='./images/01195_20150514111943322680000040536.jpg'></image>
+        </navigator>
+      </view>
+      <view class='ban2'>
+        <navigator>
+          <image src='./images/01195_20150514111943322680000040536.jpg'></image>
+        </navigator>
+        <navigator>
+          <image src='./images/01195_20150514111943322680000040536.jpg'></image>
+        </navigator>
+        <navigator>
+          <image src='./images/01195_20150514111943322680000040536.jpg'></image>
+        </navigator>
+      </view>
+    </view>
+  </swiper-item> 
+</swiper>
+<view class='timer'>
 
 </view>
