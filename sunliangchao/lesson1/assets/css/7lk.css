@@ -67,14 +67,17 @@
     vertical-align: middle;
 }
 .interlay{
+    margin: 10px;
+}
+.brand{
     border-bottom: 1px solid #999999;
-    padding: 10px;
 }
 .brand .b_name,.s_g .s_name{
     font-weight:400;
     font-size: 20px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 5px;
 }
 .b_name .point,.s_name .point{
     height: 15px;
@@ -99,4 +102,43 @@
 .s_g .list_pic img:nth-child(2){
     border-left: 1px solid #999;
     border-right: 1px solid #999;
+
+}
+.s_g .list_pic{
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    font-size: 0px;
+}
+
+.com_ill .com_ill_font{
+    font-weight: 400;
+    border-bottom: 1px solid #999;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.com_ill .com_ill_image{
+    height: 100px;
+    width: 100px;
+    background: url(../image/com_ill_list1.png) center center no-repeat;
+    background-size: 100%;
+    text-align: center;
+    line-height: 100px;
+}
+.com_ill .xx_liab{
+    width: 40%;
+    height: 45px;
+    line-height: 45px;
+    color: #f58c3b;
+    background: #f5f5db;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.com_ill_list{
+    display: flex;
+}
+.com_ill_list .xx_list{
+    display: flex;
+    flex-wrap:wrap;
+    background-color: #ffffff;
 }
