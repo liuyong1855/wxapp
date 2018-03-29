@@ -1,0 +1,216 @@
+<view class="container">
+  <view class="row1">
+    <image src="{{srcBg}}" class="row1Log"></image>
+    <view class="row1Search">输入药品名称/疾病名称搜索</view>
+    <view class="row1Icon">
+      <view class="rowLi">
+        <image src="{{srcIcon}}"></image>
+        <text>对症找药</text>
+      </view>
+      <view class="rowLi">
+        <image src="{{srcIcon2}}"></image>
+        <text>科室找药</text>
+      </view>
+      <view class="rowLi">
+        <image src="{{srcIcon3}}"></image>
+        <text>男科</text>
+      </view>
+      <view class="rowLi">
+        <image src="{{srcIcon4}}"></image>
+        <text>妇科</text>
+      </view>
+    </view>
+  </view>
+  <view class="row1bot">
+    <view class="row1my"><span>我的处方</span>  </view>
+    <view class="row1add">
+      <i>+</i><span>添加处方</span> 
+    </view>
+  </view>
+  <view class="row2Tit">
+    <view class="row2t">品牌街</view>
+    <view class="row2arr"></view>
+  </view>
+</view>
+<view class="row2">
+  <view class="row2Ul">
+    <view>
+      <image src="{{Icon}}" alt=""></image>
+    </view>
+    <view>
+      <image src="{{Icon1}}" alt=""></image>
+    </view>
+    <view>
+      <image src="{{Icon2}}" alt=""></image>
+    </view>
+  </view>
+  <view class="row2Ul">
+    <view>
+      <image src="{{Icon3}}" alt=""></image>
+    </view>
+    <view>
+      <image src="{{Icon4}}" alt=""></image>
+    </view>
+    <view>
+      <image src="{{Icon5}}" alt=""></image>
+    </view>
+  </view>
+</view>
+<view class="row3">
+  <view class="row3Tit">
+    <view class="row3t">优品闪购</view>
+    <view class="row3Time">
+      <text>323</text>:
+      <text>32</text>:
+      <text>03</text>
+    </view>
+    <view class="row3arr"></view>
+  </view>
+  <view class="row3Con clearfix">
+    <view class="row3Li">
+      <image src="{{img}}" alt=""></image>
+      <view class="row3_p">
+        <text>¥128.00</text>
+        <text>6.5折</text>
+      </view>
+    </view>
+    <view class="row3Li">
+      <image src="{{img2}}" alt="">
+      </image>
+      <view class="row3_p">
+        <text>¥128.00</text>
+        <text>6.5折</text>
+      </view>
+    </view>
+    <view class="row3Li">
+      <image src="{{img}}" alt="">
+      </image>
+      <view class="row3_p">
+        <text>¥128.00</text>
+        <text>6.5折</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="row4">
+  <view class="row4Tit">常见疾病</view>
+  <view class="row4Con">
+    <view class="row4Li clearfix">
+      <view class="row4L">
+        <image src="{{row4img}}" alt=""></image>
+        <text>五官科</text>
+      </view>
+      <view class="row4R">
+        <view class="row4sLi">眼部炎症</view>
+        <view class="row4sLi">中耳炎</view>
+        <view class="row4sLi">鼻炎</view>
+        <view class="row4sLi">眼部炎症</view>
+      </view>
+    </view>
+    <view class="row4Li clearfix">
+      <view class="row4L">
+        <image src="{{row4img2}}" alt=""></image>
+        <text>五官科</text>
+      </view>
+      <view class="row4R">
+        <view class="row4sLi">眼部炎症</view>
+        <view class="row4sLi">中耳炎</view>
+        <view class="row4sLi">鼻炎</view>
+        <view class="row4sLi">眼部炎症</view>
+      </view>
+    </view>
+    <view class="row4Li clearfix">
+      <view class="row4L">
+        <image src="{{row4img3}}" alt=""></image>
+        <text>五官科</text>
+      </view>
+      <view class="row4R">
+        <view class="row4sLi">眼部炎症</view>
+        <view class="row4sLi">中耳炎</view>
+        <view class="row4sLi">鼻炎</view>
+        <view class="row4sLi">眼部炎症</view>
+      </view>
+    </view>
+    <view class="row4Li clearfix">
+      <view class="row4L">
+        <image src="{{row4img4}}" alt=""></image>
+        <text>五官科</text>
+      </view>
+      <view class="row4R">
+        <view class="row4sLi">眼部炎症</view>
+        <view class="row4sLi">中耳炎</view>
+        <view class="row4sLi">鼻炎</view>
+        <view class="row4sLi">眼部炎症</view>
+      </view>
+    </view>
+    <view class="row4Li clearfix">
+      <view class="row4L">
+        <image src="{{row4img5}}" alt=""></image>
+        <text>五官科</text>
+      </view>
+      <view class="row4R">
+        <view class="row4sLi">眼部炎症</view>
+        <view class="row4sLi">中耳炎</view>
+        <view class="row4sLi">鼻炎</view>
+        <view class="row4sLi">眼部炎症</view>
+      </view>
+    </view>
+    <view class="row4Li clearfix">
+      <view class="row4L">
+        <image src="{{row4img6}}" alt=""></image>
+        <text>五官科</text>
+      </view>
+      <view class="row4R">
+        <view class="row4sLi">眼部炎症</view>
+        <view class="row4sLi">中耳炎</view>
+        <view class="row4sLi">鼻炎</view>
+        <view class="row4sLi">眼部炎症</view>
+      </view>
+    </view>
+    <view class="row4Li clearfix">
+      <view class="row4L">
+        <image src="{{row4img7}}" alt=""></image>
+        <text>五官科</text>
+      </view>
+      <view class="row4R">
+        <view class="row4sLi">眼部炎症</view>
+        <view class="row4sLi">中耳炎</view>
+        <view class="row4sLi">鼻炎</view>
+        <view class="row4sLi">眼部炎症</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="row5">
+  <view class="row5Phone">
+    <text>4009-717-717</text>
+  </view>
+  <view class="row5Dr">
+    <view class="row5T">
+      <text>广州七乐康药业连锁有限公司</text>
+      <navigator url="#">查看保健食品批件</navigator>
+    </view>
+    <view class="row5T">
+      Copyright © 2010-2015 七乐康网上药店 版权所有
+    </view>
+  </view>
+</view>
+<view class="row6box"></view>
+<view class="row6">
+  <view class="row6Li">
+    <view class="row6Img"></view>
+    <text> 找药 </text>
+  </view>
+  <view class="row6Li">
+    <view class="row6Img2"></view>
+    <text> 发现 </text>
+  </view>
+  <view class="row6Li">
+    <view class="row6Img3"></view>
+    <text> 购物车 </text>
+  </view>
+  <view class="row6Li">
+    <view class="row6Img4"></view>
+    <text>个人中心 </text>
+  </view>
+</view>
