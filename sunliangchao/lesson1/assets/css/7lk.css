@@ -125,20 +125,81 @@
     line-height: 100px;
 }
 .com_ill .xx_liab{
-    width: 40%;
+    width: 46%;
     height: 45px;
     line-height: 45px;
     color: #f58c3b;
     background: #f5f5db;
     text-align: center;
-    margin-bottom: 10px;
-    padding-left: 20px;
+    margin: 3px 8px;
 }
 .com_ill_list{
     display: flex;
 }
 .com_ill_list .xx_list{
+    width: 100%;
     display: flex;
     flex-wrap:wrap;
     background-color: #ffffff;
+}
+.footer .call i{
+    background: url(../image/call34.png) center center no-repeat;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    display: inline-block;
+
+}
+.footer .call{
+    text-align: center;
+    background: #481c87;
+    font-size: 18px;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+.copyright{
+    text-align: center;
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 60px;
+}
+.nav{
+    justify-content: space-around;
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    display: flex;
+    background-color: #eee;
+    left: 0;
+    right: 0;
+}
+.nav div{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.nav i{
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background: url(../image/qg_toTop.png) center center no-repeat;
+    background-size: 640% auto;
+}
+.nav .zy i{
+    background-position: 0 top;
+}
+.nav .fx i{
+    background-position: -22px top;
+}
+.nav .gwc i{
+
+    background-position: -44px top
+}
+.nav .grzx i{
+    background-position: -62px top
 }
