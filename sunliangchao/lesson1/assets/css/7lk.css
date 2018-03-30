@@ -135,6 +135,7 @@
 }
 .com_ill_list{
     display: flex;
+    background-color: white;
 }
 .com_ill_list .xx_list{
     width: 100%;
