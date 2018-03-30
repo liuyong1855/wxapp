@@ -67,7 +67,7 @@
     vertical-align: middle;
 }
 .interlay{
-    margin: 10px;
+    /*margin: 10px;*/
 }
 .brand{
     border-bottom: 1px solid #999999;
@@ -78,6 +78,8 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .b_name .point,.s_name .point{
     height: 15px;
@@ -88,6 +90,9 @@
 }
 .list_pic img{
     width: 32%;
+}
+.list_pic{
+    background-color: white;
 }
 .alarm{
     background: url(../image/wx2.0_index_18.png) center center no-repeat;
@@ -115,6 +120,8 @@
     border-bottom: 1px solid #999;
     padding-bottom: 10px;
     font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .com_ill .com_ill_image{
     height: 100px;
