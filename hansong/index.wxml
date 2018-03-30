@@ -92,5 +92,87 @@
   </swiper-item> 
 </swiper>
 <view class='timer'>
-
+  <view class='timer-top'>
+    <text class='timer-zi'>优品闪购</text>
+    <image src='http://wap.7lk.com/assets/wap/img/wx2.0_index_18.png' class='timer-ic'></image>
+    <view class='timer-time'>
+      <span>12</span>
+      :
+      <span>12</span>
+      :
+      <span>12</span>
+    </view>
+    <icon class='timer-arr'></icon>
+  </view>
+  <view class='time-bto'>
+    <image class='time-img' mode="widthFix" src='http://wap.7lk.com/assets/wap/img/jjsx-def.png'></image>
+    <image class='time-img' mode="widthFix"  src='http://wap.7lk.com/assets/wap/img/jjsx-def.png'></image>
+    <image class='time-img' mode="widthFix"  src='http://wap.7lk.com/assets/wap/img/jjsx-def.png'></image>
+  </view>
+</view>
+<view class='content'>
+  <view class='con-zi'>
+    <text>常见疾病</text>
+  </view>
+  <view class='con-con'>
+    <view class='con-item'>
+      <view class='con-itemL'>
+        <image src='http://img.7lk.com/files/storage/image/01190/201504/2110/01190_20150421101949358190000037773.png'></image> 
+        <text>五官科</text>  
+      </view>
+      <view class='con-itemR'>
+        <text>眼部炎症</text>
+        <text>眼睛干涩</text>
+        <text>中耳炎</text>
+        <text>鼻炎</text>
+      </view>
+    </view>
+     <view class='con-item'>
+      <view class='con-itemL'>
+        <image src='http://img.7lk.com/files/storage/image/01190/201504/2110/01190_20150421101949358190000037773.png'></image> 
+        <text>五官科</text>  
+      </view>
+      <view class='con-itemR'>
+        <text>眼部炎症</text>
+        <text>眼睛干涩</text>
+        <text>中耳炎</text>
+        <text>鼻炎</text>
+      </view>
+    </view>
+     <view class='con-item'>
+      <view class='con-itemL'>
+        <image src='http://img.7lk.com/files/storage/image/01190/201504/2110/01190_20150421101949358190000037773.png'></image> 
+        <text>五官科</text>  
+      </view>
+      <view class='con-itemR'>
+        <text>眼部炎症</text>
+        <text>眼睛干涩</text>
+        <text>中耳炎</text>
+        <text>鼻炎</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='btn'>
+  <button form-type="submit"><span class="tel"></span>4009-717-717</button>
+  <text class='bto-txt'>广州七乐康药业连锁有限公司  查看保健食品批件</text>
+  <text class='bto-txt'>Copyright © 2010-2015 七乐康网上药店 版权所有</text>
+</view>
+<view class='bot'> 
+  <view class='bot-item'>
+    <icon size="15" type="search"></icon>
+    <text>找药</text>
+  </view>
+  <view class='bot-item'>
+    <icon size="15" type="search"></icon>
+    <text>找药</text>
+  </view>
+  <view class='bot-item'>
+    <icon size="15" type="search"></icon>
+    <text>找药</text>
+  </view>
+  <view class='bot-item'>
+    <icon size="15" type="search"></icon>
+    <text>找药</text>
+  </view>
 </view>
