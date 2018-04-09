@@ -1,0 +1,223 @@
+body{
+    background: #f5f5f5;
+    font-size: 14px;
+    margin: 0 auto;
+    outline: 0;
+    min-width: 320px;
+    max-width: 640px;
+    position: relative;
+}
+
+.top{
+    padding: 20px 10px;
+    background: url("../images/new-index_01.jpg") center top no-repeat;
+
+}
+.top .top_img{
+    width: 40%;
+    margin:0 auto;
+    margin-bottom: 20px;
+    display: block;
+}
+.top .search{
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border: 0;
+    color: #333;
+    background: url(../images/search.png) 5px center no-repeat #fff;
+    background-size: auto 55%;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    border-radius: 5px;
+}
+.top ul{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.top ul li{
+    width: 25%;
+    float: left;
+    font-size: 16px;
+    text-shadow: 1px 1px 5px #000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.top ul li a{
+    color: #fff;
+}
+
+.top ul li img{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rx{
+   overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+}
+.rx a{
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    float: left;
+    font-size: 16px;
+    color: #2394da;
+    text-decoration: none;
+}
+.rx .rx_left{
+    float: left;
+}
+.rx a i.left{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: bottom;
+    background: url(../images/new-index_08.png) center center no-repeat;
+    background-size: 100% auto;
+
+}
+
+.rx a:nth-child(2){
+    text-align: right;
+}
+.rx a i.right{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px dashed #2394da;
+    vertical-align: bottom;
+}
+.rx a i{
+    margin-right: 5px;
+}
+
+.barner{
+    margin-bottom:10px;
+    padding: 0;
+    border-bottom: 0;
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+    background: #fff;
+    display: block;
+}
+.barner .titleBox{
+    padding: 10px;
+    position: relative;
+    border-bottom: 1px solid #dcdcdc;
+}
+.barner .titleBox a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+.barner .titleBox a h2{
+    display: inline-block;
+    font-weight: 400;
+    color: #444;
+    font-size: 1.5em;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.barner .titleBox a i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    height: 27px;
+    width: 27px;
+    font-style: italic;
+
+}
+.titleBox i:after, .titleBox i:before {
+    content: " ";
+    width: 15px;
+    height: 5px;
+    background: #c9c9c9;
+    display: block;
+    position: absolute;
+    right: 0;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+.titleBox i:before{
+    transform: rotate(45deg);
+    top: 8px;
+}
+.titleBox i:after{
+    transform: rotate(-45deg);
+    top: 8px;
+}
+.banner_pic img{
+    width: 32%;
+}
+.comment a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+.comment a h2{
+    display: inline-block;
+    font-weight: 400;
+    color: #444;
+    font-size: 1.5em;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.time{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    margin-top: 2px;
+}
+.time img{
+    width: auto;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.time span{
+    vertical-align: middle;
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: 5px;
+    float: left;
+}
+.listbox{
+    margin-top: 5px;
+}
+.listbox img{
+    width: 33.3%;
+    float: left;
+    position: relative;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.jibing  .title h2{
+    display: inline-block;
+    font-weight: 400;
+    color: #444;
+    font-size: 1.5em;
+    vertical-align: middle;
+    margin-right: 6px;
+    margin-top: 5px;
+}
