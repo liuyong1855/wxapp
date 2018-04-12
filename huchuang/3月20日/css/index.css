@@ -1,0 +1,102 @@
+.indexView{
+    min-width: 320px;
+    max-width: 640px;
+    background-color: #999999;
+    margin: auto;
+}
+.header{
+    position: relative;
+    top: 10px;
+    background: url('../img/top_backImg.jpg') center top no-repeat;
+    background-size: cover;
+}
+.topImg{
+    margin-left: 100px;
+}
+.search{
+    background: url(../img/search.jpg) left center no-repeat;
+    height: 60px;
+    background-color: #ffffff;
+    width: 95%;
+    margin-left: 10px;
+    border-radius: 30px;
+}
+.search_text{
+    text-align: center;
+    line-height: 60px;
+}
+.topButton{
+    margin-top: 10px;
+    font-size: 0px;
+}
+.t_href{
+    width: 25%;
+    display: inline-block;
+    font-size: 14px;
+}
+.t_butt{
+    display:block;
+    margin: 0 auto; 
+}
+.t_text{
+    text-align: center;
+    display: block;
+    margin-top:5px;  
+}
+.top_bottom{
+    display: flex;
+    padding: 10px;
+    color:#2394da;
+    border-bottom: 1px solid #999999;
+}
+.tb_right{
+    background: #324343;
+   flex: 1;
+   text-align: right;
+}
+.header2{
+    display: flex;
+    padding: 10px;
+    height: 40px;
+}
+.header2_right{
+    flex: 1;
+    font-size: 24px;
+    text-align: right;
+}
+.cell2_img{
+    flex: 1;
+    margin: 5px auto;
+}
+.cell3_img{
+    margin: 5px 10px;
+}
+.cell2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
