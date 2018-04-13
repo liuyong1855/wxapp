@@ -1,0 +1,14 @@
+{
+  window{
+    "navigationBarTitleText": "框架",
+    "navigationBarBackgroundColor":"#87CEFA",
+    "navigationBarTextStyle":"white",
+    "navigationStyle":"default",
+    "backgroundColor":"#FF0000",
+    "backgroundTextStyle":"dark",
+    "backgroundColorTop":"#EEE",
+    "backgroundColorBottom":"#AFEEEE",
+    "enablePullDownRefresh":true,
+    "onReachBottomDistance":1
+  }
+}

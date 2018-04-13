@@ -1,0 +1,10 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <block>
+    <text class="log-item">框架练习</text>
+  </block>
+</view>
+<view class="tabBar">
+	<text>1</text>
+	<text>2</text>
+</view>
