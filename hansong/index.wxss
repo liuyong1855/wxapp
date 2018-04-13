@@ -1,0 +1,286 @@
+.top{
+  background: url(http://wap.7lk.com/assets/wap/img/new-index_01.jpg) no-repeat top center;
+  width: 100%;
+  height: 460rpx;
+  text-align: center;
+}
+#loge{
+  width: 284rpx;
+  height: 100rpx;
+  padding: 40rpx 0;
+}
+.ipt-so{
+  background-color: #fff;
+  height: 80rpx;
+  margin: 0 20rpx; 
+  border-radius: 6rpx;
+  padding-left: 60rpx; 
+  text-align: left;
+  position: relative;
+}
+.pla-so{
+    font-size: 30rpx;  
+    color: #222;
+}
+.ipt-so icon{
+  position: absolute;
+  left: 10rpx;
+  top: 20rpx;
+}
+.nav{
+  display: flex;
+  padding-top: 40rpx; 
+}
+.nav-view{
+  flex: 1;
+}
+.nav-img{
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  margin: 0 auto;
+}
+.nav-text{
+  display: block;
+  font-size: 32rpx;
+  color: #fff;
+  text-shadow: 2rpx 2rpx 8rpx #333;
+  align-items: flex-start;
+}
+.bar{
+  background-color: #eee;
+  height: 82rpx;
+  line-height: 82rpx;
+  padding-right: 20rpx;
+}
+.bar-left, .bar-rig{
+  color: #2394da;
+  font-size: 32rpx;
+}
+.bar-left{
+  padding-left: 60rpx;
+  background: url('http://wap.7lk.com/assets/wap/img/new-index_08.png') no-repeat 20rpx center;
+  background-size: 34rpx 34rpx; 
+}
+.bar-rig{
+  padding-left: 60rpx;
+  background: url('http://wap.7lk.com/assets/wap/img/new-index_08.png') no-repeat 20rpx center;
+  background-size: 34rpx 34rpx;
+  float: right;
+}
+.barT{
+  height: 74rpx;
+  border-bottom: 1rpx solid #eee;
+  padding: 0 10rpx;
+  line-height: 74rpx;
+  position: relative;
+}
+.barTleft{
+  float: left;
+}
+
+.barTrig::after, .barTrig::before{
+  content: "";
+  width: 30rpx;
+  height: 5px;
+  background: #c9c9c9;
+  display: block;
+  position: absolute;
+  right: 20rpx;
+}
+.barTrig::after{
+      transform: rotate(-45deg);
+      top: 30rpx;
+}
+.barTrig::before{
+    transform: rotate(45deg);
+    top: 15rpx;
+}
+.swi{
+   min-height:  454rpx;
+}
+.ban{
+   padding: 3%; 
+   display: block;
+}
+.ban1,.ban2{
+  display: flex;
+}
+.ban1 navigator,.ban2 navigator{
+  flex: 1;
+  margin-right: 2%;
+  margin-bottom: 2%; 
+}
+.ban1 navigator image,.ban2 navigator image{
+   width: 100%; 
+   max-height: 182rpx;  
+}
+.timer{
+  border-top: 20rpx solid #eee;  
+}
+.timer-top{
+  border-top: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+  height: 54rpx;
+  padding: 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.timer-ic{
+  padding-left:12rpx;
+  padding-right: 10rpx; 
+  width: 45rpx;
+  height: 48rpx;
+}
+
+.timer-time{
+  flex: 1;
+}
+.timer-time span{
+  background-color: #999;
+  color: #fff;
+  padding: 0 8rpx;
+  border-radius: 8rpx;
+  font-size: 30rpx;
+}
+.timer-arr{
+  position: relative;
+  width: 30rpx;
+}
+.timer-arr::before, .timer-arr::after{
+  content: "";
+  width: 30rpx;
+  height: 5px;
+  background: #c9c9c9;
+  display: block;
+  position: absolute;
+  top: -15rpx;
+}
+.timer-arr::after{
+      transform: rotate(-45deg);
+      top: 0rpx;
+}
+.timer-arr::before{
+    transform: rotate(45deg);
+}
+.time-bto{
+   display: grid; 
+   grid-template-columns: 1fr 1fr 1fr;
+   /* grid-template-rows:3fr; */
+}
+.time-img{
+  padding: 10rpx;
+  width: 100%;
+  border-bottom:  1rpx solid #ccc; 
+}
+.time-img:nth-of-type(1),.time-img:nth-of-type(2){
+  border-right: 1rpx solid #ccc; 
+}
+.content{
+  border-top: 20rpx solid #eee;
+}
+.con-zi{
+  height: 54rpx;
+  padding: 20rpx;
+  border-top: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc; 
+}
+.con-con{
+  padding: 20rpx;
+  padding-bottom: 0px;
+  border: 1rpx solid #ccc;
+  margin-bottom: 20rpx;
+}
+.con-item{
+  display: grid;
+  grid-template-columns: 200rpx auto;
+  padding-top: 20rpx; 
+}
+.con-itemL{
+  padding-right: 20rpx;
+   position: relative; 
+}
+.con-itemL image{
+  height: 200rpx;
+  width: 100%;
+}
+.con-itemL text{
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 200rpx;
+  text-align: center;
+  font-size: 36rpx;
+  color: #e87816;
+  width: 200rpx;
+}
+.con-itemR{
+  height: 200rpx;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows:90rpx 90rpx;
+  grid-column-gap: 15rpx;
+  grid-row-gap: 20rpx;
+}
+.con-itemR text{
+  background-color: #f5f5db;
+  color: #f58c3b;
+  text-align: center;
+  line-height: 90rpx;
+}
+.btn{
+  padding: 20rpx;
+  padding-bottom:  120rpx;
+}
+.btn button{
+  width: 100%;
+  height:  72rpx;
+  line-height: 70rpx;
+  color:#fff;
+  background-color:  #481c87;
+  margin-bottom: 10rpx;
+}
+.tel{
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  background: url(http://wap.7lk.com/assets/wap/img/call34.png) no-repeat left center;
+  background-size: 100%;
+  display: inline-block;
+}
+.btn .bto-txt{
+  font-size: 24rpx;
+  color: #ccc;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+.bot{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  height: 100rpx;
+  background-color: #eee;
+  border-top: 1rpx solid #ccc;
+  align-items: center;
+  justify-content: center;
+}
+.bot-item{
+  flex: 1;
+   text-align: center; 
+}
+.bot-item icon{ 
+  display: block;
+  margin: 0 auto;
+  width: 30rpx;
+  height: 30rpx;
+}
+.bot-item text{
+  display: block;
+  padding-top: 4rpx;
+  font-size: 24rpx;
+  color: #ccc;
+}
