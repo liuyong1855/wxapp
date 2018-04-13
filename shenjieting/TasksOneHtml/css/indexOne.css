@@ -9,6 +9,7 @@ body {
 	outline: 0;
 	min-width: 320px;
 	max-width: 640px;
+	padding-bottom: 62px; 
 	/*position: relative;*/
 }
 head{
@@ -17,7 +18,9 @@ head{
 section{
 	display: block;
 }
-
+.main{
+	margin: 0 auto;
+}
 .top-search-content{
 	padding: 20px 10px;
 	background: url(../images/headBg.jpg) center top no-repeat;
