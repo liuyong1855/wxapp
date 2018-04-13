@@ -1,0 +1,143 @@
+<!--index.wxml-->
+<view class='head'>
+     <image src='../../images/new-index_01.jpg' class='headbgwrap'></image> 
+     <view class='headContent'>
+        <image src='../../images/logo.png' class='logo'></image>
+        <view class='headinputwrap'>
+           <input  type='text' class='headinput' placeholder='请输入药品名称/疾病名称搜索'/>
+           <image src='../../images/search.png'></image>
+        </view>
+        <view class='headList'>
+            <view>
+              <image src='../../images/wx2_index_05.png'> </image>
+              <text>对症找药</text>
+            </view>
+             <view>
+              <image src='../../images/wx2_index_06.png'> </image>
+              <text>科室找药</text>
+            </view>
+             <view>
+              <image src='../../images/wx2_index_07.png'> </image>
+              <text>男科</text>
+            </view>
+             <view>
+              <image src='../../images/wx2_index_08.png'> </image>
+              <text>妇科</text>
+            </view>
+        </view>  
+     </view>
+</view>
+<view class='chufang'>
+    <view>
+      <image src='../../images/new-index_08.png'></image>
+      <text>我的处方</text>
+    </view>
+    <view>
+      <image src='../../images/new-index_08.png'></image>
+      <text>添加处方</text>
+    </view>
+ </view>
+ <view class='pinpai'>
+    <text>品牌街</text>
+    <view>></view>
+ </view>
+ <view class='pinpailist'>
+    <image src='../../images/1.jpg'></image>
+    <image src='../../images/2.jpg'></image>
+    <image src='../../images/3.jpg'></image>
+    <image src='../../images/4.jpg'></image>
+    <image src='../../images/5.jpg'></image>
+    <image src='../../images/6.png'></image>
+ </view>
+ <view class='middle'></view>
+ <view class='shan'>
+    <text>优品闪购</text>
+    <image src='../../images/wx2.0_index_18.png'></image>
+    <view class='time'>
+        <text>4147</text>
+        <text>:</text>
+        <text>48</text>
+        <text>:</text>
+        <text>32</text>
+    </view>
+    <text class='jian'></text>
+ </view>
+ <view class='jijiang'>
+      <image src='../../images/jjsx-def.png'></image>
+      <image src='../../images/jjsx-def.png'></image>
+      <image src='../../images/jjsx-def.png'></image>
+ </view>
+ <view class='middle'></view>
+ <view class='changyong'>
+  常见疾病
+ </view>
+ <view class='jiBingList'>
+    <view class='jiBingBox'>
+      <view class='left'>
+        <image src='../../images/01190_20150421101949358190000037773.png'></image>
+      </view>
+      <view class='right'>
+        <view>眼部炎症</view>
+        <view>眼部干涩</view>
+        <view>中耳炎</view>
+        <view>鼻炎</view>
+      </view>
+    </view>
+ </view>
+  <view class='jiBingList'>
+    <view class='jiBingBox'>
+      <view class='left'>
+        <image src='../../images/01190_20150421101845472390000014976.png'></image>
+      </view>
+      <view class='right'>
+        <view>眼部炎症</view>
+        <view>眼部干涩</view>
+        <view>中耳炎</view>
+        <view>鼻炎</view>
+      </view>
+    </view>
+ </view>
+  <view class='jiBingList'>
+    <view class='jiBingBox'>
+      <view class='left'>
+        <image src='../../images/01190_20150421101819528490000023104.png'></image>
+      </view>
+      <view class='right'>
+        <view>眼部炎症</view>
+        <view>眼部干涩</view>
+        <view>中耳炎</view>
+        <view>鼻炎</view>
+      </view>
+    </view>
+ </view>
+  <view class='jiBingList'>
+    <view class='jiBingBox'>
+      <view class='left'>
+        <image src='../../images/01190_20150421101900248900000086214.png'></image>
+      </view>
+      <view class='right'>
+        <view>眼部炎症</view>
+        <view>眼部干涩</view>
+        <view>中耳炎</view>
+        <view>鼻炎</view>
+      </view>
+    </view>
+ </view>
+ <view class='footer'>
+    <view>
+      <image src='../../images/1523275092(1).jpg'></image>
+      <text>找药</text>
+    </view>
+    <view>
+      <image src='../../images/1523275130(1).jpg'></image>
+      <text>发现</text>
+    </view>
+    <view>
+      <image src='../../images/1523275156(1).jpg'></image>
+      <text>购药</text>
+    </view>
+    <view>
+      <image src='../../images/1523275175(1).jpg'></image>
+      <text>购物车</text>
+    </view>
+ </view>
