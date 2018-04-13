@@ -1,0 +1,64 @@
+<!-- 以下内容为小程序作业 -->
+<view class='mt'>事件绑定 + 模板语法 + 模块引用 + 路由跳转</view>
+<button bind:tap='changeTest'>点我</button>
+<view bindtap='back1'>
+  {{glb}}
+</view>
+<view>{{now}}</view>
+
+<view class='mt'>小程序内置api</view>
+<button bind:tap="startRecord">点击我开始录音</button>
+<button bind:tap="playVoice">点击播放录音</button>
+
+<view class='mt'>列表渲染</view>
+<view wx:for="{{list}}" wx:key="index">{{'我的名字是: ' + item.name}}</view>
+
+<view class='mt'>模板</view>
+<template name="tpl">
+  <view>{{name}}</view>
+  <view>{{name}}</view>
+  <view>{{name}}</view>
+  <view>{{name}}</view>
+</template>
+<template is="tpl" data="{{...tplData}}"></template>
+
+<view class='mt'>wxs</view>
+<wxs module="m1">
+  var msg = 'hello world';
+  module.exports.msg = msg
+</wxs>
+<view>{{m1.msg}}</view> 
+
+<wxs module="m2">
+  var getMax = function(array) {
+      var max = undefined;
+      for(var i = 0;i < array.length; ++i){
+        max = max === undefined ? array[i] : (max >= array[i] ? max : array[i])
+      }
+      console.log('max: ', max)
+      return max;
+  }
+  module.exports = {
+    getMax: getMax
+  }
+</wxs>
+<view>{{m2.getMax(maxArray)}}</view>
+<wxs src="../common/common.wxs" module="m3"></wxs>
+<view>{{m3.foo}}</view>
+<view>{{m3.bar(666)}}</view>
+<!-- 在wxs中require其他wxs文件只能使用相对路径
+wxs在第一次被引用的时候会被初始化为单例模式，以后每次调用都只是一个对象
+wxs文件如果不被引用，则不会被解析运行 -->
+<wxs module="m4">
+  var m5 = require('../common/common.wxs');
+  var test = m5.bar(5) + '这是在一个wxs标签中require另一个wxs文件的结果';
+  module.exports.test = test;
+</wxs>
+<view>{{m4.test}}</view>
+
+<view class='mt'>使用自定义组件</view>
+<view>可以为header指定外部class：mt  slot文字变为白色</view>
+<header classs="header" data-drink="coffee" inner-text="父 -> 子 通信" bind:sendFater="onGet">
+  <view slot="before">这是slot name=before插入的内容</view>
+  <view slot="after"><headerChild id="child"></headerChild></view>
+</header>

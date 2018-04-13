@@ -1,0 +1,212 @@
+<!--index.wxml-->
+<mask id='mask' bind:close="closeHandler"></mask>
+<view class="navbar">
+  <view class='nav-left'>
+    北京
+    <icon></icon>
+  </view>
+  <view class='nav-search'>
+    <input placeholder='输入商家/品类/商圈'>
+      <image src='../../image/search.png' mode='aspectFit'></image>
+    </input>
+  </view>
+  <view class='nav-right' bind:tap="controlMask">
+    <image src='../../image/user.png'></image>
+    <text>我的</text>
+  </view>
+</view>
+<view class='ad'>
+  <image src='../../image/wrap.jpg'></image>
+</view>
+<swiper class='carousel' indicator-dots="true" indicator-color="#fff" indicator-active-color="#06c1ae" autoplay="true">
+  <swiper-item>
+    <view>
+      <image src='../../image/food.png'></image>
+      美食生活
+    </view>
+    <view>
+      <image src='../../image/airport.png'></image>
+      美食生活
+    </view>
+    <view>
+      <image src='../../image/fun.png'></image>
+      美食生活
+    </view>
+    <view>
+      <image src='../../image/hotel.png'></image>
+      美食生活
+    </view>
+    <view>
+      <image src='../../image/ktv.png'></image>
+      美食生活
+    </view>
+    <view>
+      <image src='../../image/movie.png'></image>
+      美食生活
+    </view>
+    <view>
+      <image src='../../image/outfood.png'></image>
+      美食生活
+    </view>
+    <view>
+      <image src='../../image/quickfood.png'></image>
+      美食生活
+    </view>
+    <view>
+      <image src='../../image/travel.png'></image>
+      美食生活
+    </view>
+    <view>
+      <image src='../../image/women.png'></image>
+      美食生活
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view>
+      <image src='../../image/food.png'></image>
+      美食生活
+    </view>
+    <view>
+      <image src='../../image/airport.png'></image>
+      今日新单
+    </view>
+    <view>
+      <image src='../../image/fun.png'></image>
+      每日按摩
+    </view>
+    <view>
+      <image src='../../image/hotel.png'></image>
+      哈哈哈哈
+    </view>
+    <view>
+      <image src='../../image/ktv.png'></image>
+      嘿嘿嘿嘿
+    </view>
+    <view>
+      <image src='../../image/movie.png'></image>
+      吼吼吼吼
+    </view>
+    <view>
+      <image src='../../image/outfood.png'></image>
+      嚯嚯嚯嚯
+    </view>
+    <view>
+      <image src='../../image/quickfood.png'></image>
+      咦咦咦咦
+    </view>
+    <view>
+      <image src='../../image/travel.png'></image>
+      操操操草
+    </view>
+    <view>
+      <image src='../../image/women.png'></image>
+      靠靠靠靠
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view>
+      <image src='../../image/food.png'></image>
+      美食生活
+    </view>
+    <view>
+      <image src='../../image/airport.png'></image>
+      今日新单
+    </view>
+    <view>
+      <image src='../../image/fun.png'></image>
+      每日按摩
+    </view>
+    <view>
+      <image src='../../image/hotel.png'></image>
+      哈哈哈哈
+    </view>
+    <view>
+      <image src='../../image/ktv.png'></image>
+      嘿嘿嘿嘿
+    </view>
+    <view>
+      <image src='../../image/movie.png'></image>
+      吼吼吼吼
+    </view>
+    <view>
+      <image src='../../image/outfood.png'></image>
+      嚯嚯嚯嚯
+    </view>
+    <view>
+      <image src='../../image/quickfood.png'></image>
+      咦咦咦咦
+    </view>
+    <view>
+      <image src='../../image/travel.png'></image>
+      操操操草
+    </view>
+    <view>
+      <image src='../../image/women.png'></image>
+      靠靠靠靠
+    </view>
+  </swiper-item>
+</swiper>
+<view class='guide'>
+  <view>
+    <text>我们约吧</text>
+    <text>恋人家人好朋友</text>
+    <image src='../../image/lover.png'></image>
+  </view>
+  <view>
+    <text>低价超值</text>
+    <text>十元惠生活</text>
+    <image src='../../image/crab.png'></image>
+  </view>
+  <view>
+    <text>聚餐宴请</text>
+    <text>朋友家人常聚餐</text>
+    <image src='../../image/Hamburg.jpg'></image>
+  </view>
+</view>
+<view class='guess'>
+  <text class='title'>猜你喜欢</text>
+  <view class='guess-list'>
+    <view class='list-left'>
+      <image src='../../image/list_01.jpg'></image>
+    </view>
+    <view class='list-content'>
+      <view class='desc'>
+        <text>粒上皇</text>
+        <text>[29店通用]霜糖山楂一份</text>
+      </view>
+      <view class='price'>
+        <text>69元</text>
+        <text>门市价100元</text>
+      </view>
+    </view>
+    <view class='sold'>
+      <text>已售2018</text>
+    </view>
+  </view>
+  <view class='check-all'>
+    <text>查看全部</text>
+    <icon></icon>
+  </view>
+</view>
+<view class='footer'>
+  <view class='footer-left'>
+    <text>登录</text>
+    <text>注册</text>
+  </view>
+  <view class='footer-right'>
+    <text>城市:</text>
+    <text>北京</text>
+  </view>
+</view>
+<view class='footer-bar'>
+  <text>首页</text>
+  <text>我的</text>
+  <text>美团下载</text>
+  <text>电脑版</text>
+  <text>帮助</text>
+</view>
+<view class='mt'>使用import引用detail中定义的模板</view>
+<import src="../detail/detail.wxml"/>
+<template is="tpl" data="{{name: '首页引用了detail.wxml中定义的模板'}}"></template>
+<view class='mt'>使用include引用</view>
+<include src="../detail/detail.wxml"/>

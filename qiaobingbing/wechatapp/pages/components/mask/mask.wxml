@@ -1,0 +1,12 @@
+<!--pages/components/mask/mask.wxml-->
+<view class='mask' id='mask' hidden='{{!isShow}}'>
+  <view class='mask-bg'></view>
+  <view class='mask-box'>
+    <view class='mask-title'>{{title}}</view>
+    <view class='mask-content'>{{content}}</view>
+    <view class='mask-control'>
+      <view class='mask-confirm' bind:tap="_close">确认</view>
+      <view class='mask-cancel' bind:tap="_close">取消</view>
+    </view>
+  </view>
+</view>

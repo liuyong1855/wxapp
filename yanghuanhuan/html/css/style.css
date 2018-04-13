@@ -1,0 +1,323 @@
+body{
+	margin: 0 auto;
+	font-size: 14px;
+	background:#f5f5f5;
+	max-width: 640px;
+}
+p {
+	margin: 0;
+}
+div,form,input,ul,li{
+	box-sizing: border-box;
+}
+li{
+	list-style:none;
+}
+.header{
+	width: 100%;
+	padding: 20px 10px;
+	background: url(../images/new-index_01.jpg) no-repeat center top;
+}
+.logo{
+	width: 40%;
+	display: block;
+	margin: 0 auto 20px;
+}
+.searchForm {
+	width: 100%;
+	height: 40px;
+	padding:10px 0 10px 30px;
+	background: #fff url(../images/search.png) no-repeat 5px center;
+	background-size: 20px 20px;
+	
+}
+.searchInput{
+	width:100%;
+	height: 20px;
+	display: block;
+	padding: 0;
+	border: none;
+	line-height: 20px;
+	font-size: 14px;
+}
+.topUl{
+	overflow:hidden;
+	padding-left:0;
+	margin-bottom: 0;
+	margin-top: 20px;
+}
+.list{
+	width: 25%;
+	float: left;
+}
+.list img{
+	width:40px;
+	height: 40px;
+	margin: 0 auto;
+	display: block;
+}
+.list p{
+	margin: 0;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	text-shadow: 1px 1px 5px #000;
+}
+.prescription{
+	width: 100%;
+	height: 40px;
+	padding: 0 10px;
+	color: #2394da;
+}
+.prescription p{
+	margin-top: 10px;
+}
+.myPre{
+	background: url(../images/new-index_08.png) no-repeat;
+	background-size: 20px 20px;
+	float: left;
+	text-indent: 25px;
+}
+.add{
+	float: right;
+	width: 50%;
+	text-align: right;
+}
+.plus{
+	border: 1px dashed #2394da;
+	float: right;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 17px;
+	font-style: normal;
+	font-size: 20px;
+	margin-right: 5px;
+}
+.add span{
+	float: right;
+}
+.brand{
+	height: 50px;
+	position: relative;
+	line-height: 50px;
+	background: #fff;
+	padding: 0 10px;
+	font-size: 21px;
+	border-bottom: 1px solid #dcdcdc;
+	border-top: 1px solid #dcdcdc;
+}
+
+.righticon {
+	position: relative;
+	float: right;
+	transform: rotate(135deg);
+	top:25px;
+	right: 0;
+}
+
+.righticon:before {
+    content: ' ';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-left: 4px solid #c9c9c9;
+    height: 15px;
+}
+.righticon:after {
+    content: ' ';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top: 4px solid #c9c9c9;
+    width: 15px;
+}
+.imgUl {
+	width: 100%;
+	background: #fff;
+	margin: 0;
+	padding: 10px;
+	overflow:hidden;
+	margin-bottom: 10px;
+}
+.imgUl li{
+	width: 33%;
+	float: left;
+}
+.imgUl li img{
+	width: 100%;
+}
+.flash {
+	height: 50px;
+	width: ;
+}
+.floatL{
+	float: left;
+}
+.flash .countDown{
+	background: url(../images/wx2.0_index_18.png) no-repeat left center;
+	padding-left: 32px;
+	background-size: 24px 24px;
+	float: left;
+	font-size: 15px;
+	margin-left: 14px;
+}
+.countDown span{
+	background: #999;
+	color: #fff;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 5px;
+}
+
+.next {
+	background: #fff;
+	margin:0;
+	margin-bottom: 10px;
+	padding-left: 0;
+	overflow: hidden;
+	border-right: 1px solid #dcdcdc;
+	width: 100%;
+}
+.next li{
+	width: 33%;
+	border-right: 1px solid #dcdcdc;
+	float: left;
+}
+.next li:last-child{
+	border-right: none;
+}
+.next li img{
+	width: 100%;
+}
+.disease{
+	width: 100%;
+	padding:10px 10px 0;
+	color: #e87816;
+	background: #fff;
+	overflow:hidden;
+	margin: 0;
+	border-bottom: 1px solid #d4d4d4;
+}
+.disease > li{
+	position: relative;
+	overflow:hidden;
+}
+.avatar{
+	width: 100px;
+	height: 100px;
+	background: url(../images/01190_20150421101949358190000037773.png);
+	background-size: 100% 100%;
+	line-height: 100px;
+	text-align: center;
+	font-size: 18px;
+	float: left;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+.disease li:nth-child(2) .avatar{
+	background: url(../images/01190_20150421101940550790000023757.png);
+	background-size: 100% 100%;
+}
+.disease li:nth-child(3) .avatar{
+	background: url(../images/01190_20150421101924899090000014527.png);
+	background-size: 100% 100%;
+}
+.disease li:nth-child(4) .avatar{
+	background: url(../images/01190_20150421101911067950000033205.png);
+	background-size: 100% 100%;
+}
+.disease li:nth-child(5) .avatar{
+	background: url(../images/01190_20150421101900248900000086214.png);
+	background-size: 100% 100%;
+}
+.disease li:nth-child(6) .avatar{
+	background: url(../images/01190_20150421101845472390000014976.png);
+	background-size: 100% 100%;
+}
+.disease li:nth-child(7) .avatar{
+	background: url(../images/01190_20150421101819528490000023104.png);
+	background-size: 100% 100%;
+}
+.disease li:nth-child(8) .avatar{
+	background: url(../images/01190_20150421101809074400000045953.png);
+	background-size: 100% 100%;
+}
+.disease li:nth-child(9) .avatar{
+	background: url(../images/01190_20150421101758053810000049615.png);
+	background-size: 100% 100%;
+}
+.disease li:nth-child(10) .avatar{
+	background: url(../images/01190_20150421101743568880000086154.png);
+	background-size: 100% 100%;
+}
+.disease li:nth-child(11) .avatar{
+	background: url(../images/01190_20150421101730916200000095930.png);
+	background-size: 100% 100%;
+}
+.disease li:nth-child(12) .avatar{
+	background: url(../images/01190_20150421101710410450000024289.png);
+	background-size: 100% 100%;
+}
+.detailed{
+	float: left;
+	padding-left: 120px;
+	width: 100%;
+}
+.detailed li{
+	width: 47.5%;
+	height: 45px;
+	margin-bottom: 10px;
+	line-height: 45px;
+	text-align: center;
+	margin-right: 2.5%;
+	float: left;
+	background: #f5f5db;
+}
+.footer{
+	background: #481c87 url(../images/call34.png) no-repeat 32% center;
+	background-size: 20px 20px;
+	margin:20px 10px 10px;
+	height: 32px;
+	border-radius: 5px;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	line-height: 32px;
+
+}
+.footerP{
+	font-size: 12px;
+	color: #999;
+	text-align: center;
+	line-height: 20px;
+}
+.last {
+	margin-bottom: 60px;
+}
+.location{
+	width: 100%;
+	height: 50px;
+	background-color: #eee;
+	position: fixed;
+	bottom:0;
+	left:0;
+}
+.location ul {
+	padding-left: 0;
+	margin: 0;
+	height: 100%;
+}
+.location ul li{
+	width: 25%;
+	height: 100%;
+	float:left;
+	background: url(../images/wx2.0_index_18.png) no-repeat center 10px;
+	background-size: 20px 20px;
+	text-align: center;
+	line-height: 76px;
+	color: #707070;
+	font-size: 12px;
+}
+
