@@ -2,3 +2,5 @@
 !.gitignore
 #工具
 /.idea
+#忽略node_modules
+qiaobingbing/wepy/myproject/node_modules/

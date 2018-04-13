@@ -1,0 +1,12 @@
+<!--pages/components/header.wxml-->
+<text>pages/components/header.wxml</text>
+<view class='wrapper'>
+  <slot name="before"></slot>
+  <view class='select'>这是header组件的内部细节</view>
+  <slot name="after"></slot>
+  <text>{{innerText}}</text>
+  <button bind:tap="toFather">点击触发自定义事件</button>
+  <button bind:tap="query">触发createSelectorQuery</button>
+  <button bind:tap="behaviorMethod">点击触发来自behavior的事件</button>
+  
+</view>
