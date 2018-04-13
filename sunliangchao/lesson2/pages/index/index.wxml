@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="main">
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class='button_con'>
+    <button bindtap='addData'>添加数据</button>
+    <button bindtap='jianData'>删除数据</button>
+    <button bindtap='alert_model'>弹出对话框</button>
+    <button bindtap='alert_pop'>弹出弹层</button>
+  </view>
+
+  <view scroll-y class='scroll_i'>
+      <view  wx:for="{{list}}">{{item}}</view>
+  </view>
+</view>
+
+<view class="pop {{className.pop}}" bindtap='hidden_pop'>
+  <view class='pop_msg'>你好</view>
+</view>
