@@ -1,5 +1,4 @@
 {
-  window{
     "navigationBarTitleText": "框架",
     "navigationBarBackgroundColor":"#87CEFA",
     "navigationBarTextStyle":"white",
@@ -9,6 +8,5 @@
     "backgroundColorTop":"#EEE",
     "backgroundColorBottom":"#AFEEEE",
     "enablePullDownRefresh":true,
-    "onReachBottomDistance":1
-  }
+    "onReachBottomDistance":10
 }
