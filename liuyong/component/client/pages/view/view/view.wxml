@@ -1,0 +1,13 @@
+<view class="title"><text>view</text></view>
+<view>row横向布局</view>
+<view class="viewrow">
+	<view hover-class="hoverclass" hover-start-time="500">1</view>
+	<view hover-class="hoverclass" hover-stay-time="1000">2</view>
+	<view hover-class="hoverclass">3</view>
+</view>
+<view>column纵向布局</view>
+<view class="viewcolumn">
+	<view>1</view>
+	<view>2</view>
+	<view>3</view>
+</view>

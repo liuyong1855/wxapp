@@ -1,0 +1,12 @@
+<view class="title"><text>movable-view</text></view>
+<view>
+	<movable-area class="mobarea1" scale-area>
+		<movable-view class="movable1" direction="all" out-of-bounds="true" x="10" y="20" damping="1" friction="100" scale-value="1.5" scale scale-min="0.5" scale-max="10" bindchange="change" bindscale="scale">11</movable-view>
+	</movable-area>
+	<movable-area class="mobarea1" inertia="true">
+		<movable-view class="movable1" direction="vertical">11</movable-view>
+	</movable-area>
+	<movable-area class="mobarea1">
+		<movable-view class="movable1" direction="horizontal">11</movable-view>
+	</movable-area>
+</view>

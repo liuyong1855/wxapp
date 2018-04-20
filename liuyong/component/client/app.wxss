@@ -1,0 +1,4 @@
+/**app.wxss**/
+page{font-size:32rpx;background:#F6F6F6;}
+.title{text-align:center;padding:20rpx;}
+.title text{border-bottom:1rpx solid #ccc;line-height:60rpx;display:inline-block;}

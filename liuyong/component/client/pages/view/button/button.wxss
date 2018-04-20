@@ -1,0 +1,4 @@
+button{margin-bottom:15rpx;}
+.btnbox{margin:30rpx;}
+.nohover{background:#ccc}
+.hover{background:#f00}
