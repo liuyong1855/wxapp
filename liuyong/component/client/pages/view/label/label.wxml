@@ -1,0 +1,11 @@
+<view class="title"><text>progress</text></view>
+
+<view style="margin:20rpx;">
+	<checkbox id="checkbox1" /><label for="checkbox1">checkbox</label>
+	<checkbox id="checkbox2" /><label for="checkbox2">checkbox</label>
+</view>
+
+<view style="margin:20rpx;">
+	<label>checkbox<checkbox /></label>
+	<label>checkbox<checkbox /></label>
+</view>

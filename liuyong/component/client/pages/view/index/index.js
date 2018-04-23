@@ -8,7 +8,7 @@ Page({
     		viewitem:['text','icon','rich-text','progress']
     	},{
     		name:"表单组件",icon:'../resources/kind/form.png',opened:false,
-    		viewitem:['button','checkbox','form','input','label','picker','radio','slider','switch','textarea']
+    		viewitem:['button','checkbox','form','input','label','picker','picker-view','radio','slider','switch','textarea']
     	},{
     		name:"导航",icon:'../resources/kind/nav.png',opened:false,
     		viewitem:['navigator']
