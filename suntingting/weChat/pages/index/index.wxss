@@ -17,9 +17,46 @@
 }
 
 .usermotto {
-  margin-top: 200px;
+  margin-top: 20px;
 }
 
-.button-hover {
-  background-color: red;
+.navigator-hover{
+   color:#ff99d5;
 }
+
+.btnBox{
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  display:flex;
+  border:1px solid #eee;
+}
+
+.btnBox navigator{
+  flex:1;
+  text-align: center;
+  font-size:14px;
+  color:#ccc;
+
+}
+
+.coverImg{
+  width:30%;
+  height:30%;
+}
+
+.btnBox cover-view{
+  justify-content:center;
+  align-items:center;
+  display: flex;
+}
+
+.currentN text{
+  color:#ff99d5;
+}
+
+
+
+
+

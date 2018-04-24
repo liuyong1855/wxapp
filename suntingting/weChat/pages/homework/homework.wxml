@@ -1,0 +1,16 @@
+<!--pages/homework/homework.wxml-->
+<view class="topBox">
+  <cover-view class="topface">
+    <cover-image src="{{userInfo.avatarUrl}}"></cover-image>
+  </cover-view>
+  <text>{{userInfo.nickName}}</text>
+</view> 
+<view class='topBoxBg'>ddd</view>
+<view class='contentB' wx:for="{{homew}}" wx:for-index="index" >
+  <view class='boxC' bindtap="delList">
+    <image class="imgaLL" src="{{item.img}}" background-size="cover"></image>
+    <text>{{item.text}}</text>
+  </view>
+</view>
+
+
