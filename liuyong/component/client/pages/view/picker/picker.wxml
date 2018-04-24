@@ -1,0 +1,49 @@
+<view class="title"><text>icon</text></view>
+
+<view class="boxpicker">
+	<view>普通选择器</view>
+	<picker range="{{array}}" value="{{index}}" bindchange="picker1" bindcancel="pickercancel1">
+		<view>当前选择:{{array[index]}}</view>
+	</picker>
+</view>
+<view class="boxpicker">
+	<view>普通选择器</view>
+	<picker range="{{objectArray}}" value="{{index}}" bindchange="picker1" bindcancel="pickercancel1" range-key="name">
+		<view>当前选择:{{objectArray[index].name}}</view>
+	</picker>
+</view>
+<view class="boxpicker">
+	<view>多列选择器</view>
+	<picker mode="multiSelector" range="{{objectMultiArray}}" value="{{index2}}" bindchange="picker2" bindcancel="pickercancel2" range-key="name" bindcolumnchange="columnchange">
+		<view>当前选择:
+		{{objectMultiArray[0][index2[0]].name}},
+		{{objectMultiArray[1][index2[1]].name}},
+		{{objectMultiArray[2][index2[2]].name}}</view>
+	</picker>
+</view>
+<view class="boxpicker">
+	<view>时间选择器</view>
+	<picker mode="time" value="{{time}}" start="10:00" end="12:00" bindchange="time">
+		<view>当前选择:{{time}}</view>
+	</picker>
+</view>
+<view class="boxpicker">
+	<view>日期选择器</view>
+	<picker mode="date" value="{{date}}" bindchange="date">
+		<view>当前选择:{{date}}</view>
+	</picker>
+</view>
+
+<view class="boxpicker">
+	<view>日期选择器</view>
+	<picker mode="date" value="{{date2}}" bindchange="date2" fields="year">
+		<view>当前选择:{{date2}}</view>
+	</picker>
+</view>
+
+<view class="boxpicker">
+	<view>省市区选择器</view>
+	<picker mode="region" value="{{region}}" bindchange="region">
+		<view>当前选择:{{region}}</view>
+	</picker>
+</view>

@@ -1,0 +1,8 @@
+.viewrow{display:flex;flex-direction:row;margin:0 20rpx;}
+.viewrow view{display:block;height:100rpx;width:200rpx;}
+.viewrow view:nth-child(1),.viewcolumn view:nth-child(1){background:#f00;}
+.viewrow view:nth-child(2),.viewcolumn view:nth-child(2){background:#f0f;}
+.viewrow view:nth-child(3),.viewcolumn view:nth-child(3){background:#0ff;}
+.viewcolumn{display:flex;flex-direction:column;}
+.viewcolumn view{display:block;height:100rpx;width:200rpx;}
+.viewrow view.hoverclass,.viewcolumn view.hoverclass{background:#000;}

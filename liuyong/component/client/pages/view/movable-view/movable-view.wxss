@@ -1,0 +1,2 @@
+.mobarea1{width:600rpx;height:600rpx;margin:0 auto;background:#eee;margin-bottom:20rpx;}
+.movable1{width:300rpx;height:300rpx;background:#f00;}

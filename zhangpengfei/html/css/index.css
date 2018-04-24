@@ -1,0 +1,252 @@
+div,
+p,
+img,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #f5f5f5;
+	font-size: 15px;
+	color: black;
+}
+/*主体*/
+.bo {
+	width: 640px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.emptyTable{
+	height: 50px;
+}
+/*头部*/
+.top {
+	background: url(../images/new-index_01.jpg) center top no-repeat;
+	padding: 20px 10px;
+}
+
+.topSearchLogo{
+	margin: 0 auto;
+	display: block;
+}
+.topSearch{
+	background: url(../images/search.png) no-repeat white 5px;
+	width: 100%;
+	border-radius: 3px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-size: auto 55%;
+	text-indent: 30px;
+	margin-top: 20px;
+}
+.topBtn{
+	margin-top: 20px;
+	overflow: hidden;
+	color: white;
+	text-shadow: 1px 1px 5px #000000;
+}
+.topBtn div{
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+.topBtn img{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 5px;
+}
+/*处方*/
+.recipe{
+	color: #2394da;
+	padding: 10px;
+	overflow: hidden;
+}
+.myRecipe{
+	float: left;
+	
+}
+.myRecipe img{
+	width: 20px;
+	vertical-align: middle;
+}
+.addRecipe{
+	float:right
+}
+.addRecipe b{
+	border: 1px dashed #2394DA;
+	display: inline-block;
+}
+/*品牌街*/
+.brand{
+	padding: 0;
+	font-size: 0;
+}
+.brandTitle{
+	border-bottom: 1px solid #dcdcdc;
+	border-top: 1px solid #dcdcdc;
+	font-size: 20px;
+	background: white;
+	padding: 5px;
+}
+.brand img{
+	width: 33.3%;
+}
+/*优品闪购*/
+.gilt{
+	font-size: 0;
+	margin-top: 10px;
+}
+.giltTitle{
+	border-bottom: 1px solid #dcdcdc;
+	border-top: 1px solid #dcdcdc;
+	font-size: 20px;
+	background: white;
+	padding: 5px;
+}
+.giltTitle img{
+	width: 20px;
+	vertical-align: middle;
+	
+}
+.giltImg{
+	border-bottom:1px solid #DCDCDC ;
+}
+.giltImg img{
+	background: white;
+	width: 33%;
+	margin:0 1px;
+}
+/*常见疾病*/
+.ailment{
+	font-size: 0;
+	margin-top: 10px;
+	    clear: both;
+}
+.ailmentTitle{
+	border-bottom: 1px solid #dcdcdc;
+	border-top: 1px solid #dcdcdc;
+	font-size: 20px;
+	background: white;
+	padding: 5px;
+}
+.ailmentContent{
+	padding: 5px 0;
+	background: white;
+}
+.ailmentList{
+	overflow: hidden;
+	position: relative;
+}
+.ailmentListImg{
+	margin: 5px 0 5px 10px;
+	font-size: 15px;
+	color: #f58c3b;
+	float: left;
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	line-height: 100px;
+	text-align: center;
+}
+.ailmentListImg img{
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	left: 0;
+	z-index: 1;
+}
+.ailmentListImg p{
+	position: relative;
+	z-index: 2;
+}
+.ailmentListContent p{
+	font-size: 10px;
+	height: 45px;
+	color: #f58c3b;
+	text-align: center;
+	line-height: 40px;
+	background: #f5f5db;
+	float: right;
+	width: 38%;
+	margin: 5px 10px;
+}
+.bottomTel{
+	height: 40px;
+	width: 95%;
+	background: #481c87;
+	text-align: center;
+	line-height: 40px;
+	color: white;
+	font-size: 18px;
+	margin: 20px auto 10px auto;
+}
+.bottomTel span{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background: url(../images/wx2.0_index_18.png);
+	background-size: 100%;
+	vertical-align: middle;
+}
+.bottomTel p{
+	display: inline-block;
+	vertical-align: middle;
+}
+.bottomCopyright{
+	text-align: center;
+	font-size: 12px;
+	color: #999;
+	margin-bottom: 10px;
+}
+.buttontob {
+	height: 50px;
+	background-color: #eee;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	z-index: 3;
+}
+.findmedicine,
+.discover,
+.shoppingCart,
+.person {
+	width: 25%;
+	float: left;
+	text-align: center;
+	margin-top: 4px;
+}
+
+.findmedicine i,
+.discover i,
+.shoppingCart i,
+.person i {
+	width: 22px;
+	height: 22px;
+	display: block;
+	margin: auto;
+}
+
+.findmedicine i {
+	background: url(../images/qg_toTop.png) no-repeat;
+	background-position: 0 top;
+	background-size: 640% auto;
+}
+
+.discover i {
+	background: url(../images/qg_toTop.png) no-repeat;
+	background-position: -22px top;
+	background-size: 640% auto;
+}
+
+.shoppingCart i {
+	background: url(../images/qg_toTop.png) no-repeat;
+	background-position: -44px top;
+	background-size: 640% auto;
+}
+
+.person i {
+	background: url(../images/qg_toTop.png) no-repeat;
+	background-position: -68px top;
+	background-size: 640% auto;
+}

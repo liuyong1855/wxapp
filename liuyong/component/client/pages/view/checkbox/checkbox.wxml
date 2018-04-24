@@ -1,0 +1,14 @@
+<view class="title"><text>checkbox</text></view>
+
+<view class="checkbox">
+	<block wx:for="{{list}}">
+		<checkbox checked color="#f00" value="1" />{{item}}
+	</block>
+</view>
+<view class="checkbox">
+	<checkbox-group bindchange="change">
+		<view class="checklist" wx:for="{{list2}}">
+			<checkbox checked="{{item.checked}}" value="{{item.value}}" />
+		</view>
+	</checkbox-group>
+</view>

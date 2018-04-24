@@ -1,0 +1,15 @@
+<view class="title"><text>input</text></view>
+
+<view>
+	<form>
+		<view class="inputflex"><text>text maxlength 10</text><input maxlength="10" type="text" bindinput="input"  /></view>
+		<view class="inputflex"><text>number</text><input type="number" /></view>
+		<view class="inputflex"><text>idcard</text><input type="idcard" /></view>
+		<view class="inputflex"><text>digit</text><input type="digit" /></view>
+		<view class="inputflex"><text>password</text><input password type="digit" /></view>
+		<view class="inputflex"><text>placeholder</text><input placeholder="占位" type="text" placeholder-style="color:#f00" placeholder-class="placeholder"  /></view>
+		<view class="inputflex"><text>password</text><input cursor-spacing="200" type="text" /></view>
+		<view class="inputflex"><text>focus</text><input type="text" focus="true" selection-start="2" selection-end="6" value="打扫房间历史课鸡蛋饭离开家" bindfocus="focus" bindblur="blur"  /></view>
+		<view class="inputflex"><text>confirm-type</text><input type="text" confirm-type="search" bindconfirm="confirm" adjust-position="true" confirm-hold /></view>
+	</form>
+</view>

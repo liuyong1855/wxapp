@@ -1,0 +1,15 @@
+Page({
+	data:{
+		list:['box1','box2'],
+		list2:[{
+			name:'gbox1',value:'1',checked:false
+		},{
+			name:'gbox2',value:'2',checked:true
+		},{
+			name:'gbox3',value:'3',checked:false
+		}]
+	},
+	change:function(e){
+		console.log(e,e.detail.value);
+	}
+})

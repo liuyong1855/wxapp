@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/view/index/index",
+    "pages/view/switch/switch",
+    "pages/view/slider/slider",
+    "pages/view/radio/radio",
+    "pages/view/picker-view/picker-view",
+    "pages/view/picker/picker",
+    "pages/view/label/label",
+    "pages/view/input/input",
+    "pages/view/form/form",
+    "pages/view/checkbox/checkbox",
+    "pages/view/button/button",
+    "pages/view/progress/progress",
+    "pages/view/rich-text/rich-text",
+    "pages/view/icon/icon",
+    "pages/view/text/text",
+    "pages/view/cover-view/cover-view",
+    "pages/view/movable-view/movable-view",
+    "pages/view/swiper/swiper",
+    "pages/view/scroll-view/scroll-view",
+    "pages/view/view/view",
+    "pages/api/index/index"
+  ],
+  "window":{
+    "color":"#7A7E83",
+    "selectedColor":"#3cc51f",
+    "backgroundColor":"#ffffff",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "小程序组件demo",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "list":[{
+      "pagePath":"pages/view/index/index",
+      "text":"组件",
+      "iconPath":"./img/icon_component.png",
+      "selectedIconPath":"./img/icon_component_HL.png"
+    },{
+      "pagePath":"pages/api/index/index",
+      "text":"接口",
+      "iconPath":"./img/icon_API.png",
+      "selectedIconPath":"./img/icon_API_HL.png"
+    }],
+    "selectedColor":"#3cc51f",
+    "borderStyle":"black",
+    "backgroundColor":"#fff"
+  }
+}

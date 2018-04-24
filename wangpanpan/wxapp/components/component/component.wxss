@@ -1,0 +1,6 @@
+.inner{
+	color:red;
+}
+:host{
+	color:yellow;
+}
