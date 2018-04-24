@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="content">
+    <view class="text" bindtap="dataBinTab" data-method="bind">绑定、渲染、条件渲染</view>
+    <view class="text1" bindtap="dataBinTab" data-method="datapro">数据处理、弹层</view>
+</view>
