@@ -38,12 +38,22 @@
   vertical-align: middle;
   margin-right: 10px;
 }
-.del{
+.btnRemove{
   float:right;
+  line-height:30px;
+  color:#bbb;
 }
 
-
-
+.btnBox{
+  padding:0 10px;
+  box-sizing: border-box;
+  display: flex;
+  margin-top: 40px;
+}
+.btnBox button{
+  flex:1;
+  margin:0 5px;
+}
 
 
 
