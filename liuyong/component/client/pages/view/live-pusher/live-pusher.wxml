@@ -1,0 +1,7 @@
+<view class="title"><text>live-pusher</text></view>
+
+<live-pusher mode="RTC" autopush url="rtmp://18898.livepush.myqcloud.com/live/18898_c7ca153e85?bizid=18898&txSecret=499b123b925e8e86c833aafd6bdde067&txTime=5B0832FF" style="width:100%;height:300px;" bindstatechange="change" beauty="{{beauty}}" whiteness="{{whiteness}}" muted bindnetstatus="status" binderror="error" />
+beauty
+<slider min="0" max="100" show-value="true" value="{{beauty}}" bindchange="schange" />
+whiteness
+<slider min="0" max="100" show-value="true" value="{{whiteness}}" bindchange="wchange" />

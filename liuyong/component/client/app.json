@@ -1,6 +1,18 @@
 {
   "pages":[
     "pages/view/index/index",
+    "pages/view/web-view/web-view",
+    "pages/view/open-data/open-data",
+    "pages/view/canvas/canvas",
+    "pages/view/map/map",
+    "pages/view/live-pusher/live-pusher",
+    "pages/view/live-player/live-player",
+    "pages/view/camera/camera",
+    "pages/view/video/video",
+    "pages/view/image/image",
+    "pages/view/audio/audio",
+    "pages/view/navigator/navigator",
+    "pages/view/textarea/textarea",
     "pages/view/switch/switch",
     "pages/view/slider/slider",
     "pages/view/radio/radio",
@@ -20,6 +32,7 @@
     "pages/view/swiper/swiper",
     "pages/view/scroll-view/scroll-view",
     "pages/view/view/view",
+
     "pages/api/index/index"
   ],
   "window":{

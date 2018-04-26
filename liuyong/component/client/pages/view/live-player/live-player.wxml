@@ -1,0 +1,3 @@
+<view class="title"><text>live-player</text></view>
+
+<live-player autoplay mode="RTC" src="rtmp://18898.liveplay.myqcloud.com/live/18898_c7ca153e85" object-fit="fillCrop" bindstatechange="change" bindfullscreenchange="full" bindnetstatus="status"></live-player>

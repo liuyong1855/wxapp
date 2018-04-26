@@ -1,0 +1,1 @@
+<web-view src="http://wx.c88s.com/monther/index.php" bindmessage="message"></web-view>

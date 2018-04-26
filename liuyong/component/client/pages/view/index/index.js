@@ -14,14 +14,17 @@ Page({
     		viewitem:['navigator']
     	},{
     		name:"媒体组件",icon:'../resources/kind/media.png',opened:false,
-    		viewitem:['video','image','audio']
+    		viewitem:['video','image','audio','camera','live-player','live-pusher']
     	},{
     		name:"地图",icon:'../resources/kind/map.png',opened:false,
     		viewitem:['map']
     	},{
     		name:"画布",icon:'../resources/kind/canvas.png',opened:false,
     		viewitem:['canvas']
-    	}]
+    	},{
+            name:"开发能力",icon:'../resources/kind/canvas.png',opened:false,
+            viewitem:['open-data','web-view']
+        }]
     },
     viewtap:function(e){
     	var index = e.currentTarget.dataset.index;
