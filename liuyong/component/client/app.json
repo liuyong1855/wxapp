@@ -1,6 +1,17 @@
 {
   "pages":[
     "pages/view/index/index",
+    "pages/api/storage/storage",
+    "pages/api/live-pusher/live-pusher",
+    "pages/api/live-player/live-player",
+    "pages/api/camera/camera",
+    "pages/api/video/video",
+    "pages/api/background/background",
+    "pages/api/audio/audio",
+    "pages/api/record/record",
+    "pages/api/image/image",
+    "pages/api/upload/upload",
+    "pages/api/request/request",
     "pages/view/web-view/web-view",
     "pages/view/open-data/open-data",
     "pages/view/canvas/canvas",

@@ -1,0 +1,4 @@
+<view class="title"><text>wx.request</text></view>
+
+<button type="primary" bindtap="tap">请求接口</button>
+<text>{{text}}</text>
