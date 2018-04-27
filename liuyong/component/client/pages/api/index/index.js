@@ -9,6 +9,12 @@ Page({
     	},{
             name:"数据存储",icon:'../resources/kind/content.png',opened:false,
             viewitem:['storage']
+        },{
+            name:"位置",icon:'../resources/kind/content.png',opened:false,
+            viewitem:['location']
+        },{
+            name:"界面",icon:'../resources/kind/content.png',opened:false,
+            viewitem:['interface','navigation']
         }]
     },
     viewtap:function(e){

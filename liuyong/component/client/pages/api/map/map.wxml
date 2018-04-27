@@ -1,0 +1,8 @@
+<view class="title"><text>map</text></view>
+<map id="map" style="width:100%;height:400px;" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}"  markers="{{markers}}" polyline="{{polyline}}" circles="{{circles}}" controls="{{controls}}" bindtap="tap" bindmarkertap="makertap" bindcallouttap="calloutap" bindcontroltap="controltap" bindregionchange="regionchange" bindupdated="update" show-location></map>
+<button type="primary" bindtap="get">获取当前地图中心的经纬度</button>
+<button type="primary" bindtap="move">将地图中心移动到当前定位点</button>
+<button type="primary" bindtap="movemark">平移marker</button>
+<button type="primary" bindtap="scfw">缩放视野展示所有经纬度</button>
+<button type="primary" bindtap="region">获取当前地图的视野范围</button>
+<button type="primary" bindtap="scale">获取当前地图的缩放级别</button>

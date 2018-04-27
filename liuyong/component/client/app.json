@@ -1,6 +1,10 @@
 {
   "pages":[
     "pages/view/index/index",
+    "pages/api/navigation/navigation",
+    "pages/api/interface/interface",
+    "pages/api/map/map",
+    "pages/api/location/location",
     "pages/api/storage/storage",
     "pages/api/live-pusher/live-pusher",
     "pages/api/live-player/live-player",
