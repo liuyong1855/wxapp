@@ -18,13 +18,13 @@ swiper image{
 }
 .pro-logo{
   float: left;
-  background-color: greenyellow;
+  background-color: gainsboro;
   width: 190rpx;
   height: 190rpx;
 }
 .pro-body{
-  background-color: yellow;
-  margin-left: 210rpx;
+   background-color: beige; 
+   margin-left: 210rpx;
 }
 .pro-title{
   color: #212121;
@@ -37,6 +37,7 @@ swiper image{
   line-height: 1;
 }
 .pro-footer{
+  margin-top: 50rpx;
   overflow: hidden;
 }
 .btn-detail{
@@ -58,8 +59,8 @@ swiper image{
   height: 100%;
 }
 
-.mainFotter{
-  margin-top: 30px;
+.mainHead{
+  margin-top: 10px;
   overflow: hidden;
   padding: 20rpx;
 
@@ -67,7 +68,9 @@ swiper image{
 
 .caozuo{
   float: left;
-  width: 200rpx;
+  width: 140rpx;
   height: 100rpx;
+  font-size: 36rpx;
   background: greenyellow;
+  text-align: center;
 }

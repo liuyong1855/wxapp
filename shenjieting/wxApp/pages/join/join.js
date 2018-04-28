@@ -16,7 +16,7 @@ Page({
   },
    tell:function(){
      wx.makePhoneCall({
-      phoneNumber:"15188708317"
+      phoneNumber:"15801345534"
        }
      )
    }
