@@ -1,7 +1,10 @@
 {
   "pages":[
-    "pages/api/animation/animation",
     "pages/view/index/index",
+    "pages/api/tabbar/tabbar",
+    "pages/api/system/system",
+    "pages/api/websocket/websocket",
+    "pages/api/animation/animation",
     "pages/api/navigation/navigation",
     "pages/api/interface/interface",
     "pages/api/map/map",
@@ -48,7 +51,6 @@
     "pages/view/swiper/swiper",
     "pages/view/scroll-view/scroll-view",
     "pages/view/view/view",
-
     "pages/api/index/index"
   ],
   "window":{
@@ -69,6 +71,11 @@
     },{
       "pagePath":"pages/api/index/index",
       "text":"接口",
+      "iconPath":"./img/icon_API.png",
+      "selectedIconPath":"./img/icon_API_HL.png"
+    },{
+      "pagePath":"pages/api/tabbar/tabbar",
+      "text":"tabBar",
       "iconPath":"./img/icon_API.png",
       "selectedIconPath":"./img/icon_API_HL.png"
     }],

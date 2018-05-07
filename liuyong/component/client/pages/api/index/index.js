@@ -14,7 +14,10 @@ Page({
             viewitem:['location']
         },{
             name:"界面",icon:'../resources/kind/content.png',opened:false,
-            viewitem:['interface','navigation']
+            viewitem:['interface','navigation','tabbar无法调跳转']
+        },{
+            name:"设备",icon:'../resources/kind/content.png',opened:false,
+            viewitem:['system']
         }]
     },
     viewtap:function(e){
