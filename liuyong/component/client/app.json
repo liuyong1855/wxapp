@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/api/animation/animation",
     "pages/view/index/index",
     "pages/api/navigation/navigation",
     "pages/api/interface/interface",
