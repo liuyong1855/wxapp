@@ -1,0 +1,16 @@
+<view class="title"><text>系统信息</text></view>
+<button type="primary" bindtap="getSystem">获取系统信息</button>
+<button type="primary" bindtap="use">canIUse</button>
+<button type="primary" bindtap="network">获取网络状态</button>
+<button type="primary" bindtap="getlight">获取手机屏幕亮度</button>
+<view>设置屏幕亮度</view>
+<slider min="0" max="1" step="0.1" show-value value="{{light}}" bindchange="change"></slider>
+<button type="primary" bindtap="long">使手机长时间震动</button>
+<button type="primary" bindtap="short">使手机短时间震动</button>
+<button type="primary" bindtap="start">开始监听加速度数据</button>
+<button type="primary" bindtap="stop">停止监听加速度数据</button>
+<button type="primary" bindtap="start1">开始监听罗盘数据</button>
+<button type="primary" bindtap="stop1">停止监听罗盘数据</button>
+<button type="primary" bindtap="sao">扫码</button>
+<button type="primary" bindtap="tel">拨打电话</button>
+<view wx:for="{{systemData}}">{{index}}==>{{item}}</view>

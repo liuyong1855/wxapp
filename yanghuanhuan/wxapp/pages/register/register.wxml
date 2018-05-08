@@ -1,0 +1,10 @@
+<view>
+  <view class="register">
+    <text class="welcome">欢迎注册新用户</text>
+    <input type="text" placeholder='输入手机号'></input>
+    <input type="password" placeholder='输入密码'></input>
+    <input type="password" placeholder='再次确认密码'></input>
+  </view>
+  <button class="registerBtn">注册</button>
+  <text class="goback" bindtap="goback">已注册账号，返回登录页面</text>
+</view>

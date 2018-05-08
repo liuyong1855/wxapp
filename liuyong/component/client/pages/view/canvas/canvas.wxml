@@ -1,0 +1,2 @@
+<view class="title"><text>canvas</text></view>
+<canvas class="canvas" canvas-id="canvas" bindtouchstart="start" bindtouchmove="move" bindtouchend="end" bindtouchcancel="canel" bindlongtap="long" binderror="error"></canvas>

@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/usercenter/login",
+    "pages/register/register"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "默认标题",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"images/a.png",
+        "selectedIconPath": "images/a_hover.png"
+      },
+      {
+        "pagePath": "pages/usercenter/login",
+        "text": "用户",
+        "iconPath": "images/b.png",
+        "selectedIconPath": "images/b_hover.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+Page({
+	change:function(e){
+		console.log('change',e)
+	},
+	full:function(e){
+		console.log('full',e)
+	},
+	status:function(e){
+		console.log('status',e)
+	}
+})

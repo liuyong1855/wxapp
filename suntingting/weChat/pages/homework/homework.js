@@ -9,28 +9,49 @@ Page({
       { img: "../image/6.png", text: "第2个图片"},
       { img: "../image/7.png", text: "第3个图片"}, 
       { img: "../image/8.png", text: "第4个图片"}
-    ]
+    ],
+    typeBtn:'primary',
+    typeBtn2:'default',
+    btnSize:'mini',
+    plain:'false',
+    disabled:'false'
   },
-  delList:function(event){
-    console.log('支付了');
-    var timestamp = new Date().getTime();
-    var nonceS = Math.ceil(Math.random() * 35);
-    console.log(timestamp, nonceS)
-    // wx.requestPayment({
-    //   'timeStamp': timestamp,
-    //   'nonceStr': nonceS,
-    //   'package': '',
-    //   'signType': 'MD5',
-    //   'paySign': '',
-    //   'success': function (res) {
-    //     console.log(1)
-    //   },
-    //   'fail': function (res) {
-    //   }
-    // })
+  //添加
+  btnAdd:function(event){
+   var _this = this;
 
+   var oldDate = _this.data.homew;
+   var oJson = JSON.parse('{"img":"../image/1.png","text":"第12个图片"}');
+   oldDate.push(oJson);
+
+   var oNowDate = {homew: []};
+   oNowDate.homew = oldDate;
+
+   _this.setData(oNowDate);
   },
+  // 删除
+  btnRemove: function (event) {
+    var _this = this;
+    var oldDate = _this.data.homew;
 
+    var oCurrent = event.currentTarget.dataset.index;
+    var oNowDate = {homew:[]};
+
+    oldDate.splice(oCurrent, 1);
+    oNowDate.homew = oldDate;
+
+    var oLength = oNowDate.homew.length;
+    console.log(oLength)
+    if (oLength>1){
+      _this.setData(oNowDate);
+    }else{
+      wx.showToast({
+        title: '别删除啦！',
+        icon: 'success',
+        duration: 2000
+      })
+    }
+  },
   /**生命周期函数--监听页面加载 */
   onLoad: function () {
     var that = this

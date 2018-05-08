@@ -1,0 +1,3 @@
+<view class="title"><text>video</text></view>
+
+<video id="myVideo" src="{{src}}" initial-time="2" page-gesture danmu-btn enable-danmu danmu-list="{{list}}" direction="90" controls="{{false}}" autoplay show-fullscreen-btn="{{false}}" show-play-btn="{{false}}" show-center-play-btn="{{false}}" enable-progress-gesture="{{false}}" poster="{{poster}}" bindplay="play" bindpause="pause" bindended="end" bindtimeupdate="update" bindwaiting="waiting" bindfullscreenchange="full" binderror="error"></video>

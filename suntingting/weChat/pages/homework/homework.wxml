@@ -7,10 +7,13 @@
 </view> 
 <view class='topBoxBg'>ddd</view>
 <view class='contentB' wx:for="{{homew}}" wx:for-index="index" >
-  <view class='boxC' bindtap="delList">
+  <view class='boxC' bindtap="delList" data-index='{{index}}'>
     <image class="imgaLL" src="{{item.img}}" background-size="cover"></image>
     <text>{{item.text}}</text>
+    <view class='btnRemove' bindtap="btnRemove" data-index='{{index}}'>删除</view>
   </view>
+  
 </view>
-
-
+<view class='btnBox'>
+  <button type="{{typeBtn}}" size="{{btnSize}}" bindtap="btnAdd" class='btnAdd'> 添加 </button>
+</view>

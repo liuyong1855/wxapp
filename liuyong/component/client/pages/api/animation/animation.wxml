@@ -1,0 +1,2 @@
+<view class="title"><text>动画</text></view>
+<view class="box" animation="{{animationData}}"></view>

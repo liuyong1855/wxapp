@@ -1,0 +1,5 @@
+<view class="title"><text>textarea</text></view>
+<textarea value="jlsd即可来得及菲利克斯江东父老会计师多了几分流口水的积分离开" placeholder="占位文字" placeholder-class="red" cursor-spacing="50" auto-height show-confirm-bar selection-start="2" selection-end="20" bindfocus="focus" bindblur="blur" bindlinechange="linechange" bindinput="input" bindconfirm="confirm">
+
+</textarea>
+<view wx:for="{{list}}">{{item}}</view>

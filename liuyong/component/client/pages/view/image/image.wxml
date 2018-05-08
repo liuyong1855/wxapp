@@ -1,0 +1,57 @@
+<view class="title"><text>image</text></view>
+<view class="imagebox">
+	<text>默认</text>
+	<image src="{{src}}?v=1" binderror="error" bindload="load" />
+</view>
+<view class="imagebox">
+	<text>scaleToFill-不保持纵横比缩放图片，使图片的宽高完全拉伸至填满 image 元素</text>
+	<image class="image" src="{{src}}?v=2" lazy-load="true" mode="scaleToFill" bindload="load" />
+</view>
+<view class="imagebox">
+	<text>aspectFit-保持纵横比缩放图片，使图片的长边能完全显示出来。也就是说，可以完整地将图片显示出来</text>
+	<image class="image" src="{{src}}?v=3" lazy-load="true" mode="aspectFit" bindload="load" />
+</view>
+<view class="imagebox">
+	<text>aspectFill-保持纵横比缩放图片，只保证图片的短边能完全显示出来。也就是说，图片通常只在水平或垂直方向是完整的，另一个方向将会发生截取。</text>
+	<image class="image" src="{{src}}?v=4" lazy-load="true" mode="aspectFill" bindload="load" />
+</view>
+<view class="imagebox">
+	<text>widthFix-宽度不变，高度自动变化，保持原图宽高比不变</text>
+	<image class="image" src="{{src}}?v=5" lazy-load="true" mode="widthFix" bindload="load" />
+</view>
+<view class="imagebox">
+	<text>top-不缩放图片，只显示图片的顶部区域</text>
+	<image class="image" src="{{src}}?v=6" lazy-load="true" mode="top" />
+</view>
+<view class="imagebox">
+	<text>bottom-不缩放图片，只显示图片的底部区域</text>
+	<image class="image" src="{{src}}?v=7" lazy-load="true" mode="bottom" />
+</view>
+<view class="imagebox">
+	<text>center-不缩放图片，只显示图片的中间区域</text>
+	<image class="image" src="{{src}}?v=8" lazy-load="true" mode="center" />
+</view>
+<view class="imagebox">
+	<text>left-不缩放图片，只显示图片的左边区域</text>
+	<image class="image" src="{{src}}?v=9" lazy-load="true" mode="left" />
+</view>
+<view class="imagebox">
+	<text>right-不缩放图片，只显示图片的右边区域</text>
+	<image class="image" src="{{src}}?v=10" lazy-load="true" mode="right" />
+</view>
+<view class="imagebox">
+	<text>top left-不缩放图片，只显示图片的左上边区域</text>
+	<image class="image" src="{{src}}?v=11" lazy-load="true" mode="top left" />
+</view>
+<view class="imagebox">
+	<text>top right-不缩放图片，只显示图片的右上边区域</text>
+	<image class="image" src="{{src}}?v=12" lazy-load="true" mode="top right" />
+</view>
+<view class="imagebox">
+	<text>bottom left-不缩放图片，只显示图片的左下边区域</text>
+	<image class="image" src="{{src}}?v=13" lazy-load="true" mode="bottom left" />
+</view>
+<view class="imagebox">
+	<text>bottom right-不缩放图片，只显示图片的右下边区域</text>
+	<image class="image" src="{{src}}?v=14" lazy-load="true" mode="bottom right" />
+</view>

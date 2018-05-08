@@ -1,0 +1,28 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/join/join"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#2e5e86",
+    "navigationBarTitleText": "七乐康",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "selectedColor":"#0f0",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text":"首页",
+      "iconPath":"images/icon.png",
+      "selectedIconPath":"images/icon.png"
+      },{
+      "pagePath": "pages/index/index",
+      "text": "商城",
+      "iconPath": "images/icon.png",
+      "selectedIconPath": "images/icon.png"
+      }
+    ]
+  }
+}

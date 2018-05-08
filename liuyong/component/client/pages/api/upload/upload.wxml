@@ -1,0 +1,5 @@
+<view class="title"><text>wx.uploadFile</text></view>
+
+<button type="primary" bindtap="tap">上传文件uploadFile</button>
+<image src="{{src}}" />
+<button type="primary" bindtap="down">下载文件downloadFile</button>
