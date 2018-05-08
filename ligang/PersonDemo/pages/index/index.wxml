@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class='center'>勇敢点击屏幕</view>
+<view class="ripple" style="{{rippleStyle}}">你好帅</view>
+<view class="container center" bindtouchstart="containerTap">敢点这里么</view>
+
+<view class='clickWrap'>  
+  <navigator url='/pages/home/home' class="img-style itemOne" animation="{{animCollect}}" bindtap="collect">
+      <image src="/pages/images/1.jpg" class='psize'></image>
+  </navigator>
+  <navigator class="img-style itemTwo" animation="{{animTranspond}}" bindtap="transpond">
+      <image src="/pages/images/2.jpg"  class='psize' ></image>
+  </navigator>
+  <navigator  class="img-style itemThree" animation="{{animInput}}" bindtap="input">
+      <image src="/pages/images/3.jpg"  class='psize'></image> 
+  </navigator>
+  <image src="/pages/images/0.jpg" class="img-plus-style" animation="{{animPlus}}" bindtap="plus"></image>  
+</view>  
