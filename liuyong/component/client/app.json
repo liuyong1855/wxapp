@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/view/index/index",
+    "pages/api/login/login",
     "pages/api/tabbar/tabbar",
     "pages/api/system/system",
     "pages/api/websocket/websocket",
