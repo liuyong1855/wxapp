@@ -1,0 +1,86 @@
+<view class='wrap'>
+    <view class='title'>
+        <icon type='success' size='40' color='green'></icon>
+        <text>以下将展示小程序官方组件能力</text>
+    </view>
+    <view class='item'  data-id='1' style='{{showOne}}'>
+      <view class='item_a'>
+        <text>视图容器</text>
+        <icon type='success' size='40' color='green'></icon>
+      </view>
+      <view>
+      </view>
+    </view>
+    <view class='item' >
+      <view class='item_a'  data-id="2"  bindtap='clickItem'>
+        <text>基础内容</text>
+        <icon type='success' size='40' color='green'></icon>
+       </view>
+       <view class='item_b' style='{{showTwo}}'>
+          <view>
+              <text>text</text>
+              <navigator url='/pages/addDel/addDel'>></navigator>
+          </view>
+          <view>
+              <text>icon</text>
+              <text>></text>
+          </view>
+          <view>
+              <text>progress</text>
+              <text>></text>
+          </view>
+       </view>
+    </view>
+    <view class='item'  data-id='3'>
+      <view class='item_a'>
+        <text>表单组件</text>
+        <icon type='success' size='40' color='green'></icon>
+      </view>
+    </view>
+    <view class='item'>
+      <view class='item_a'>
+        <text>导航</text>
+        <icon type='success' size='40' color='green'></icon>
+      </view>
+    </view>
+    <view class='item'>
+      <view class='item_a'>
+        <text>媒体组件</text>
+        <icon type='success' size='40' color='green'></icon>
+    </view>
+    </view>
+    <view class='item'>
+      <view class='item_a'>
+        <text>地图</text>
+        <icon type='success' size='40' color='green'></icon>
+      </view>
+    </view>
+    <view class='item'>
+      <view class='item_a'>
+        <text>画布</text>
+        <icon type='success' size='40' color='green'></icon>
+      </view>
+    </view>
+    <view class='item'>
+      <view class='item_a'>
+        <text>广告组件</text>
+        <icon type='success' size='40' color='green'></icon>
+      </view>
+    </view>
+    <view class='item'>
+        <view class='item_a'>
+          <text>空白</text>
+          <icon type='success' size='40' color='green'></icon>
+        </view>
+    </view>
+    <view class='footer'>
+      <view class='footer_l'>
+        <icon type='success'  size='40'  color='green'></icon>
+        <text>组件</text>
+      </view>
+      <view class='footer_r'>
+        <icon type='success'  size='40'  color='green'></icon>
+        <text>接口</text>
+      </view>
+    </view>
+</view>
