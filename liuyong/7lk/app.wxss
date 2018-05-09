@@ -1,0 +1,3 @@
+/**app.wxss**/
+.disflex{display:flex;}
+.flex{flex:1}

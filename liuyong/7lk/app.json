@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/drugStore/drugStore",
+    "pages/chooseCity/chooseCity",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "7lk",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "list":[{
+      "pagePath":"pages/drugStore/drugStore",
+      "text":"首页",
+      "iconPath":"./img/icon1.png",
+      "selectedIconPath":"./img/icon1_on.png"
+    },{
+      "pagePath":"pages/index/index",
+      "text":"分类",
+      "iconPath":"./img/icon2.png",
+      "selectedIconPath":"./img/icon2_on.png"
+    },{
+      "pagePath":"pages/logs/logs",
+      "text":"购物车",
+      "iconPath":"./img/icon3.png",
+      "selectedIconPath":"./img/icon3_on.png"
+    },{
+      "pagePath":"pages/logs/logs",
+      "text":"个人中心",
+      "iconPath":"./img/icon4.png",
+      "selectedIconPath":"./img/icon4_on.png"
+    }],
+    "selectedColor":"#36c4b6",
+    "backgroundColor":"#f6f6f6"
+  }
+}
