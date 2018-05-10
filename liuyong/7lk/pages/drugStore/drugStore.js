@@ -18,5 +18,10 @@ Page({
 		wx.navigateTo({
 			url:'../chooseCity/chooseCity'
 		})
+	},
+	goList:function(){
+		wx.navigateTo({
+			url:'../searchFinish/searchFinish'
+		})
 	}
 })

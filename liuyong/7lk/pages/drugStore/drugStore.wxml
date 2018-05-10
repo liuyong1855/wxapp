@@ -5,7 +5,7 @@
 	<view class="searchbox"><input placeholder="输入药品名称/疾病名称搜索" /></view>
 </view>
 <scroll-view class="scrollview" scroll-y>
-	<view class="drugview" wx:for="{{drugList}}" data-id="{{item.id}}">
+	<view class="drugview" wx:for="{{drugList}}" data-id="{{item.id}}" bindtap="goList">
 		<view class="drugicon"><image mode='widthFix' src="{{item.pic}}" /></view>
 		<view class="drugcom">
 			<view class="title">{{item.name}}</view>

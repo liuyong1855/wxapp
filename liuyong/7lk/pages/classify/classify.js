@@ -35,6 +35,8 @@ Page({
 	},
 	goList:function(e){
 		let id = e.target.dataset.id;
-		console.log(id)
+		wx.navigateTo({
+			url:'../searchFinish/searchFinish'
+		})
 	}
 })
