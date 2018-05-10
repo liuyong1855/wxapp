@@ -2682,4 +2682,200 @@ class Wxapp extends CI_Controller {
         exit;
     }
 
+    public function searchResult(){
+        $data = ['{
+            "skuId": "14843",
+            "salesId": null,
+            "commonName": "步长 步长 步长脑心通胶囊 0.4g*36粒/盒",
+            "rx": 1,
+            "preSale": null,
+            "limit": null,
+            "stockQuantity": 19999972,
+            "marketPrice": "26.00",
+            "salePrice": "26.00",
+            "icon": "http://img.7lk.com/files/storage/image/207040024/1/1476165153501/w360_207040024_1.jpg",
+            "soldOut": 0,
+            "medicare": null,
+            "takeTheir": null,
+            "takeTheirContent": null,
+            "discount": ""
+        }','{
+            "skuId": "23584",
+            "salesId": null,
+            "commonName": "倍他乐克 酒石酸美托洛尔片  25mg*20片",
+            "rx": 1,
+            "preSale": null,
+            "limit": null,
+            "stockQuantity": 19999993,
+            "marketPrice": null,
+            "salePrice": "10.00",
+            "icon": "http://img.7lk.com/files/storage/image/01360/201510/2310/01360_20151023105616532120000046766.jpg",
+            "soldOut": 0,
+            "medicare": null,
+            "takeTheir": null,
+            "takeTheirContent": null,
+            "discount": null
+        }','{
+            "skuId": "81377",
+            "salesId": null,
+            "commonName": "立普妥 阿托伐他汀钙片 20mg*7片",
+            "rx": 1,
+            "preSale": null,
+            "limit": null,
+            "stockQuantity": 14866,
+            "marketPrice": "64.20",
+            "salePrice": "54.57",
+            "icon": "http://img.7lk.com/files/storage/image/01360/201510/2115/01360_20151021154337862590000014430.jpg",
+            "soldOut": 0,
+            "medicare": null,
+            "takeTheir": null,
+            "takeTheirContent": null,
+            "discount": "8.50"
+        }','{
+            "skuId": "80630",
+            "salesId": null,
+            "commonName": "可定 瑞舒伐他汀钙片 10mg*7片",
+            "rx": 1,
+            "preSale": null,
+            "limit": null,
+            "stockQuantity": 3924,
+            "marketPrice": "55.10",
+            "salePrice": "49.25",
+            "icon": "http://img.7lk.com/files/storage/image/01360/201506/2514/01360_20150625144107956920000079325.jpg",
+            "soldOut": 0,
+            "medicare": 0,
+            "takeTheir": 1,
+            "takeTheirContent": "支持本地部分药店自提",
+            "discount": "8.93"
+        }','{
+            "skuId": "79840",
+            "salesId": null,
+            "commonName": "倍林达 替格瑞洛片 90mg*14片",
+            "rx": 1,
+            "preSale": null,
+            "limit": null,
+            "stockQuantity": 19999996,
+            "marketPrice": "175.00",
+            "salePrice": "159.00",
+            "icon": "http://img.7lk.com/files/storage/image/01360/201511/2615/01360_20151126151911869110000016029.jpg",
+            "soldOut": 0,
+            "medicare": null,
+            "takeTheir": null,
+            "takeTheirContent": null,
+            "discount": "9.08"
+        }','{
+            "skuId": "79229",
+            "salesId": null,
+            "commonName": "拜阿司匹灵 阿司匹林肠溶片（TB） 0.1g*30片",
+            "rx": 1,
+            "preSale": null,
+            "limit": null,
+            "stockQuantity": 19999996,
+            "marketPrice": "17.80",
+            "salePrice": "17.62",
+            "icon": "http://img.7lk.com/files/storage/image/01360/201608/3011/01360_20160830111856433060000017257.jpg",
+            "soldOut": 0,
+            "medicare": null,
+            "takeTheir": null,
+            "takeTheirContent": null,
+            "discount": "9.90"
+        }','{
+            "skuId": "24504",
+            "salesId": null,
+            "commonName": "施慧达 苯磺酸左旋氨氯地平片  2.5mg*7片*2板/盒",
+            "rx": 1,
+            "preSale": null,
+            "limit": null,
+            "stockQuantity": 10000,
+            "marketPrice": "55.00",
+            "salePrice": "39.46",
+            "icon": "http://img.7lk.com/files/storage/image/01360/201510/2311/01360_20151023110259306900000056838.jpg",
+            "soldOut": 0,
+            "medicare": null,
+            "takeTheir": null,
+            "takeTheirContent": null,
+            "discount": "7.17"
+        }','{
+            "skuId": "18200",
+            "salesId": null,
+            "commonName": "波立维 硫酸氢氯吡格雷片  赛诺菲 75mg*7片",
+            "rx": 1,
+            "preSale": null,
+            "limit": null,
+            "stockQuantity": 19999992,
+            "marketPrice": "172.65",
+            "salePrice": "119.13",
+            "icon": "http://img.7lk.com/files/storage/image/01360/201505/1211/01360_20150512110713733700000010984.jpg",
+            "soldOut": 0,
+            "medicare": null,
+            "takeTheir": null,
+            "takeTheirContent": null,
+            "discount": "6.90"
+        }','{
+            "skuId": "14207",
+            "salesId": null,
+            "commonName": "西比灵 盐酸氟桂利嗪胶囊 5mg*20粒",
+            "rx": 1,
+            "preSale": null,
+            "limit": null,
+            "stockQuantity": 1654,
+            "marketPrice": "34.67",
+            "salePrice": "23.92",
+            "icon": "http://img.7lk.com/o/01360/336/360_335813_13.jpg",
+            "soldOut": 0,
+            "medicare": null,
+            "takeTheir": null,
+            "takeTheirContent": null,
+            "discount": "6.89"
+        }','{
+            "skuId": "78802",
+            "salesId": null,
+            "commonName": "倍他乐克 琥珀酸美托洛尔缓释片  47.5mg*7片",
+            "rx": 1,
+            "preSale": null,
+            "limit": null,
+            "stockQuantity": 19999999,
+            "marketPrice": "19.20",
+            "salePrice": "15.70",
+            "icon": "http://img.7lk.com/o/01360/481/360_480964_1.jpg",
+            "soldOut": 0,
+            "medicare": null,
+            "takeTheir": null,
+            "takeTheirContent": null,
+            "discount": "8.17"
+        }'];
+        $str = '{
+            "code": 0,
+            "msg": "成功",
+            "data": [
+                {
+                    "pageNo": 1,
+                    "pageSize": 10,
+                    "orderBy": null,
+                    "order": null,
+                    "result": [],
+                    "totalCount": 1794,
+                    "offset": 0,
+                    "hasPre": false,
+                    "prePage": 1,
+                    "orderBySetted": false,
+                    "totalPages": 180,
+                    "hasNext": true,
+                    "nextPage": 2,
+                    "first": 0
+                }
+            ]
+        }';
+        $cdata = [];
+        for($i=0;$i<10;$i++){
+            array_push($cdata, json_decode($data[rand(0,9)]));
+        }
+        $strData = json_decode($str);
+        // var_dump($strData);
+        $strData->data[0]->result = $cdata;
+        // var_dump($strData->data[0]->result);
+        echo json_encode($strData);
+        exit;
+    }
+
 }

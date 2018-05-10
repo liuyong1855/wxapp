@@ -10,4 +10,5 @@ module.exports = {
   departmentList: apiUrl + 'wxapp/departmentList', //找药买药
   getCityList: apiUrl + 'wxapp/getCityList', //城市列表
   searchClass: apiUrl + 'wxapp/searchClass', //分类
+  searchResult: apiUrl + 'wxapp/searchResult', //搜索结果
 }
