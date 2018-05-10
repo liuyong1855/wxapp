@@ -22,6 +22,7 @@ Page({
 			},
 			method:'POST',
 			success:d => {
+				wx.hideLoading();
 				let result = d.data.data[0];
 				console.log(this.data.page,this.data.orderBy)
 				if(this.data.page == 1){
@@ -50,6 +51,9 @@ Page({
 		this.getList();
 	},
 	loadMr:function(){
+		wx.showLoading({
+		  title: '加载中',
+		})
 		this.setData({
 			page:1,
 			orderBy:6,
@@ -58,6 +62,9 @@ Page({
 		this.getList();
 	},
 	loadPrice:function(){
+		wx.showLoading({
+		  title: '加载中',
+		})
 		if(this.data.orderBy==0){
 			this.setData({
 				page:1,
@@ -74,6 +81,9 @@ Page({
 		this.getList();
 	},
 	loadSales:function(){
+		wx.showLoading({
+		  title: '加载中',
+		})
 		if(this.data.orderBy==4){
 			this.setData({
 				page:1,
