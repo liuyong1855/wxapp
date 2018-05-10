@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/classify/classify",
     "pages/drugStore/drugStore",
     "pages/chooseCity/chooseCity",
     "pages/index/index",
@@ -18,7 +19,7 @@
       "iconPath":"./img/icon1.png",
       "selectedIconPath":"./img/icon1_on.png"
     },{
-      "pagePath":"pages/index/index",
+      "pagePath":"pages/classify/classify",
       "text":"分类",
       "iconPath":"./img/icon2.png",
       "selectedIconPath":"./img/icon2_on.png"

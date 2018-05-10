@@ -8,5 +8,6 @@ const apiUrl = "http://wxapp.c88s.com/";
 module.exports = {
   domainSrc:apiUrl,
   departmentList: apiUrl + 'wxapp/departmentList', //找药买药
-  getCityList: apiUrl + 'wxapp/getCityList', //用户信息
+  getCityList: apiUrl + 'wxapp/getCityList', //城市列表
+  searchClass: apiUrl + 'wxapp/searchClass', //分类
 }

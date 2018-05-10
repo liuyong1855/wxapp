@@ -1813,4 +1813,873 @@ class Wxapp extends CI_Controller {
         exit;
     }
 
+    public function searchClass(){
+        $str = '{
+            "code": 0,
+            "msg": "成功",
+            "data": [
+                {
+                    "id": 303,
+                    "name": "科室用药",
+                    "commonName": "科室用药",
+                    "subList": [
+                        {
+                            "id": 30318,
+                            "name": "心脑血管科",
+                            "commonName": "心脑血管科"
+                        },
+                        {
+                            "id": 30302,
+                            "name": "肝胆胰腺科",
+                            "commonName": "肝胆胰腺科"
+                        },
+                        {
+                            "id": 30316,
+                            "name": "抗感染药",
+                            "commonName": "抗感染药"
+                        },
+                        {
+                            "id": 30311,
+                            "name": "呼吸系统科",
+                            "commonName": "呼吸系统科"
+                        },
+                        {
+                            "id": 30312,
+                            "name": "精神科",
+                            "commonName": "精神科"
+                        },
+                        {
+                            "id": 30308,
+                            "name": "神经科",
+                            "commonName": "神经科"
+                        },
+                        {
+                            "id": 30303,
+                            "name": "风湿免疫科",
+                            "commonName": "风湿免疫科"
+                        },
+                        {
+                            "id": 30306,
+                            "name": "骨伤科",
+                            "commonName": "骨伤科"
+                        },
+                        {
+                            "id": 30313,
+                            "name": "男科",
+                            "commonName": "男科"
+                        },
+                        {
+                            "id": 30314,
+                            "name": "泌尿系统科",
+                            "commonName": "泌尿系统科"
+                        },
+                        {
+                            "id": 30310,
+                            "name": "内分泌科",
+                            "commonName": "内分泌科"
+                        },
+                        {
+                            "id": 30305,
+                            "name": "妇科",
+                            "commonName": "妇科"
+                        },
+                        {
+                            "id": 30301,
+                            "name": "皮肤/性病科",
+                            "commonName": "皮肤/性病科"
+                        },
+                        {
+                            "id": 30304,
+                            "name": "小儿科",
+                            "commonName": "小儿科"
+                        },
+                        {
+                            "id": 30307,
+                            "name": "胃肠科",
+                            "commonName": "胃肠科"
+                        },
+                        {
+                            "id": 30315,
+                            "name": "肿瘤科",
+                            "commonName": "肿瘤科"
+                        },
+                        {
+                            "id": 30317,
+                            "name": "五官科",
+                            "commonName": "五官科"
+                        },
+                        {
+                            "id": 30309,
+                            "name": "维生素/矿物质",
+                            "commonName": "维生素/矿物质"
+                        },
+                        {
+                            "id": 30320,
+                            "name": "补益类药物",
+                            "commonName": "补益类药物"
+                        },
+                        {
+                            "id": 30319,
+                            "name": "其它药物",
+                            "commonName": "其它药物"
+                        }
+                    ]
+                },
+                {
+                    "id": 358,
+                    "name": "保健食品",
+                    "commonName": "保健食品",
+                    "subList": [
+                        {
+                            "id": 35801,
+                            "name": "增强免疫力",
+                            "commonName": "增强免疫力"
+                        },
+                        {
+                            "id": 35802,
+                            "name": "改善睡眠",
+                            "commonName": "改善睡眠"
+                        },
+                        {
+                            "id": 35803,
+                            "name": "缓解体力疲劳",
+                            "commonName": "缓解体力疲劳"
+                        },
+                        {
+                            "id": 35804,
+                            "name": "提高缺氧耐受力/抗氧化",
+                            "commonName": "提高缺氧耐受力/抗氧化"
+                        },
+                        {
+                            "id": 35805,
+                            "name": "促进排铅/对辐射危害有辅助保护功能",
+                            "commonName": "促进排铅/对辐射危害有辅助保护功能"
+                        },
+                        {
+                            "id": 35806,
+                            "name": "增加骨密度/改善生长发育",
+                            "commonName": "增加骨密度/改善生长发育"
+                        },
+                        {
+                            "id": 35807,
+                            "name": "对化学性肝损伤有辅助保护功能",
+                            "commonName": "对化学性肝损伤有辅助保护功能"
+                        },
+                        {
+                            "id": 35808,
+                            "name": "缓解视疲劳",
+                            "commonName": "缓解视疲劳"
+                        },
+                        {
+                            "id": 35809,
+                            "name": "祛痤疮/祛黄褐斑",
+                            "commonName": "祛痤疮/祛黄褐斑"
+                        },
+                        {
+                            "id": 35810,
+                            "name": "改善皮肤水份/改善皮肤油份",
+                            "commonName": "改善皮肤水份/改善皮肤油份"
+                        },
+                        {
+                            "id": 35811,
+                            "name": "减肥",
+                            "commonName": "减肥"
+                        },
+                        {
+                            "id": 35812,
+                            "name": "辅助降血糖/血脂/血脂",
+                            "commonName": "辅助降血糖/血脂/血脂"
+                        },
+                        {
+                            "id": 35813,
+                            "name": "改善营养性贫血",
+                            "commonName": "改善营养性贫血"
+                        },
+                        {
+                            "id": 35814,
+                            "name": "辅助改善记忆",
+                            "commonName": "辅助改善记忆"
+                        },
+                        {
+                            "id": 35815,
+                            "name": "调节肠道菌群/通便",
+                            "commonName": "调节肠道菌群/通便"
+                        },
+                        {
+                            "id": 35816,
+                            "name": "促进消化",
+                            "commonName": "促进消化"
+                        },
+                        {
+                            "id": 35817,
+                            "name": "清咽",
+                            "commonName": "清咽"
+                        },
+                        {
+                            "id": 35818,
+                            "name": "对胃粘膜有辅助保护功能",
+                            "commonName": "对胃粘膜有辅助保护功能"
+                        },
+                        {
+                            "id": 35819,
+                            "name": "促进泌乳",
+                            "commonName": "促进泌乳"
+                        },
+                        {
+                            "id": 35820,
+                            "name": "其它保健食品",
+                            "commonName": "其它保健食品"
+                        }
+                    ]
+                },
+                {
+                    "id": 359,
+                    "name": "婴幼儿配方奶粉",
+                    "commonName": "婴幼儿配方奶粉",
+                    "subList": [
+                        {
+                            "id": 35901,
+                            "name": "1段",
+                            "commonName": "1段"
+                        },
+                        {
+                            "id": 35902,
+                            "name": "2段",
+                            "commonName": "2段"
+                        },
+                        {
+                            "id": 35903,
+                            "name": "3段",
+                            "commonName": "3段"
+                        },
+                        {
+                            "id": 35904,
+                            "name": "其它阶段奶粉",
+                            "commonName": "其它阶段奶粉"
+                        }
+                    ]
+                },
+                {
+                    "id": 360,
+                    "name": "特殊医学用途配方食品",
+                    "commonName": "特殊医学用途配方食品",
+                    "subList": [
+                        {
+                            "id": 36001,
+                            "name": "特殊医学用途婴儿配方食品",
+                            "commonName": "特殊医学用途婴儿配方食品"
+                        },
+                        {
+                            "id": 36002,
+                            "name": "全营养配方食品",
+                            "commonName": "全营养配方食品"
+                        },
+                        {
+                            "id": 36003,
+                            "name": "特定全营养配方食品",
+                            "commonName": "特定全营养配方食品"
+                        },
+                        {
+                            "id": 36004,
+                            "name": "非全营养配方食品",
+                            "commonName": "非全营养配方食品"
+                        },
+                        {
+                            "id": 36005,
+                            "name": "其它特殊医学食品",
+                            "commonName": "其它特殊医学食品"
+                        }
+                    ]
+                },
+                {
+                    "id": 361,
+                    "name": "营养食品",
+                    "commonName": "营养食品",
+                    "subList": [
+                        {
+                            "id": 36101,
+                            "name": "饮料类",
+                            "commonName": "饮料类"
+                        },
+                        {
+                            "id": 36102,
+                            "name": "糖果制品",
+                            "commonName": "糖果制品"
+                        },
+                        {
+                            "id": 36103,
+                            "name": "蜂产品",
+                            "commonName": "蜂产品"
+                        },
+                        {
+                            "id": 36104,
+                            "name": "茶叶及相关制品",
+                            "commonName": "茶叶及相关制品"
+                        },
+                        {
+                            "id": 36105,
+                            "name": "乳制品",
+                            "commonName": "乳制品"
+                        },
+                        {
+                            "id": 36106,
+                            "name": "炒货食品及坚果制品",
+                            "commonName": "炒货食品及坚果制品"
+                        },
+                        {
+                            "id": 36107,
+                            "name": "其它食品",
+                            "commonName": "其它食品"
+                        },
+                        {
+                            "id": 36108,
+                            "name": "食用油及食糖",
+                            "commonName": "食用油及食糖"
+                        },
+                        {
+                            "id": 36109,
+                            "name": "新资源食品（新食品原料）",
+                            "commonName": "新资源食品（新食品原料）"
+                        }
+                    ]
+                },
+                {
+                    "id": 305,
+                    "name": "养生中药",
+                    "commonName": "养生中药",
+                    "subList": [
+                        {
+                            "id": 30501,
+                            "name": "中药饮片",
+                            "commonName": "中药饮片"
+                        },
+                        {
+                            "id": 30502,
+                            "name": "贵细/滋补",
+                            "commonName": "贵细/滋补"
+                        },
+                        {
+                            "id": 30503,
+                            "name": "药食煲汤料",
+                            "commonName": "药食煲汤料"
+                        },
+                        {
+                            "id": 30504,
+                            "name": "参类产品",
+                            "commonName": "参类产品"
+                        },
+                        {
+                            "id": 30505,
+                            "name": "花茶/茶叶",
+                            "commonName": "花茶/茶叶"
+                        }
+                    ]
+                },
+                {
+                    "id": 355,
+                    "name": "中药饮片",
+                    "commonName": "中药饮片",
+                    "subList": [
+                        {
+                            "id": 35503,
+                            "name": "解表药",
+                            "commonName": "解表药"
+                        },
+                        {
+                            "id": 35502,
+                            "name": "非可调配处方饮片",
+                            "commonName": "非可调配处方饮片"
+                        },
+                        {
+                            "id": 35504,
+                            "name": "清热药",
+                            "commonName": "清热药"
+                        },
+                        {
+                            "id": 35505,
+                            "name": "祛风湿药",
+                            "commonName": "祛风湿药"
+                        },
+                        {
+                            "id": 35506,
+                            "name": "温里药",
+                            "commonName": "温里药"
+                        },
+                        {
+                            "id": 35507,
+                            "name": "行气药",
+                            "commonName": "行气药"
+                        },
+                        {
+                            "id": 35508,
+                            "name": "消食药",
+                            "commonName": "消食药"
+                        },
+                        {
+                            "id": 35509,
+                            "name": "活血化瘀药",
+                            "commonName": "活血化瘀药"
+                        },
+                        {
+                            "id": 35510,
+                            "name": "安神药",
+                            "commonName": "安神药"
+                        },
+                        {
+                            "id": 35511,
+                            "name": "补虚药",
+                            "commonName": "补虚药"
+                        },
+                        {
+                            "id": 35512,
+                            "name": "泻下药",
+                            "commonName": "泻下药"
+                        },
+                        {
+                            "id": 35513,
+                            "name": "芳香化湿药",
+                            "commonName": "芳香化湿药"
+                        },
+                        {
+                            "id": 35514,
+                            "name": "利水渗湿药",
+                            "commonName": "利水渗湿药"
+                        },
+                        {
+                            "id": 35515,
+                            "name": "驱虫药",
+                            "commonName": "驱虫药"
+                        },
+                        {
+                            "id": 35516,
+                            "name": "止血药",
+                            "commonName": "止血药"
+                        },
+                        {
+                            "id": 35517,
+                            "name": "化痰止咳平喘药",
+                            "commonName": "化痰止咳平喘药"
+                        },
+                        {
+                            "id": 35518,
+                            "name": "平肝药",
+                            "commonName": "平肝药"
+                        },
+                        {
+                            "id": 35519,
+                            "name": "开窍药",
+                            "commonName": "开窍药"
+                        },
+                        {
+                            "id": 35520,
+                            "name": "收涩药",
+                            "commonName": "收涩药"
+                        },
+                        {
+                            "id": 35521,
+                            "name": "其它中药饮片",
+                            "commonName": "其它中药饮片"
+                        }
+                    ]
+                },
+                {
+                    "id": 357,
+                    "name": "医疗器械",
+                    "commonName": "医疗器械",
+                    "subList": [
+                        {
+                            "id": 35705,
+                            "name": "辅助器械",
+                            "commonName": "辅助器械"
+                        },
+                        {
+                            "id": 35706,
+                            "name": "呼吸系统理疗",
+                            "commonName": "呼吸系统理疗"
+                        },
+                        {
+                            "id": 35707,
+                            "name": "计生用品",
+                            "commonName": "计生用品"
+                        },
+                        {
+                            "id": 35708,
+                            "name": "检测器械",
+                            "commonName": "检测器械"
+                        },
+                        {
+                            "id": 35709,
+                            "name": "康复理疗",
+                            "commonName": "康复理疗"
+                        },
+                        {
+                            "id": 35710,
+                            "name": "其它器械",
+                            "commonName": "其它器械"
+                        },
+                        {
+                            "id": 35711,
+                            "name": "卫生材料及敷料",
+                            "commonName": "卫生材料及敷料"
+                        }
+                    ]
+                },
+                {
+                    "id": 356,
+                    "name": "保健器具",
+                    "commonName": "保健器具",
+                    "subList": [
+                        {
+                            "id": 35601,
+                            "name": "护具系列",
+                            "commonName": "护具系列"
+                        },
+                        {
+                            "id": 35602,
+                            "name": "康复辅助器具",
+                            "commonName": "康复辅助器具"
+                        },
+                        {
+                            "id": 35603,
+                            "name": "其它保健器具",
+                            "commonName": "其它保健器具"
+                        },
+                        {
+                            "id": 35604,
+                            "name": "家用保健器具",
+                            "commonName": "家用保健器具"
+                        }
+                    ]
+                },
+                {
+                    "id": 307,
+                    "name": "计生/成人",
+                    "commonName": "计生/成人",
+                    "subList": [
+                        {
+                            "id": 30701,
+                            "name": "润滑液",
+                            "commonName": "润滑液"
+                        },
+                        {
+                            "id": 30702,
+                            "name": "验孕/排卵",
+                            "commonName": "验孕/排卵"
+                        },
+                        {
+                            "id": 30703,
+                            "name": "女性用品",
+                            "commonName": "女性用品"
+                        },
+                        {
+                            "id": 30704,
+                            "name": "安全套",
+                            "commonName": "安全套"
+                        },
+                        {
+                            "id": 30705,
+                            "name": "男性用品",
+                            "commonName": "男性用品"
+                        }
+                    ]
+                },
+                {
+                    "id": 301,
+                    "name": "隐形眼镜/护理液",
+                    "commonName": "隐形眼镜/护理液",
+                    "subList": [
+                        {
+                            "id": 30101,
+                            "name": "隐形眼镜伴侣",
+                            "commonName": "隐形眼镜伴侣"
+                        },
+                        {
+                            "id": 30102,
+                            "name": "功能眼镜",
+                            "commonName": "功能眼镜"
+                        },
+                        {
+                            "id": 30103,
+                            "name": "彩色隐形眼镜",
+                            "commonName": "彩色隐形眼镜"
+                        },
+                        {
+                            "id": 30104,
+                            "name": "透明隐形眼镜",
+                            "commonName": "透明隐形眼镜"
+                        },
+                        {
+                            "id": 30105,
+                            "name": "护理液",
+                            "commonName": "护理液"
+                        },
+                        {
+                            "id": 30106,
+                            "name": "隐形眼镜润滑液",
+                            "commonName": "隐形眼镜润滑液"
+                        },
+                        {
+                            "id": 30107,
+                            "name": "其它隐形眼镜/护理液",
+                            "commonName": "其它隐形眼镜/护理液"
+                        }
+                    ]
+                },
+                {
+                    "id": 363,
+                    "name": "消毒产品",
+                    "commonName": "消毒产品",
+                    "subList": [
+                        {
+                            "id": 36301,
+                            "name": "消毒剂",
+                            "commonName": "消毒剂"
+                        },
+                        {
+                            "id": 36302,
+                            "name": "卫生用品",
+                            "commonName": "卫生用品"
+                        },
+                        {
+                            "id": 36303,
+                            "name": "隐形眼镜护理用品",
+                            "commonName": "隐形眼镜护理用品"
+                        },
+                        {
+                            "id": 36304,
+                            "name": "抗（抑）菌洗剂",
+                            "commonName": "抗（抑）菌洗剂"
+                        },
+                        {
+                            "id": 36305,
+                            "name": "其它消毒产品",
+                            "commonName": "其它消毒产品"
+                        }
+                    ]
+                },
+                {
+                    "id": 362,
+                    "name": "化妆品/护肤品",
+                    "commonName": "化妆品/护肤品",
+                    "subList": [
+                        {
+                            "id": 36201,
+                            "name": "特殊化妆品",
+                            "commonName": "特殊化妆品"
+                        },
+                        {
+                            "id": 36202,
+                            "name": "普通化妆品",
+                            "commonName": "普通化妆品"
+                        },
+                        {
+                            "id": 36203,
+                            "name": "其它化妆品",
+                            "commonName": "其它化妆品"
+                        }
+                    ]
+                },
+                {
+                    "id": 308,
+                    "name": "美妆/个人",
+                    "commonName": "美妆/个人",
+                    "subList": [
+                        {
+                            "id": 30801,
+                            "name": "女性卫生护理",
+                            "commonName": "女性卫生护理"
+                        },
+                        {
+                            "id": 30802,
+                            "name": "沐浴洗发",
+                            "commonName": "沐浴洗发"
+                        },
+                        {
+                            "id": 30803,
+                            "name": "婴幼儿护理",
+                            "commonName": "婴幼儿护理"
+                        },
+                        {
+                            "id": 30804,
+                            "name": "生活用品",
+                            "commonName": "生活用品"
+                        },
+                        {
+                            "id": 30805,
+                            "name": "面部眼部护理",
+                            "commonName": "面部眼部护理"
+                        },
+                        {
+                            "id": 30806,
+                            "name": "身体护理",
+                            "commonName": "身体护理"
+                        },
+                        {
+                            "id": 30807,
+                            "name": "孕妇产妇护理",
+                            "commonName": "孕妇产妇护理"
+                        },
+                        {
+                            "id": 30808,
+                            "name": "口腔护理",
+                            "commonName": "口腔护理"
+                        },
+                        {
+                            "id": 30809,
+                            "name": "手脚护理",
+                            "commonName": "手脚护理"
+                        },
+                        {
+                            "id": 30810,
+                            "name": "季节用品",
+                            "commonName": "季节用品"
+                        },
+                        {
+                            "id": 30811,
+                            "name": "男性卫生护理",
+                            "commonName": "男性卫生护理"
+                        },
+                        {
+                            "id": 30812,
+                            "name": "隐形眼镜周边产品",
+                            "commonName": "隐形眼镜周边产品"
+                        },
+                        {
+                            "id": 30813,
+                            "name": "太阳镜/老花镜/镜框",
+                            "commonName": "太阳镜/老花镜/镜框"
+                        },
+                        {
+                            "id": 30814,
+                            "name": "其它日用品",
+                            "commonName": "其它日用品"
+                        }
+                    ]
+                },
+                {
+                    "id": 302,
+                    "name": "食品（保健食品）",
+                    "commonName": "食品（保健食品）",
+                    "subList": [
+                        {
+                            "id": 30201,
+                            "name": "女士保健",
+                            "commonName": "女士保健"
+                        },
+                        {
+                            "id": 30202,
+                            "name": "男士保健",
+                            "commonName": "男士保健"
+                        },
+                        {
+                            "id": 30203,
+                            "name": "中老年保健",
+                            "commonName": "中老年保健"
+                        },
+                        {
+                            "id": 30204,
+                            "name": "基础营养",
+                            "commonName": "基础营养"
+                        },
+                        {
+                            "id": 30205,
+                            "name": "普通食品/粮油",
+                            "commonName": "普通食品/粮油"
+                        },
+                        {
+                            "id": 30206,
+                            "name": "儿童保健",
+                            "commonName": "儿童保健"
+                        }
+                    ]
+                },
+                {
+                    "id": 304,
+                    "name": "美颜瘦身",
+                    "commonName": "美颜瘦身",
+                    "subList": [
+                        {
+                            "id": 30401,
+                            "name": "美颜瘦身",
+                            "commonName": "美颜瘦身"
+                        }
+                    ]
+                },
+                {
+                    "id": 306,
+                    "name": "家用器械",
+                    "commonName": "家用器械",
+                    "subList": [
+                        {
+                            "id": 30601,
+                            "name": "呼吸道防护",
+                            "commonName": "呼吸道防护"
+                        },
+                        {
+                            "id": 30602,
+                            "name": "消毒用品",
+                            "commonName": "消毒用品"
+                        },
+                        {
+                            "id": 30603,
+                            "name": "康复理疗",
+                            "commonName": "康复理疗"
+                        },
+                        {
+                            "id": 30604,
+                            "name": "眼罩/耳塞",
+                            "commonName": "眼罩/耳塞"
+                        },
+                        {
+                            "id": 30605,
+                            "name": "护具系列",
+                            "commonName": "护具系列"
+                        },
+                        {
+                            "id": 30606,
+                            "name": "家用检测",
+                            "commonName": "家用检测"
+                        },
+                        {
+                            "id": 30607,
+                            "name": "母婴检测",
+                            "commonName": "母婴检测"
+                        },
+                        {
+                            "id": 30608,
+                            "name": "辅助器具",
+                            "commonName": "辅助器具"
+                        }
+                    ]
+                },
+                {
+                    "id": 352,
+                    "name": "器械-其它器械",
+                    "commonName": "器械-其它器械",
+                    "subList": [
+                        {
+                            "id": 35201,
+                            "name": "其它器械",
+                            "commonName": "其它器械"
+                        }
+                    ]
+                },
+                {
+                    "id": 354,
+                    "name": "其它非药品",
+                    "commonName": "其它非药品",
+                    "subList": [
+                        {
+                            "id": 35404,
+                            "name": "日用品",
+                            "commonName": "日用品"
+                        }
+                    ]
+                }
+            ]
+        }';
+        echo $str;
+        exit;
+    }
+
 }

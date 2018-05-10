@@ -1,0 +1,10 @@
+<scroll-view class="scrollLeft" scroll-y>
+	<block wx:for="{{classList}}">
+	<view class="leftbox active" wx:if="{{item.id==active}}" data-id="{{item.id}}" bindtap="changeClass">{{item.name}}</view>
+	<view class="leftbox" wx:else data-id="{{item.id}}" bindtap="changeClass">{{item.name}}</view>
+	</block>
+</scroll-view>
+
+<scroll-view class="scrollRight" scroll-y>
+	<view wx:for="{{classData}}" bindtap="goList" data-id="{{item.id}}">{{item.name}}</view>
+</scroll-view>
