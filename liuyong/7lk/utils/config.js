@@ -11,4 +11,5 @@ module.exports = {
   getCityList: apiUrl + 'wxapp/getCityList', //城市列表
   searchClass: apiUrl + 'wxapp/searchClass', //分类
   searchResult: apiUrl + 'wxapp/searchResult', //搜索结果
+  cartInfo: apiUrl + 'wxapp/cartInfo', //购物车
 }

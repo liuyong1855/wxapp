@@ -1,0 +1,25 @@
+.cartbox{position:absolute;top:0;left:0;bottom:100rpx;right:0;background:#fff;}
+.cartInfo{position:fixed;bottom:0;left:0;right:0;height:80rpx;padding:10rpx;}
+.settle button{background:#f00;font-size:34rpx;color:#fff;height:80rpx;line-height:80rpx;}
+.checkall{font-size:34rpx;line-height:80rpx;margin-right:10rpx;}
+.cartprice{line-height:35rpx;padding:5rpx 0;}
+.freight{font-size:30rpx;}
+.cartprice{font-size:30rpx;}
+.cartprice text{color:#f00;}
+.cartprice text:first-child{font-size:30rpx;}
+.cartprice text:last-child{font-weight:900;font-size:34rpx;}
+.drug-list{padding:0 10rpx;}
+.checkblock{padding:0 10rpx;}
+.checkproduct{padding:0 10rpx;height:158rpx;justify-content:center;align-items:center;}
+.doctortitle{line-height:100rpx;}
+.doctortitle .title{border-bottom:1rpx solid #ebebeb;}
+.product{padding:16rpx 0;}
+.product .icon{width:158rpx;height:158rpx;border:1rpx solid #ebebeb;margin-right:10rpx;}
+.product .icon image{width:100%;height:100%;}
+.pmess .pt{line-height:40rpx;max-height:80rpx;overflow:hidden;}
+.pmess .rx{padding:10rpx 0;}
+.pmess .rx text{font-size:20rpx;line-height:26rpx;background:#006e34;padding:0 6rpx;display:inline-block;border-radius:5rpx;color:#fff;}
+.pmess .pr{color:#f00;}
+.pmess .pe .number text{width:60rpx;text-align:center;font-size:38rpx;font-weight:900;border:1rpx solid #ebebeb;line-height:60rpx;height:60rpx;}
+.pmess .pe .number input{width:100rpx;border-top:1rpx solid #ebebeb;border-bottom:1rpx solid #ebebeb;line-height:60rpx;height:60rpx;text-align:center;}
+.pmess .pe .del{width:70rpx;background:url(http://10.9.0.149/wxapp/liuyong/7lk/img/delete.png) no-repeat center center;background-size:43rpx 50rpx;height:62rpx;height:60rpx;}
