@@ -2,7 +2,7 @@
 	<view class="drug-list">
 		<block wx:for="{{cartInfo.cartGroups}}" wx:for-item="cartbox">
 			<view class="disflex doctortitle">
-				<view class="checkblock"><checkbox></checkbox></view>
+				<view class="checkblock"><checkbox bindtap="check" checked="{{cartbox.selected==1}}"></checkbox></view>
 				<view class="flex title">
 					<block wx:if="{{cartbox.groupType==1}}">{{cartbox.doctorName}}推荐的药品</block>
 					<block wx:if="{{cartbox.groupType==2}}">自选非处方药</block>
@@ -10,14 +10,14 @@
 				</view>
 			</view>
 			<view class="disflex product" wx:for="{{cartbox.cartItems}}" wx:for-item="product">
-				<view class="checkproduct disflex"><checkbox checked="{{product.selected==1}}"></checkbox></view>
+				<view class="checkproduct disflex"><checkbox bindtap="check" checked="{{product.selected==1}}"></checkbox></view>
 				<view class="icon"><image mode="aspectFit" src="{{product.iconService}}{{product.icon.w640}}" /></view>
 				<view class="flex pmess">
 					<view class="pt">{{product.productName}}</view>
 					<view class="rx disflex"><text wx:if="{{product.rx==1}}">Rx</text></view>
 					<view class="pr"><text>{{product.salePrice}}</text></view>
 					<view class="disflex pe">
-						<view class="disflex number"><text>-</text><input type="number" maxlength="3" value="{{product.quantity}}" /><text>+</text></view>
+						<view class="disflex number"><text bindtap="check">-</text><input type="number" maxlength="3" value="{{product.quantity}}" /><text bindtap="check">+</text></view>
 						<view class="flex"></view>
 						<view class="del"></view>
 					</view>
@@ -27,10 +27,10 @@
 	</view>
 </scroll-view>
 <view class="cartInfo disflex">
-	<view class="checkall"><label><checkbox></checkbox>全选</label></view>
+	<view class="checkall"><label><checkbox checked="{{cartInfo.selected==1}}" bindtap="check"></checkbox>全选</label></view>
 	<view class="flex cartprice">
-		<view>总计:<text>￥</text><text>33.55</text></view>
+		<view>总计:<text>￥</text><text>{{cartInfo.realPay}}</text></view>
 		<view class="freight">(不含运费)</view>
 	</view>
-	<view class="settle"><button>去结算(8)</button></view>
+	<view class="settle"><button>去结算({{cartInfo.quantity}})</button></view>
 </view>
