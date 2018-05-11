@@ -16,7 +16,7 @@
         <text>基础内容</text>
         <icon type='success' size='40' color='green'></icon>
        </view>
-       <view class='item_b' style='{{showTwo}}'>
+       <view class='item_b {{ifShow =="2"?"":"hidden"}}'>
           <view>
               <text>text</text>
               <navigator url='/pages/addDel/addDel'>></navigator>
@@ -31,29 +31,45 @@
           </view>
        </view>
     </view>
-    <view class='item'  data-id='3'>
-      <view class='item_a'>
+    <view class='item'>
+      <view class='item_a' data-id='3' bindtap='clickItem'>
         <text>表单组件</text>
         <icon type='success' size='40' color='green'></icon>
       </view>
     </view>
     <view class='item'>
-      <view class='item_a'>
+      <view class='item_a' data-id='4' >
         <text>导航</text>
         <icon type='success' size='40' color='green'></icon>
       </view>
     </view>
     <view class='item'>
-      <view class='item_a'>
+      <view class='item_a'  bindtap='clickItem' data-id='5'>
         <text>媒体组件</text>
         <icon type='success' size='40' color='green'></icon>
-    </view>
+       </view>
+        <view class='item_b {{ifShow =="5"?"":"hidden"}}'>
+          <view>
+              <text>拍照</text>
+              <navigator url='/pages/qrCode/qrCode'>></navigator>
+          </view>
+           <view>
+              <text>扫描二维码</text>
+              <navigator url='/pages/saoCode/saoCode'>></navigator>
+          </view>
+       </view>
     </view>
     <view class='item'>
-      <view class='item_a'>
+      <view class='item_a' bindtap='clickItem' data-id='6'>
         <text>地图</text>
         <icon type='success' size='40' color='green'></icon>
       </view>
+       <view class='item_b {{ifShow =="6"?"":"hidden"}}'>
+          <view>
+              <text>map</text>
+              <navigator url='/pages/map/map'>></navigator>
+          </view>
+       </view>
     </view>
     <view class='item'>
       <view class='item_a'>

@@ -1,8 +1,11 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/addDel/addDel",
     "pages/home/home",
+    "pages/saoCode/saoCode",
+    "pages/qrCode/qrCode",
+    "pages/map/map",
+    "pages/addDel/addDel",
     "pages/logs/logs"
   ],
   "window":{
