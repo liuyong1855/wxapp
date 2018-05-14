@@ -1,0 +1,9 @@
+.utx{background:url(http://10.9.0.149/wxapp/liuyong/7lk/img/paient_infoBg.jpg) no-repeat center center;text-align:center;padding:20rpx;margin-bottom:20rpx;}
+.tx{width:200rpx;height:200rpx;border-radius:100%;border:8rpx solid #ddd;}
+.inforBox{background:#fff;}
+.inforLow{margin-left:20rpx;border-bottom:1rpx solid #ebebeb;line-height:120rpx;}
+.inforL{width:200rpx;}
+.inforL text{color:#f00;}
+.forIcon{background:url(http://10.9.0.149/wxapp/liuyong/7lk/img/inforIcon.jpg) no-repeat left center;width:40rpx;background-size:17rpx 31rpx;}
+.inforR{margin-right:50rpx;width:0px;}
+.inforR view{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;height:120rpx;line-height:120rpx;}

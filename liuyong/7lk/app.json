@@ -1,12 +1,12 @@
 {
   "pages":[
+    "pages/userCenter/userCenter",
     "pages/shopcart/shopcart",
     "pages/drugStore/drugStore",
     "pages/searchFinish/searchFinish",
     "pages/classify/classify",
     "pages/chooseCity/chooseCity",
-    "pages/index/index",
-    "pages/userCenter/userCenter"
+    "pages/index/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

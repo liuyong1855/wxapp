@@ -13,7 +13,6 @@ Page({
 		})
 		wx.request({
 			url:API.cartInfo,
-			method:'POST',
 			success:d => {
 				wx.hideLoading();
 				var cartGroups = d.data.data[0].cartGroups;

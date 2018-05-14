@@ -3289,4 +3289,1603 @@ class Wxapp extends CI_Controller {
         exit;
     }
 
+    public function userInfo(){
+        $str = '{
+            "code": 0,
+            "msg": "成功",
+            "data": [
+                {
+                    "patientId": 48924,
+                    "name": "demon",
+                    "openId": null,
+                    "unionId": null,
+                    "qlkId": null,
+                    "gender": 1,
+                    "age": "34",
+                    "cityId": 65,
+                    "provinceId": 5,
+                    "cityTempId": 65,
+                    "countyId": null,
+                    "provinceName": "甘肃",
+                    "cityTempName": "甘南",
+                    "countyName": null,
+                    "phone": "13810919152",
+                    "height": null,
+                    "weight": null,
+                    "maritalStatus": null,
+                    "createAt": null,
+                    "nickName": null,
+                    "old": null,
+                    "photo": "http://thirdwx.qlogo.cn/mmopen/0nn3FBrD9a0N1UdZg0PHt2HRvKRE9nSiay7qTY1oic1HUcMY95BX1exczWViczhaWRWsUGRm3Mr67iaEKwUKmCU7TA/132",
+                    "unionKey": "Serwkfjrewkjvlwe3483ddf",
+                    "city": "甘南",
+                    "canTalk": null,
+                    "personalNum": null,
+                    "havePersonal": null,
+                    "department": null,
+                    "token": null,
+                    "consultCost": null,
+                    "consultPayType": null,
+                    "idNo": null,
+                    "birthday": null,
+                    "genderStr": "男"
+                }
+            ]
+        }';
+        echo $str;
+        exit;
+    }
+
+    public function cityList(){
+        $str = '{
+            "code": 0,
+            "msg": "成功",
+            "data": [
+                {
+                    "id": 2,
+                    "name": "北京",
+                    "parentId": null,
+                    "childs": [
+                        {
+                            "id": 52,
+                            "name": "北京",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 500,
+                                    "name": "东城区",
+                                    "parentId": null,
+                                    "childs": [
+                                        {
+                                            "id": 36,
+                                            "parentId": 500,
+                                            "name": "安庆",
+                                            "childs": [
+                                                {
+                                                    "id": 398,
+                                                    "parentId": 36,
+                                                    "name": "迎江区",
+                                                    "childs": []
+                                                },
+                                                {
+                                                    "id": 399,
+                                                    "parentId": 36,
+                                                    "name": "大观区",
+                                                    "childs": []
+                                                },
+                                                {
+                                                    "id": 400,
+                                                    "parentId": 36,
+                                                    "name": "宜秀区",
+                                                    "childs": []
+                                                },
+                                                {
+                                                    "id": 401,
+                                                    "parentId": 36,
+                                                    "name": "桐城市",
+                                                    "childs": []
+                                                },
+                                                {
+                                                    "id": 402,
+                                                    "parentId": 36,
+                                                    "name": "怀宁县",
+                                                    "childs": []
+                                                },
+                                                {
+                                                    "id": 403,
+                                                    "parentId": 36,
+                                                    "name": "枞阳县",
+                                                    "childs": []
+                                                },
+                                                {
+                                                    "id": 404,
+                                                    "parentId": 36,
+                                                    "name": "潜山县",
+                                                    "childs": []
+                                                },
+                                                {
+                                                    "id": 405,
+                                                    "parentId": 36,
+                                                    "name": "太湖县",
+                                                    "childs": []
+                                                },
+                                                {
+                                                    "id": 406,
+                                                    "parentId": 36,
+                                                    "name": "宿松县",
+                                                    "childs": []
+                                                },
+                                                {
+                                                    "id": 407,
+                                                    "parentId": 36,
+                                                    "name": "望江县",
+                                                    "childs": []
+                                                },
+                                                {
+                                                    "id": 408,
+                                                    "parentId": 36,
+                                                    "name": "岳西县",
+                                                    "childs": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 501,
+                                    "name": "西城区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 502,
+                                    "name": "海淀区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 503,
+                                    "name": "朝阳区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 504,
+                                    "name": "崇文区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 505,
+                                    "name": "宣武区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 506,
+                                    "name": "丰台区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 507,
+                                    "name": "石景山区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 508,
+                                    "name": "房山区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 509,
+                                    "name": "门头沟区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 510,
+                                    "name": "通州区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 511,
+                                    "name": "顺义区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 512,
+                                    "name": "昌平区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 513,
+                                    "name": "怀柔区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 514,
+                                    "name": "平谷区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 515,
+                                    "name": "大兴区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 516,
+                                    "name": "密云县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 517,
+                                    "name": "延庆县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 3421,
+                                    "name": "测试1",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 3424,
+                                    "name": "测试123",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 3425,
+                                    "name": "阿萨啊",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 3833,
+                                    "name": "其它区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 3975,
+                                    "name": "123",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 3415,
+                            "name": "胡 胡123",
+                            "parentId": null,
+                            "childs": []
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "name": "福建",
+                    "parentId": null,
+                    "childs": [
+                        {
+                            "id": 53,
+                            "name": "福州",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 518,
+                                    "name": "鼓楼区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 519,
+                                    "name": "台江区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 520,
+                                    "name": "仓山区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 521,
+                                    "name": "马尾区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 522,
+                                    "name": "晋安区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 523,
+                                    "name": "福清市",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 524,
+                                    "name": "长乐市",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 525,
+                                    "name": "闽侯县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 526,
+                                    "name": "连江县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 527,
+                                    "name": "罗源县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 528,
+                                    "name": "闽清县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 529,
+                                    "name": "永泰县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 530,
+                                    "name": "平潭县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 3834,
+                                    "name": "其它区",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 54,
+                            "name": "龙岩",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 531,
+                                    "name": "新罗区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 532,
+                                    "name": "漳平市",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 533,
+                                    "name": "长汀县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 534,
+                                    "name": "永定县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 535,
+                                    "name": "上杭县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 536,
+                                    "name": "武平县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 537,
+                                    "name": "连城县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 3835,
+                                    "name": "其它区",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 55,
+                            "name": "南平",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 538,
+                                    "name": "延平区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 539,
+                                    "name": "邵武市",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 540,
+                                    "name": "武夷山市",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 541,
+                                    "name": "建瓯市",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 542,
+                                    "name": "建阳市",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 543,
+                                    "name": "顺昌县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 544,
+                                    "name": "浦城县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 545,
+                                    "name": "光泽县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 546,
+                                    "name": "松溪县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 547,
+                                    "name": "政和县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 3836,
+                                    "name": "其它区",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 56,
+                            "name": "宁德",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 548,
+                                    "name": "蕉城区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 549,
+                                    "name": "福安市",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 550,
+                                    "name": "福鼎市",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 551,
+                                    "name": "霞浦县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 552,
+                                    "name": "古田县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 553,
+                                    "name": "屏南县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 554,
+                                    "name": "寿宁县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 555,
+                                    "name": "周宁县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 556,
+                                    "name": "柘荣县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 3837,
+                                    "name": "其它区",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 57,
+                            "name": "莆田",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 557,
+                                    "name": "城厢区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 558,
+                                    "name": "涵江区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 559,
+                                    "name": "荔城区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 560,
+                                    "name": "秀屿区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 561,
+                                    "name": "仙游县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 3838,
+                                    "name": "其它区",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 58,
+                            "name": "泉州",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 562,
+                                    "name": "鲤城区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 563,
+                                    "name": "丰泽区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 564,
+                                    "name": "洛江区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 565,
+                                    "name": "清濛开发区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 566,
+                                    "name": "泉港区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 567,
+                                    "name": "石狮市",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 568,
+                                    "name": "晋江市",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 569,
+                                    "name": "南安市",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 570,
+                                    "name": "惠安县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 571,
+                                    "name": "安溪县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 572,
+                                    "name": "永春县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 573,
+                                    "name": "德化县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 574,
+                                    "name": "金门县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 3839,
+                                    "name": "其它区",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 59,
+                            "name": "三明",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 575,
+                                    "name": "梅列区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 576,
+                                    "name": "三元区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 577,
+                                    "name": "永安市",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 578,
+                                    "name": "明溪县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 579,
+                                    "name": "清流县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 580,
+                                    "name": "宁化县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 581,
+                                    "name": "大田县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 582,
+                                    "name": "尤溪县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 583,
+                                    "name": "沙县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 584,
+                                    "name": "将乐县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 585,
+                                    "name": "泰宁县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 586,
+                                    "name": "建宁县",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 60,
+                            "name": "厦门",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 587,
+                                    "name": "思明区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 588,
+                                    "name": "海沧区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 589,
+                                    "name": "湖里区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 590,
+                                    "name": "集美区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 591,
+                                    "name": "同安区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 592,
+                                    "name": "翔安区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 3840,
+                                    "name": "其它区",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 61,
+                            "name": "漳州",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 593,
+                                    "name": "芗城区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 594,
+                                    "name": "龙文区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 595,
+                                    "name": "龙海市",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 596,
+                                    "name": "云霄县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 597,
+                                    "name": "漳浦县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 598,
+                                    "name": "诏安县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 599,
+                                    "name": "长泰县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 600,
+                                    "name": "东山县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 601,
+                                    "name": "南靖县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 602,
+                                    "name": "平和县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 603,
+                                    "name": "华安县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 3841,
+                                    "name": "其它区",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "name": "甘肃",
+                    "parentId": null,
+                    "childs": [
+                        {
+                            "id": 62,
+                            "name": "兰州",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 604,
+                                    "name": "皋兰县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 605,
+                                    "name": "城关区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 606,
+                                    "name": "七里河区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 607,
+                                    "name": "西固区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 608,
+                                    "name": "安宁区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 609,
+                                    "name": "红古区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 610,
+                                    "name": "永登县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 611,
+                                    "name": "榆中县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 3842,
+                                    "name": "其它区",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 63,
+                            "name": "白银",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 612,
+                                    "name": "白银区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 613,
+                                    "name": "平川区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 614,
+                                    "name": "会宁县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 615,
+                                    "name": "景泰县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 616,
+                                    "name": "靖远县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 3843,
+                                    "name": "其它区",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 64,
+                            "name": "定西",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 617,
+                                    "name": "临洮县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 618,
+                                    "name": "陇西县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 619,
+                                    "name": "通渭县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 620,
+                                    "name": "渭源县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 621,
+                                    "name": "漳县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 622,
+                                    "name": "岷县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 623,
+                                    "name": "安定区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 624,
+                                    "name": "安定区",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 65,
+                            "name": "甘南",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 625,
+                                    "name": "合作市",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 626,
+                                    "name": "临潭县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 627,
+                                    "name": "卓尼县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 628,
+                                    "name": "舟曲县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 629,
+                                    "name": "迭部县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 630,
+                                    "name": "玛曲县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 631,
+                                    "name": "碌曲县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 632,
+                                    "name": "夏河县",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 66,
+                            "name": "嘉峪关",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 633,
+                                    "name": "嘉峪关市",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 67,
+                            "name": "金昌",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 634,
+                                    "name": "金川区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 635,
+                                    "name": "永昌县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 3844,
+                                    "name": "其它区",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 68,
+                            "name": "酒泉",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 636,
+                                    "name": "肃州区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 637,
+                                    "name": "玉门市",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 638,
+                                    "name": "敦煌市",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 639,
+                                    "name": "金塔县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 640,
+                                    "name": "瓜州县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 641,
+                                    "name": "肃北",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 642,
+                                    "name": "阿克塞",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 3845,
+                                    "name": "其它区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 3846,
+                                    "name": "安西县",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 69,
+                            "name": "临夏",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 643,
+                                    "name": "临夏市",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 644,
+                                    "name": "临夏县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 645,
+                                    "name": "康乐县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 646,
+                                    "name": "永靖县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 647,
+                                    "name": "广河县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 648,
+                                    "name": "和政县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 649,
+                                    "name": "东乡族自治县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 650,
+                                    "name": "积石山",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 70,
+                            "name": "陇南",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 651,
+                                    "name": "成县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 652,
+                                    "name": "徽县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 653,
+                                    "name": "康县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 654,
+                                    "name": "礼县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 655,
+                                    "name": "两当县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 656,
+                                    "name": "文县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 657,
+                                    "name": "西和县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 658,
+                                    "name": "宕昌县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 659,
+                                    "name": "武都区",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 71,
+                            "name": "平凉",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 660,
+                                    "name": "崇信县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 661,
+                                    "name": "华亭县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 662,
+                                    "name": "静宁县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 663,
+                                    "name": "灵台县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 664,
+                                    "name": "崆峒区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 665,
+                                    "name": "庄浪县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 666,
+                                    "name": "泾川县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 3847,
+                                    "name": "其它区",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 72,
+                            "name": "庆阳",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 667,
+                                    "name": "合水县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 668,
+                                    "name": "华池县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 669,
+                                    "name": "环县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 670,
+                                    "name": "宁县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 671,
+                                    "name": "庆城县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 672,
+                                    "name": "西峰区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 673,
+                                    "name": "镇原县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 674,
+                                    "name": "正宁县",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 73,
+                            "name": "天水",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 675,
+                                    "name": "甘谷县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 676,
+                                    "name": "秦安县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 677,
+                                    "name": "清水县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 678,
+                                    "name": "秦州区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 679,
+                                    "name": "麦积区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 680,
+                                    "name": "武山县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 681,
+                                    "name": "张家川",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 74,
+                            "name": "武威",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 682,
+                                    "name": "古浪县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 683,
+                                    "name": "民勤县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 684,
+                                    "name": "天祝",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 685,
+                                    "name": "凉州区",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 75,
+                            "name": "张掖",
+                            "parentId": null,
+                            "childs": [
+                                {
+                                    "id": 686,
+                                    "name": "高台县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 687,
+                                    "name": "临泽县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 688,
+                                    "name": "民乐县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 689,
+                                    "name": "山丹县",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 690,
+                                    "name": "肃南",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 691,
+                                    "name": "甘州区",
+                                    "parentId": null,
+                                    "childs": []
+                                },
+                                {
+                                    "id": 3848,
+                                    "name": "其它区",
+                                    "parentId": null,
+                                    "childs": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }';
+        echo $str;
+        exit;
+    }
+
 }
