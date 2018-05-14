@@ -1,6 +1,6 @@
 <view class="drugheader">
 	<view>
-		<text class="city" bindtap="changeCity">北京</text>
+		<text class="city" bindtap="changeCity">{{city}}</text>
 	</view>
 	<view class="searchbox"><input placeholder="输入药品名称/疾病名称搜索" /></view>
 </view>

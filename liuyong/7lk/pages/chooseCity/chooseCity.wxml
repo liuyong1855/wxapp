@@ -9,13 +9,13 @@
 	<block wx:if="{{cityList.hot}}">
 		<view class="title" id="hot">热门城市</view>
 		<view class="citybox">
-			<view wx:for="{{cityList.hot}}" wx:for-item="hot" data-id="{{hot.id}}">{{hot.name}}</view>
+			<view wx:for="{{cityList.hot}}" bindtap="changeCity" data-name="{{hot.name}}" wx:for-item="hot" data-id="{{hot.id}}">{{hot.name}}</view>
 		</view>
 	</block>
 	<block wx:for="{{cityList.groups}}" wx:for-item="ikey">
 		<view class="title" id="{{ikey.key}}">{{ikey.key}}</view>
 		<view class="citybox">
-			<view wx:for="{{ikey.voList}}" wx:for-item="ilist" data-id="{{ilist.id}}">{{ilist.name}}</view>
+			<view bindtap="changeCity" data-name="{{ilist.name}}" wx:for="{{ikey.voList}}" wx:for-item="ilist" data-id="{{ilist.id}}">{{ilist.name}}</view>
 		</view>
 	</block>
 </scroll-view>

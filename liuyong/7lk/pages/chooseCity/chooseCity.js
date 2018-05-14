@@ -38,5 +38,14 @@ Page({
 				})
 			}
 		}
+	},
+	changeCity:function(e){
+		var pages = getCurrentPages();
+		var prepage = pages[pages.length - 2];
+		prepage.setData({
+			city:e.currentTarget.dataset.name
+		})
+		wx.navigateBack();
+		// console.log(e.currentTarget.dataset.name,getCurrentPages())
 	}
 })

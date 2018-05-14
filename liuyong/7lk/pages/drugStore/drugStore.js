@@ -1,7 +1,8 @@
 var API = require('../../utils/config');
 Page({
 	data:{
-		drugList:[]
+		drugList:[],
+		city:'北京1'
 	},
 	onLoad:function(){
 		wx.request({
