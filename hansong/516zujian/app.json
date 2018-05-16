@@ -1,8 +1,10 @@
 {
   "pages":[
-    "pages/bind/bind",
+    
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/inde/inde"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",
