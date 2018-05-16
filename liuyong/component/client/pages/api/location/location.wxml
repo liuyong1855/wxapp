@@ -1,0 +1,6 @@
+<view class="title"><text>位置</text></view>
+
+<button type="primary" bindtap="get">获取当前的地理位置、速度</button>
+<button type="primary" bindtap="choose">打开地图选择位置</button>
+<button type="primary" bindtap="open">​使用微信内置地图查看位置</button>
+<view style="word-break: break-all;">{{text}}</view>

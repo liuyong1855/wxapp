@@ -1,0 +1,49 @@
+Page({
+	data:{
+		text:'',
+		record:''
+	},
+	onReady:function(){
+		this.data.record = wx.getRecorderManager();
+		this.data.record.onStart((e)=>{
+			console.log('start',e)
+			this.setData({
+				text:'start'
+			})
+		})
+		this.data.record.onPause((e)=>{
+			console.log('pause',e)
+			this.setData({
+				text:'pause'
+			})
+		})
+		this.data.record.onStop((e)=>{
+			console.log('stop',e)
+			this.setData({
+				text:'stop'
+			})
+		})
+		this.data.record.onFrameRecorded((e)=>{
+			console.log('onFrameRecorded',e)
+			this.setData({
+				text:'onFrameRecorded'
+			})
+		})
+	},
+	start:function(e){
+		this.data.record.start({
+			// duration:6000,
+			// format:'mp3'
+			// frameSize: 0.001
+		});
+	},
+	pause:function(e){
+		this.data.record.pause();
+	},
+	resume:function(e){
+		this.data.record.resume();
+	},
+	stop:function(e){
+		this.data.record.stop();
+	}
+})

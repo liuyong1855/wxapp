@@ -1,0 +1,128 @@
+Page({
+	data:{
+		systemData:{},
+		light:0,
+	},
+	onReady:function(){
+		var _this = this;
+		wx.onNetworkStatusChange(function(d){
+			console.log('网络状态变化',d)
+			_this.setData({
+				systemData:d
+			})
+		})
+		wx.onAccelerometerChange(function(res) {
+			_this.setData({
+				systemData:res
+			})
+		})
+		wx.stopAccelerometer()
+		wx.onCompassChange(function(res) {
+			_this.setData({
+				systemData:res
+			})
+		})
+		wx.stopCompass();
+		wx.onUserCaptureScreen(function(d){
+				console.log('用户截屏了',d)
+		})
+	},
+	getSystem:function(){
+		var _this = this;
+		wx.getSystemInfo({
+			success:function(d){
+				console.log('获取系统信息',d)
+				_this.setData({
+					systemData:d
+				})
+			}
+		})
+	},
+	use:function(){
+		console.log(wx.canIUse('getSystemInfo.success'));
+	},
+	network:function(){
+		var _this = this;
+		wx.getNetworkType({
+			success:function(d){
+				console.log('获取网络状态',d)
+				_this.setData({
+					systemData:d
+				})
+			}
+		})
+	},
+	getlight:function(){
+		var _this = this;
+		wx.getScreenBrightness({
+			success:function(d){
+				console.log('获取手机屏幕亮度',d)
+				_this.setData({
+					systemData:d,
+					light:d.value
+				})
+			}
+		})
+	},
+	change:function(d){
+		console.log(d.detail.value)
+		var _this = this;
+		wx.setScreenBrightness({
+			value:d.detail.value,
+			success:function(d){
+				console.log('设置屏幕亮度成功',d)
+			}
+		})
+	},
+	long:function(){
+		var _this = this;
+		wx.vibrateLong({
+			success:function(d){
+				console.log('使手机长时间震动',d)
+			}
+		})
+	},
+	short:function(){
+		var _this = this;
+		wx.vibrateShort({
+			success:function(d){
+				console.log('使手机短时间震动',d)
+			}
+		})
+	},
+	start:function(){
+		console.log('开始监听加速度数据')
+		wx.startAccelerometer();
+	},
+	stop:function(){
+		console.log('停止监听加速度数据')
+		wx.stopAccelerometer();
+	},
+	start1:function(){
+		console.log('开始监听罗盘数据')
+		wx.startCompass();
+	},
+	stop1:function(){
+		console.log('停止监听罗盘数据')
+		wx.stopCompass();
+	},
+	sao:function(){
+		var _this = this;
+		console.log('扫码')
+		wx.scanCode({
+			success:function(d){
+				_this.setData({
+					systemData:d
+				})
+			}
+		})
+	},
+	tel:function(){
+		wx.makePhoneCall({
+			phoneNumber:'15810693291',
+			success:function(d){
+				console.log(d)
+			}
+		})
+	}
+})

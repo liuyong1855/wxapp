@@ -1,0 +1,8 @@
+	<view>文本节点</view>
+	<view class="richview">
+		<rich-text nodes="{{textdom}}"></rich-text>
+	</view>
+	<view>元素节点</view>
+	<view class="richview">
+		<rich-text nodes="{{nodedom}}"></rich-text>
+	</view>

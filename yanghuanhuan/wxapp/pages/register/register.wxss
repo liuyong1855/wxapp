@@ -1,0 +1,27 @@
+.register input{
+  border:1px solid #ccc;
+  width: 80%;
+  height: 70rpx;
+  margin-left: 10%;
+  margin-bottom: 50rpx;
+  font-size: 15px;
+  padding-left: 20rpx;
+}
+.welcome{
+  width: 100%;
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 50rpx;
+}
+.registerBtn{
+  width: 50%;
+  background: greenyellow;
+}
+.goback{
+  font-size: 12px;
+  float:right;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+  text-decoration: underline;
+}

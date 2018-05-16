@@ -1,0 +1,18 @@
+<view class="title"><text>icon</text></view>
+
+<view class="btnbox">
+	<button size="default">按钮</button>
+	<button type="primary" open-type="getUserInfo" bindgetuserinfo="userinfo">bindgetuserinfo按钮</button>
+	<button type="primary" open-type="getphonenumber" bindgetphonenumber="getnum">bindgetphonenumber按钮</button>
+	<button size="default" type="primary">primary按钮</button>
+	<button size="default" type="default">default按钮</button>
+	<button size="default" type="warn">warn按钮</button>
+	<button size="default" type="warn" plain="true">背景透明按钮</button>
+	<button size="default" type="warn" plain="true" disabled="">禁用按钮</button>
+	<button type="primary" loading>loading按钮</button>
+	<button type="primary" form-type="submit">submit按钮</button>
+	<button type="primary" form-type="reset">reset按钮</button>
+	<button type="primary" open-type="getUserInfo">open-type按钮</button>
+	<button class="nohover" hover-class="hover" >hover-class按钮</button>
+	<button size="mini">按钮</button>
+</view>

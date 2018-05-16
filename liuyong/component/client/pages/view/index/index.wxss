@@ -1,0 +1,10 @@
+.viewlist{margin:30rpx;}
+.listbox{background:#fff;border-radius:10rpx;margin-bottom:20rpx;}
+.listtitle{display:flex;padding:10rpx 20rpx;}
+.listtitle text{flex:1;line-height:80rpx;}
+.listtitle image{width:60rpx;height:auto;}
+.listitem{display:flex;border-bottom:1rpx solid #D8D8D8;padding:10rpx 20rpx;}
+.listitem text{line-height:60rpx;flex:1;}
+.listitem view{position:relative;width:30rpx;}
+.listitem view:after{content:' ';position:absolute;border-width:2rpx 2rpx 0 0;border-style:solid;border-color:#888;width:18rpx;height:18rpx;transform:rotate(45deg);top:20rpx;}
+.listitem:last-child{border-bottom:none;}

@@ -1,0 +1,10 @@
+<view class="title"><text>live-player</text></view>
+
+<live-player id="player" autoplay mode="RTC" src="rtmp://18898.liveplay.myqcloud.com/live/18898_c7ca153e85" object-fit="fillCrop" bindstatechange="change" bindfullscreenchange="full" bindnetstatus="status"></live-player>
+<button type="primary" bindtap="play">播放</button>
+<button type="primary" bindtap="pause">暂停</button>
+<button type="primary" bindtap="stop">停止</button>
+<button type="primary" bindtap="mute">静音</button>
+<button type="primary" bindtap="resume">恢复</button>
+<button type="primary" bindtap="full">全屏</button>
+<button type="primary" bindtap="exit">退出全屏</button>

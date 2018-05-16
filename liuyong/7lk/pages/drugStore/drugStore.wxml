@@ -1,0 +1,15 @@
+<view class="drugheader">
+	<view>
+		<text class="city" bindtap="changeCity">{{city}}</text>
+	</view>
+	<view class="searchbox"><input placeholder="输入药品名称/疾病名称搜索" /></view>
+</view>
+<scroll-view class="scrollview" scroll-y>
+	<view class="drugview" wx:for="{{drugList}}" data-id="{{item.id}}" bindtap="goList">
+		<view class="drugicon"><image mode='widthFix' src="{{item.pic}}" /></view>
+		<view class="drugcom">
+			<view class="title">{{item.name}}</view>
+			<view class="drugli"><view class="viewone" wx:for="{{item.subList}}"><text class="type">{{item.name}}</text><text class="line">|</text></view></view>
+		</view>
+	</view>
+</scroll-view>

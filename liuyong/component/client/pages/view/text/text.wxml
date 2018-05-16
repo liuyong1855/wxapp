@@ -1,0 +1,7 @@
+<view class="title"><text>text</text></view>
+
+<scroll-view scroll-y class="textbox">
+	<text wx:for="{{textlist}}">{{item}}</text>
+</scroll-view>
+<button bindtap="addline">增加行</button>
+<button bindtap="removeline">删除行</button>

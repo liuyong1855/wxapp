@@ -1,0 +1,3 @@
+<!-- map.wxml -->
+<text>宝能中心A座</text>
+<map id="map" longitude="116.4791303086" latitude="39.9886313321" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>

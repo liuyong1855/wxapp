@@ -9,3 +9,6 @@
 .tabBar{
 	height:50rpx;
 }
+.inner{
+	color: red;
+}

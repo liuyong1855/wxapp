@@ -1,0 +1,10 @@
+<view class="title"><text>cover-view</text></view>
+<view>
+	<video>
+		<cover-view>
+			<cover-view class="covertext">text</cover-view>
+		</cover-view>
+		<cover-view><cover-image src="../resources/kind/canvas.png" mode="aspectFill" style="width:200rpx;height:200rpx;"></cover-image></cover-view>
+	</video>
+
+</view>

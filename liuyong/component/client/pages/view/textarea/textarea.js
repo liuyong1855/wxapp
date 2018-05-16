@@ -1,0 +1,20 @@
+Page({
+	data:{
+		list:[]
+	},
+	focus:function(e){
+		console.log('focus',e.detail);
+	},
+	blur:function(e){
+		console.log('blur',e.detail);
+	},
+	linechange:function(e){
+		console.log('linechange',e.detail)
+	},
+	input:function(e){
+		console.log('input',e.detail)
+	},
+	confirm:function(e){
+		console.log('confirm',e.detail)
+	}
+})

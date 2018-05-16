@@ -1,0 +1,13 @@
+<view class="title"><text>picker-view</text></view>
+<view bindtap="showpicker">{{value}}</view>
+<picker-view hidden="{{dis}}" mask-class="mask" value="{{valueindex}}" class="zidingyi" indicator-class="linestyle" bindchange="changeview">
+	<picker-view-column>
+		<view wx:for="{{colunm1}}">{{item}}</view>
+	</picker-view-column>
+	<picker-view-column>
+		<view wx:for="{{colunm2}}">{{item}}</view>
+	</picker-view-column>
+	<picker-view-column>
+		<view wx:for="{{colunm3}}">{{item}}</view>
+	</picker-view-column>
+</picker-view>
