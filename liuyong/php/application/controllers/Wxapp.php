@@ -4888,4 +4888,123 @@ class Wxapp extends CI_Controller {
         exit;
     }
 
+    public function srarhHot(){
+        $str = '{
+            "code": 0,
+            "msg": "成功",
+            "data": [
+                {
+                    "skuId": "102933",
+                    "skuTitle": "退热贴"
+                },
+                {
+                    "skuId": "14843",
+                    "skuTitle": "步长脑心通胶囊"
+                },
+                {
+                    "skuId": "20461",
+                    "skuTitle": "拜阿司匹灵阿司匹林肠溶片"
+                },
+                {
+                    "skuId": "16794",
+                    "skuTitle": "999感冒灵颗粒"
+                },
+                {
+                    "skuId": "23584",
+                    "skuTitle": "倍他乐克酒石酸美托洛尔片"
+                },
+                {
+                    "skuId": "19908",
+                    "skuTitle": "施保利通片"
+                },
+                {
+                    "skuId": "60032",
+                    "skuTitle": "恩替卡韦片"
+                },
+                {
+                    "skuId": "87981",
+                    "skuTitle": "蒲地蓝消炎口服液"
+                },
+                {
+                    "skuId": "81377",
+                    "skuTitle": "阿托伐他汀钙片"
+                },
+                {
+                    "skuId": "80630",
+                    "skuTitle": "瑞舒伐他汀钙片"
+                }
+            ]
+        }';
+        echo $str;
+        exit;
+    }
+
+    public function searchHint(){
+        $str = '{
+            "code": 0,
+            "msg": "成功",
+            "data": [
+                {
+                    "commonName": "好易康 口腔健康好管家 专研儿童防龋（防蛀）牙膏  江苏雪豹  清新草莓60g",
+                    "brands": [
+                        "好易康"
+                    ]
+                },
+                {
+                    "commonName": "好易康 fe生物溶菌酶牙膏 （1针对多种口腔问题）",
+                    "brands": [
+                        "好易康"
+                    ]
+                },
+                {
+                    "commonName": "温感理疗贴",
+                    "brands": []
+                },
+                {
+                    "commonName": "电子体温计",
+                    "brands": [
+                        "好及施"
+                    ]
+                },
+                {
+                    "commonName": "小儿氨酚烷胺颗粒",
+                    "brands": [
+                        "好娃娃"
+                    ]
+                },
+                {
+                    "commonName": "复方皂矾丸",
+                    "brands": [
+                        "郝其军"
+                    ]
+                },
+                {
+                    "commonName": "诺氟沙星胶囊",
+                    "brands": [
+                        "好医生",
+                        "好及施"
+                    ]
+                },
+                {
+                    "commonName": "阿莫西林胶囊",
+                    "brands": [
+                        "好医生"
+                    ]
+                },
+                {
+                    "commonName": "好易康 fe生物溶菌酶牙膏（全效升级特惠装）",
+                    "brands": []
+                },
+                {
+                    "commonName": "桑姜感冒片",
+                    "brands": [
+                        "好医生"
+                    ]
+                }
+            ]
+        }';
+        echo $str;
+        exit;
+    }
+
 }

@@ -1,8 +1,8 @@
 {
   "pages":[
+    "pages/drugStore/drugStore",
     "pages/userCenter/userCenter",
     "pages/shopcart/shopcart",
-    "pages/drugStore/drugStore",
     "pages/searchFinish/searchFinish",
     "pages/classify/classify",
     "pages/chooseCity/chooseCity",
