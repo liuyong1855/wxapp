@@ -1,5 +1,8 @@
 {
 	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
 	"setting": {
 		"urlCheck": true,
 		"es6": true,
@@ -8,9 +11,10 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.9.93",
-	"appid": "touristappid",
-	"projectname": "418bind",
+	"libVersion": "2.0.4",
+	"appid": "wx8b5c4109fd28d730",
+	"projectname": "zujian",
+	"isGameTourist": false,
 	"condition": {
 		"search": {
 			"current": -1,
