@@ -1,0 +1,11 @@
+<view hidden="{{!isShow}}">
+	<view class="mask"></view>
+	<view class="dialog">
+		<view class="title">{{title}}</view>
+		<view class="content">{{content}}</view>
+		<view class="disflex">
+			<view hidden="{{!isCanel}}" class="canel" bindtap="canelbtn">{{canel}}</view>
+			<view class="sure" bindtap="surebtn">{{sure}}</view>
+		</view>
+	</view>
+</view>

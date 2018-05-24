@@ -1,0 +1,10 @@
+.mask{position:fixed;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,.5);z-index:1000;}
+.dialog{position:absolute;left:50%;top:50%;width:80%;min-height:200rpx;background:#ebebeb;transform:translate(-50%,-50%);text-align:center;border-radius:10rpx;z-index:1001;overflow:hidden;}
+.title{line-height:100rpx;font-size:36rpx;font-weight:900;color:#333;padding-top:20rpx;}
+.content{padding:20rpx 20rpx 50rpx;line-height:50rpx;font-size:34rpx;}
+.dialog .disflex{border-top:1rpx solid #ddd;}
+.canel,.sure{line-height:100rpx;box-sizing:border-box;}
+.canel{border-right:1rpx solid #ddd;}
+.sure{color:green;}
+.disflex{display:flex;}
+.disflex>view{flex:1;}

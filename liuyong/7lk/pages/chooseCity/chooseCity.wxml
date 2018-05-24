@@ -4,7 +4,7 @@
 <scroll-view class="scrollview" scroll-y scroll-into-view="{{char}}">
 	<view class="disflex cityCur">
 		<view class="flex">当前定位城市：北京</view>
-		<view class="cityposit"></view>
+		<view class="cityposit" bindtap="location"></view>
 	</view>
 	<block wx:if="{{cityList.hot}}">
 		<view class="title" id="hot">热门城市</view>

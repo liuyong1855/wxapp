@@ -1,0 +1,2 @@
+<button bindtap="tap">点击</button>
+<dialog id="dialog" title="组件标题" content="组件内容" sure="确定btn" canel="取消btn" bindsureEvent="onsureEvent" bindcanelEvent="oncanelEvent"></dialog>
