@@ -1,8 +1,11 @@
 page{background:#ebebeb;}
 .scrollLeft{position:absolute;left:0;top:0;bottom:0;width:250rpx;}
-.scrollRight{position:absolute;right:0;top:0;bottom:0;width:490rpx;overflow:auto;}
+.scrollRight{position:absolute;right:0;top:0;bottom:0;width:490rpx;overflow:auto;display:flex;align-items:center;}
 .scrollLeft view{padding:20rpx;height:142rpx;border:1rpx solid #ddd;background:#fff;width:100%;box-sizing:border-box;border-right:1rpx solid #ebebeb;border-bottom:1rpx solid #ebebeb;overflow:hidden;display:flex;align-items:center;}
 .scrollLeft view:first-child{border-top:none;}
 .scrollRight view{background:#fff;margin-bottom:10rpx;float:left;width:240rpx;display:flex;align-items:center;height:160rpx;justify-content:center;padding-left:20rpx;padding-right:20rpx;box-sizing:border-box;}
 .scrollRight view:nth-child(2n+1){margin-right:10rpx;}
 .scrollLeft .active{background:#ebebeb;color:#36c4b6;}
+
+/*.scrollRight view{background:#fff;margin-bottom:10rpx;display:inline-flex;align-items:center;height:160rpx;justify-content:center;padding-left:20rpx;padding-right:20rpx;box-sizing:border-box;min-width:49%;max-width:51%;width:0;float:left;}
+.scrollRight view:nth-child(2n+1){margin-right:10rpx;}*/
