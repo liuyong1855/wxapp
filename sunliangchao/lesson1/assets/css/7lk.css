@@ -67,14 +67,17 @@
     vertical-align: middle;
 }
 .interlay{
+    margin: 10px;
+}
+.brand{
     border-bottom: 1px solid #999999;
-    padding: 10px;
 }
 .brand .b_name,.s_g .s_name{
     font-weight:400;
     font-size: 20px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 5px;
 }
 .b_name .point,.s_name .point{
     height: 15px;
@@ -99,4 +102,11 @@
 .s_g .list_pic img:nth-child(2){
     border-left: 1px solid #999;
     border-right: 1px solid #999;
+
 }
+.s_g .list_pic{
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    font-size: 0px;
+}
+
