@@ -1,0 +1,4 @@
+input{border:1px solid #ccc;padding:5rpx;}
+.inputflex{display:flex;background:#fff;padding:20rpx;}
+.inputflex text{line-height:70rpx;margin-right:10rpx;}
+.placeholder{background:#eee;border:1px dashed #f00;}

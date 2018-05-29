@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/framework/framework",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "navigationBarTitleText": "框架",
+    "navigationBarBackgroundColor":"#87CEFA",
+    "navigationBarTextStyle":"white",
+    "navigationStyle":"default",
+    "backgroundColor":"#FF0000",
+    "backgroundTextStyle":"dark",
+    "backgroundColorTop":"#EEE",
+    "backgroundColorBottom":"#AFEEEE",
+    "enablePullDownRefresh":true,
+    "onReachBottomDistance":10
+  },
+  "tabBar":{
+    "color":"#fff",
+    "position":"bottom",
+    "backgroundColor":"#eee",
+    "borderStyle":"black",
+    "selectedColor":"#66CD00",
+    "list":[{
+        "pagePath":"pages/framework/framework",
+        "text":"首页"
+    },
+    {
+        "pagePath":"pages/index/index",
+        "text":"测试页"
+    }]
+  }
+}

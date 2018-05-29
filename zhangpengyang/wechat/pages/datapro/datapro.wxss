@@ -1,0 +1,91 @@
+/**index.wxss**/
+.content{
+    width: 750rpx;
+    font-size: 14px;
+}
+.list{
+    width: 750rpx;
+}
+.list-news{
+    width: 720rpx;
+    display: flex;
+    overflow: hidden;
+    height: 200rpx;
+    padding: 0 15rpx;
+    margin-top: 15rpx;
+}
+.list-news image{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 10%;
+}
+.news-detail{
+    flex: 1;
+    margin-left: 15rpx;
+}
+.news-detail text{
+    word-break:break-all;
+    display: block;
+    overflow: hidden;
+}
+.news-title{
+    height: 40rpx;
+    overflow: hidden;
+    font-weight:700;
+}
+.operation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10rpx;
+}
+.operation text{
+    display: flex;
+    align-items: center;
+    background: red;
+    padding: 10rpx;
+    border-radius: 15%;
+    color: #fff;
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+}
+.update-layer{
+    background: #fff;
+    width: 650rpx;
+    border-radius: 10rpx;
+    padding: 20rpx 0;
+    margin: 150rpx auto 0 auto;
+    opacity:1;
+}
+.layer-image{
+    padding: 0 10rpx;
+    display: flex;
+    align-items: center;
+    margin-bottom:15rpx;
+}
+.layer-image text{
+
+}
+.layer-image input{
+    flex: 1;
+    padding: 5rpx 0 5rpx 10rpx;
+    border: #999999 solid 1rpx;
+    border-radius: 10rpx;
+}
+.layer-image textarea{
+    height: 200rpx;
+    flex: 1;
+    padding: 5rpx 0 5rpx 10rpx;
+    border: #999999 solid 1rpx;
+    border-radius: 10rpx;
+}
+.image-input{
+    color: #000;
+}
+

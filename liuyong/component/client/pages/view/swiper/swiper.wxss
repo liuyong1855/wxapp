@@ -1,0 +1,4 @@
+.swiper{}
+swiper-item{line-height:200rpx;text-align:center;font-size:100rpx;color:#fff;}
+swiper-item:nth-child(even){background:#f00}
+swiper-item:nth-child(odd){background:#f0f}

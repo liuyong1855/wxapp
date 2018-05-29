@@ -1,0 +1,8 @@
+<view class="title"><text>map</text></view>
+<map style="width:100%;height:400px;" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}"  markers="{{markers}}" polyline="{{polyline}}" circles="{{circles}}" controls="{{controls}}" bindtap="tap" bindmarkertap="makertap" bindcallouttap="calloutap" bindcontroltap="controltap" bindregionchange="regionchange" bindupdated="update"></map>
+longitude
+<slider min="-180" max="180" value="{{longitude}}" show-value="true" bindchange="lchange" />
+latitude
+<slider min="-90" max="90" value="{{latitude}}" show-value="true"  bindchange="schange" />
+scale
+<slider min="5" max="18" value="{{scale}}" show-value="true"  bindchange="achange" />

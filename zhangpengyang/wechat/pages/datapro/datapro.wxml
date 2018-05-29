@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<view class="content">
+    <view class="list">
+        <block wx:if="{{flag}}">
+            <block wx:for="{{list}}" wx:key="a" wx:for-index="idx" wx:for-item="vo">
+                <view class="list-news">
+                    <image src="{{vo.image}}"></image>
+                    <view class="news-detail">
+                        <text class="news-title">{{vo.title}}</text>
+                        <text class="news-desc">{{idx + vo.desc}}</text>
+                    </view>
+                    <view class="operation">
+                        <text bindtap="dataBindTab" data-id="{{idx}}" data-method="update">修改</text>
+                        <text bindtap="dataBindTab" data-id="{{idx}}" data-method="del">删除</text>
+                    </view>
+                </view>
+            </block>
+        </block>
+    </view>
+    <view class="layer" hidden="{{upflag}}">
+        <form bindsubmit="bindFormSubmit">
+            <view class="update-layer">
+                <view class="layer-image">
+                    <text>图片地址：</text>
+                    <input value="{{vo.image}}" name="image" type="text" maxlength="-1" placeholder="请输入图片地址" bindinput="imgurlBind" placeholder-class="image-input"/>
+                </view>
+                <view class="layer-image">
+                    <text>图片标题：</text>
+                    <input value="{{vo.title}}" name="title" type="text" placeholder="请输入标题" bindinput="titleBind" placeholder-class="image-input"/>
+                </view>
+                <view class="layer-image">
+                    <text>新闻简介：</text>
+                    <textarea placeholder="请输入简介" name="desc" value="{{vo.desc}}" placeholder-class="image-input"></textarea>
+                </view>
+                <view class="layer-image">
+                    <button form-type="submit" size="mini" data-sub="commit" type="primary"> 提交 </button>
+                    <button size="mini" form-type="submit" data-sub="close"  type="warn" > 关闭 </button>
+                </view>
+            </view>
+        </form>
+    </view>
+</view>

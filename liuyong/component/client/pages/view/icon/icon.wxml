@@ -1,0 +1,6 @@
+<view class="title"><text>icon</text></view>
+
+<view class="iconbox" wx:for="{{iconType}}">
+	<icon type="{{item}}" size="{{index*5+30}}"></icon>
+	<icon type="{{item}}" size="{{index*5+30}}" color="#f00"></icon>
+</view>

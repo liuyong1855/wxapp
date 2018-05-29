@@ -1,0 +1,53 @@
+Page({
+	data:{
+		text:'',
+		longitude:0,
+		latitude:0,
+		name:'',
+		address:''
+	},
+	get:function(e){
+		var _this = this;
+		wx.getLocation({
+			type:'wgs84',
+			altitude:true,
+			success:function(d){
+				console.log(d)
+				_this.setData({
+					text:JSON.stringify(d)
+				})
+			}
+		})
+	},
+	choose:function(e){
+		var _this = this;
+		wx.chooseLocation({
+			success:function(d){
+				console.log(d)
+				_this.setData({
+					text:JSON.stringify(d),
+					longitude:d.longitude,
+					latitude:d.latitude,
+					name:d.name,
+					address:d.address
+				})
+			}
+		})
+	},
+	open:function(e){
+		var _this = this;
+		wx.openLocation({
+			latitude:_this.data.latitude,
+			longitude:_this.data.longitude,
+			scale:16,
+			name:_this.data.name,
+			address:_this.data.address,
+			success:function(d){
+				console.log(d)
+				_this.setData({
+					text:JSON.stringify(d)
+				})
+			}
+		})
+	}
+})

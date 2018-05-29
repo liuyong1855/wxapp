@@ -1,0 +1,223 @@
+/**index.wxss**/
+/* navbar.wxss */
+page{
+  background: #f0efed;
+}
+.navbar{
+  height: 100rpx;
+  color: #fff;
+  background: #06c1ae;
+  border-bottom: 1px solid #21897d;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 20rpx;
+}
+.nav-left{
+  font-size: 32rpx;
+}
+.nav-left icon{
+  width: 16rpx;
+  height: 16rpx;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(135deg) translateY(8rpx);
+  margin-left: 10rpx;
+}
+.nav-search{
+  background: rgba(0,0,0,.15);
+  flex: 1;
+  margin: 0 20rpx;
+  font-size: 32rpx;
+}
+.nav-search input{
+  position: relative;
+  padding-left: 55rpx;
+}
+.nav-search input image{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.nav-right{
+  font-size: 26rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-right image{
+  width: 36rpx;
+  height: 36rpx;
+}
+/* 轮播 */
+.ad image{
+  display: block;
+  width: 640rpx;
+  height: 100rpx;
+  margin: 0 auto;
+}
+.carousel{
+  margin-top: 20rpx;
+  background: #fff;
+}
+ .carousel swiper-item{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+} 
+.carousel swiper-item view{
+  width: 20%;
+  font-size: 26rpx;
+  text-align: center;
+  color: #666;
+}
+.carousel swiper-item view image{
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0 auto 10rpx;
+}
+/* 导购 */
+.guide{
+  display: flex;
+  background: #fff;
+  margin-top: 20rpx;
+  padding: 20rpx 0 0;
+}
+.guide view{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between
+}
+.guide view text:nth-of-type(1){
+  font-size: 32rpx;
+  color: red;
+  margin-bottom: 30rpx;
+}
+.guide view text:nth-of-type(2){
+  font-size: 26rpx;
+  color: #666;
+}
+.guide view image{
+  width: 124rpx;
+  height: 124rpx;
+}
+/* 猜你喜欢 */
+.guess{
+  background: #fff;
+  padding: 20rpx 0 20rpx 20rpx;
+  margin-top: 20rpx;
+}
+.guess .title{
+  font-size: 36rpx;
+}
+.guess .guess-list{
+  display: flex;
+  padding: 20rpx 0;
+  border-bottom: 1px solid #ccc;  
+  border-top: 1px solid #ccc;
+  margin-top: 25rpx;
+}
+.guess .guess-list .list-left{
+  width: 180rpx;
+  height: 180rpx;
+}
+.guess .guess-list .list-left image{
+  width: 180rpx;
+  height: 180rpx;
+}
+.guess .guess-list .list-content{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20rpx;
+}
+.guess .guess-list .list-content text:nth-of-type(1){
+  font-size: 36rpx;
+}
+.guess .guess-list .list-content .desc{
+  display: flex;
+  flex-direction: column;
+}
+.guess .guess-list .list-content .desc text:nth-of-type(2){
+  font-size: 30rpx;
+  color: #666;
+}
+.guess .guess-list .list-content .price text:nth-of-type(1){
+  font-size: 36rpx;
+  color: #06c1ae;
+}
+.guess .guess-list .list-content .price text:nth-of-type(2){
+  font-size: 26rpx;
+}
+.guess .guess-list .sold{
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 10rpx;
+  font-size: 30rpx;
+  color: #666;
+}
+.guess .check-all{
+  font-size: 32rpx;
+  height: 100rpx;
+  color: #06c1ae;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.guess .check-all icon{
+  width: 18rpx;
+  height: 18rpx;
+  border-top: 1px solid #06c1ae;
+  border-right: 1px solid #06c1ae;
+  transform: rotate(45deg); 
+}
+/* footer */
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 60rpx 20rpx;
+}
+.footer .footer-left text{
+  border: 1px solid #06c1ae;
+  font-size: 32rpx;
+  color: #06c1ae;
+  padding: 10rpx 40rpx;
+  border-radius: 5rpx;
+}
+.footer .footer-left text:nth-of-type(2){
+  margin-left: 30rpx;
+}
+.footer .footer-right text:nth-of-type(1){
+  font-size: 28rpx;
+  color: #666;
+}
+.footer .footer-right text:nth-of-type(2){
+  border: 1px solid #06c1ae;
+  color: #06c1ae;
+  font-size: 32rpx;
+  margin-left: 30rpx;
+  padding: 10rpx 60rpx;
+  border-radius: 5rpx;
+}
+.footer-bar{
+  font-size: 26rpx;
+  color: #06c1ae;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 40rpx;
+}
+.footer-bar text{
+  flex: 1;
+  border-right: 1px solid #06c1ae;
+  text-align: center;
+  line-height: 1;
+}
+.footer-bar text:last-of-type{
+  border-right: none;
+}

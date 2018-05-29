@@ -1,0 +1,6 @@
+<view class="title"><text>radio</text></view>
+<view>
+	<radio-group bindchange="radio">
+		<radio wx:for="{{radio}}" value="{{item}}" color="#f00" >{{item}}</radio>
+	</radio-group>
+</view>

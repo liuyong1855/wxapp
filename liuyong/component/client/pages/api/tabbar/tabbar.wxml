@@ -1,0 +1,9 @@
+<view class="title"><text>tabbar</text></view>
+<button type="primary" bindtap="set">设置文本</button>
+<button type="primary" bindtap="remove">移除设置文本</button>
+<button type="primary" bindtap="show">显示红点</button>
+<button type="primary" bindtap="hide">隐藏红点</button>
+<button type="primary" bindtap="showbar">显示bar</button>
+<button type="primary" bindtap="hidebar">隐藏bar</button>
+<button type="primary" bindtap="setbar">设置bar样式</button>
+<button type="primary" bindtap="setitem">设置bar某项样式</button>

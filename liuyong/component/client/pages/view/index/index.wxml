@@ -1,0 +1,14 @@
+<view class="viewlist">
+	<view class="listbox" wx:for="{{list}}">
+		<view class="listtitle" bindtap="viewtap" data-index="{{index}}">
+			<text>{{item.name}}</text>
+			<image src="{{item.icon}}" mode="aspectFit"></image>
+		</view>
+		<view hidden="{{!item.opened}}">
+			<navigator class="listitem" wx:for="{{item.viewitem}}" url="../{{item}}/{{item}}">
+				<text>{{item}}</text>
+				<view></view>
+			</navigator>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,2 @@
+.checkbox{margin:30rpx;}
+.checklist{height:60rpx;background:#fff;border-bottom:1px solid #ccc;padding:10rpx;}

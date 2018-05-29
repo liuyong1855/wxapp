@@ -1,0 +1,16 @@
+.title{
+  text-align: center;
+  padding: 50rpx;
+}
+.title text{
+  display: inline-block;
+  width: 150rpx;
+  border-bottom:2rpx solid gray; 
+  padding: 30rpx;
+}
+.content{
+  width: 550rpx;
+  height: 350rpx;
+  background-color: #ffffff;
+  margin: 30rpx auto  100rpx;
+}

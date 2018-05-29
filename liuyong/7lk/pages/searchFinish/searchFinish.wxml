@@ -1,0 +1,24 @@
+<view class="header disflex">
+	<view class="flex {{menuIndex==1?'active':''}}" bindtap="loadMr">默认</view>
+	<view class="flex {{menuIndex==2?'active':''}}" bindtap="loadPrice">价格<text class="{{orderBy==0?'acitveDown':orderBy==1?'acitveUp':''}}">.</text></view>
+	<view class="flex {{menuIndex==3?'active':''}}" bindtap="loadSales">销量<text class="{{orderBy==4?'acitveDown':orderBy==5?'acitveUp':''}}">.</text></view>
+</view>
+<scroll-view scroll-y class="finishbox" bindscrolltolower="loadMore">
+	<view wx:for="{{resultList}}" data-id="{{item.skuId}}" class="productBox disflex">
+		<view class="icon"><image mode="aspectFit" src="{{item.icon}}" /></view>
+		<view class="flex mess">
+			<view class="title">{{item.commonName}}</view>
+			<view class="rx"><text wx:if="{{item.rx==1}}">RX</text></view>
+			<view class="price">￥{{item.salePrice}}</view>
+		</view>
+	</view>
+	<view class="productBox disflex">
+		<view class="icon"><image mode="aspectFit" src="http://img.7lk.com/files/storage/image/207040024/1/1476165153501/w360_207040024_1.jpg" /></view>
+		<view class="flex mess">
+			<view class="title">价格title</view>
+			<view class="rx">RX</view>
+			<view class="price">￥26.00</view>
+		</view>
+	</view>
+	<view class="loading" hidden="{{loading}}">加载中</view>
+</scroll-view>

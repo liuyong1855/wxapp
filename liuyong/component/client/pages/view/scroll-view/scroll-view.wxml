@@ -1,0 +1,15 @@
+<view bindtap="tapbind">
+	<view class="title"><text>scroll-view</text></view>
+	<view>竖向滚动</view>
+	<scroll-view  bindscroll="scroll" upper-threshold="5" lower-threshold="5" bindscrolltoupper="topscroll" bindscrolltolower="bottomscroll" class="scrolly" scroll-y scroll-top="50" scroll-into-view="{{scrollItem}}">
+		<view id="view1">1</view>
+		<view id="view2">2</view>
+		<view id="view3">3</view>
+	</scroll-view>
+	<view>横向滚动</view>
+	<scroll-view class="scrollx" scroll-x scroll-left="{{scrollLeft}}">
+		<view>1</view>
+		<view>2</view>
+		<view>3</view>
+	</scroll-view>
+</view>

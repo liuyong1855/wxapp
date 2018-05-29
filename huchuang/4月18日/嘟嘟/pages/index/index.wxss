@@ -1,0 +1,18 @@
+.header{
+  background-color: greenyellow
+}
+.cell{
+  height: 88px
+}
+.cellView1{
+  background-color: #333;
+  height: 66px;
+  line-height: 66px;
+  text-align: center;
+}
+.cellView2{
+  background-color: red;
+  height: 60px;
+  line-height: 66px;
+  text-align: center;
+}

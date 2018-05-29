@@ -1,0 +1,29 @@
+<view class="cityinput">
+	<input placeholder="请输入城市名字" />
+</view>
+<scroll-view class="scrollview" scroll-y scroll-into-view="{{char}}">
+	<view class="disflex cityCur">
+		<view class="flex">当前定位城市：北京</view>
+		<view class="cityposit" bindtap="location"></view>
+	</view>
+	<block wx:if="{{cityList.hot}}">
+		<view class="title" id="hot">热门城市</view>
+		<view class="citybox">
+			<view wx:for="{{cityList.hot}}" bindtap="changeCity" data-name="{{hot.name}}" wx:for-item="hot" data-id="{{hot.id}}">{{hot.name}}</view>
+		</view>
+	</block>
+	<block wx:for="{{cityList.groups}}" wx:for-item="ikey">
+		<view class="title" id="{{ikey.key}}">{{ikey.key}}</view>
+		<view class="citybox">
+			<view bindtap="changeCity" data-name="{{ilist.name}}" wx:for="{{ikey.voList}}" wx:for-item="ilist" data-id="{{ilist.id}}">{{ilist.name}}</view>
+		</view>
+	</block>
+</scroll-view>
+<view class="charselectr" catchtouchstart="handtouch" catchtouchmove="handmove">
+	<block wx:if="{{cityList.hot}}">
+		<view class="char" data-char="hot">热门</view>
+	</block>
+	<block wx:for="{{cityList.groups}}" wx:for-item="char">
+		<view class="char" data-char="{{char.key}}">{{char.key}}</view>
+	</block>
+</view>

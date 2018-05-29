@@ -1,0 +1,11 @@
+Page({
+	data:{
+		src:'https://static.cnbetacdn.com/article/2018/0423/d4138d4bb969159.jpg'
+	},
+	error:function(e){
+		console.log('error',e)
+	},
+	load:function(e){
+		console.log('load',e)
+	}
+})

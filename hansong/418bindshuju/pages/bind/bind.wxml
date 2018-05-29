@@ -1,0 +1,26 @@
+<view>
+    <!--<view wx:for="{{array}}">
+        {{index}} : {{item.message}}
+    </view>
+    <view wx:for = "{{list}}" wx:for-index="idx" wx:for-item="itemName">
+        {{idx}} : {{itemName}}
+    </view>
+    <block wx:for="{{['a','b','c']}}">
+    <view>{{index}}:</view>
+    <view>{{item}}</view>
+    </block>
+    <view wx:for="{{[1,2,3] + ' '}}" >   
+        {{item}}
+    </view>
+    <view wx:for="{{[1,2,3]}} ">{{item}}</view>
+    <switch wx:for="{{objectArray}}" wx:key="unique" style="display: block;"> {{item.id}} </switch>
+    <button bindtap="switch"> Switch </button>
+    <button bindtap="addToFront"> Add to the front </button>
+
+    <switch wx:for="{{numberArray}}" wx:key="*this" style="display: block;"> {{item}} </switch>
+    <button bindtap="addNumberToFront"> Add to the front </button>-->
+    <view wx:for="{{lists}}">
+        <view>{{item}}</view>
+    </view>
+    <button bindtap="addLists">点击增加</button>
+</view>
