@@ -1,5 +1,6 @@
 Page({
     data: {
+        canIUse:wx.canIUse('button.open-type.getUserInfo'),
     	list:[{
     		name:"视图容器",icon:'../resources/kind/view.png',opened:false,
     		viewitem:['view','scroll-view','swiper','movable-view','cover-view']
@@ -25,6 +26,9 @@ Page({
             name:"开发能力",icon:'../resources/kind/canvas.png',opened:false,
             viewitem:['open-data','web-view']
         }]
+    },
+    bindGetUserInfo: function(e) {
+        console.log(e,e.detail.userInfo)
     },
     viewtap:function(e){
     	var index = e.currentTarget.dataset.index;

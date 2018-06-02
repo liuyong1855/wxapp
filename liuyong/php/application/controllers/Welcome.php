@@ -22,15 +22,16 @@ class Welcome extends CI_Controller {
 		exit;
 	}
 
+
     public function test(){
-        $encryptedData="CiyLU1Aw2KjvrjMdj8YKliAjtP4gsMZMQmRzooG2xrDcvSnxIMXFufNstNGTyaGS9uT5geRa0W4oTOb1WT7fJlAC+oNPdbB+3hVbJSRgv+4lGOETKUQz6OYStslQ142dNCuabNPGBzlooOmB231qMM85d2/fV6ChevvXvQP8Hkue1poOFtnEtpyxVLW1zAo6/1Xx1COxFvrc2d7UL/lmHInNlxuacJXwu0fjpXfz/YqYzBIBzD6WUfTIF9GRHpOn/Hz7saL8xz+W//FRAUid1OksQaQx4CMs8LOddcQhULW4ucetDf96JcR3g0gfRK4PC7E/r7Z6xNrXd2UIeorGj5Ef7b1pJAYB6Y5anaHqZ9J6nKEBvB4DnNLIVWSgARns/8wR2SiRS7MNACwTyrGvt9ts8p12PKFdlqYTopNHR1Vf7XjfhQlVsAJdNiKdYmYVoKlaRv85IfVunYzO0IKXsyl7JCUjCpoG20f0a04COwfneQAGGwd5oa+T8yO5hzuyDb/XcxxmK01EpqOyuxINew==";
-        $iv = 'r7BXXKkLb8qrSNn05n0qiA==';
-        $this->load->library('wxbizdatacrypt', array('appid'=>'wx4f4bc4dec97d474b','sessionKey'=>'tiihtNczf5v6AKRyjwEUhQ=='));
+        $encryptedData = "QOYssGdydJ960n+xaI5UnPeXh1hX0P2O6xWfZxy+8wZ87WI3PQO2cVlWOjiEgJEB86qUH2sQp6+ogi+0uNVaiFbAW2byKXLIU9mO54KJbjjmDoN2jQ6fpO94W+of7JzdMVntq+xzlEbXUpgNtyyDf8Wf/kWrjXtnJeNLEEldaUqLmmzy1YQ5TK/3YtctUELRyEEfXHxjhsIEw2s6BLcXY7JYQxcX4rp8cxn3GYMC5VPmVV7avLOAigG1DdITUwoaWAFUbhJDNy57rW+XxHpLluVcJL2zdT2BdEJEQ6YBjOswI+NurQrCOGrpyzQJbrLn6cW55OCLMTyQixJAEsLvt72eiXJoXXvDvmfPJyYpw7XCKA3GBXON3C5uOag/uLzRsmhTjBAhiTk9C/j0YR4+9XCt8kAuLYVLO/aZOVaNzEeshCKvELLzf2B+v7mcaskhI/r39UAnE86hvIZ/4816sQylPnRmF0GIRKYlzev6n4M=";
+        $iv = '9yVF+gFBwcX99CtWolJt/A==';
+        $this->load->library('wxbizdatacrypt', array('appid'=>'wxc306e633ffa63472','sessionKey'=>'BIIyJECA0yuRyhWuVptfkw=='));
         $errCode = $this->wxbizdatacrypt->decryptData($encryptedData, $iv, $data );
         if ($errCode == 0) {
-            print($data . "\n");
+            var_dump($data);
         } else {
-            print($errCode . "\n");
+            var_dump($errCode);
         }
     }
 
@@ -132,6 +133,77 @@ class Welcome extends CI_Controller {
             );
         }
 
+        echo json_encode($result);
+        exit;
+    }
+
+    public function login_v2(){
+        if($_POST['code']){
+            // $rawData = json_decode($_POST['rawData']);
+            $params_api = $this->config->config['apis']['session_key'];
+            $params_api['param']['appid'] = $this->appid;
+            $params_api['param']['secret'] = $this->appsecret;
+            $params_api['param']['js_code'] = $_POST['code'];
+            $params_api['param']['grant_type'] = 'authorization_code';
+            //获取用户openid和session_key
+            $result=json_decode($this->api->get_data($params_api),true);
+            if($result){
+                // var_dump($result);
+                $three_session = $this->randomFromDev(16);
+                $sessionid = session_id();
+                $this->session->$three_session = $result;
+                //查询用户是否存在
+                $query = $this->db->query("select * from user where openid='".$result["openid"]."'");
+                $row = $query->row();
+                if(!isset($row)){
+                    //插入用户
+                    $query = $this->db->query("insert into user (openid,createtime) values ('".$result["openid"]."',".$_SERVER["REQUEST_TIME"].")");
+                    if(!$query){
+                        $result = array(
+                            'code'=>1,
+                            'msg'=>'操作失败'
+                        );
+                        echo json_encode($result);
+                        exit;
+                    }
+                }
+                $data = array();
+                $data['three_session'] = $three_session;
+                $data['sessionid'] = $sessionid;
+                // $data['session_key'] = $result;
+                $result = array(
+                    'code'=>0,
+                    'msg'=>'操作成功',
+                    'data' => $data
+                );
+                echo json_encode($result);
+                exit;
+            }else{
+                $result = array(
+                    'code'=>1,
+                    'msg'=>'操作失败'
+                );
+                echo json_encode($result);
+                exit;
+            }
+        }else{
+            $result = array(
+                'code'=>1,
+                'msg'=>'code不存在'
+            );
+            echo json_encode($result);
+            exit;
+        }
+    }
+
+    public function index_v2()
+    {
+        $three_session = $_POST['three_session'];
+        // var_dump($this->session->$three_session);
+        $result = array(
+            'code'=>1,
+            'data'=>$this->session->$three_session
+        );
         echo json_encode($result);
         exit;
     }
