@@ -27,8 +27,30 @@ Page({
             viewitem:['open-data','web-view']
         }]
     },
-    bindGetUserInfo: function(e) {
-        console.log(e,e.detail.userInfo)
+    onLoad: function(){
+        // 查看是否授权
+        wx.getSetting({
+            success: res => {
+                if (res.authSetting['scope.userInfo']) {
+                    this.setData({
+                        canIUse:false
+                    })
+                    // 已经授权，可以直接调用 getUserInfo 获取头像昵称
+                    wx.getUserInfo({
+                        success: function(res) {
+                            console.log(res.userInfo)
+                        }
+                    })
+                }
+            }
+        })
+    },
+    getUserInfo: function(e) {
+        if(e.detail.userInfo){
+            console.log(e,e.detail.userInfo)
+        }else{
+            console.log("拒绝授权")
+        }
     },
     viewtap:function(e){
     	var index = e.currentTarget.dataset.index;
