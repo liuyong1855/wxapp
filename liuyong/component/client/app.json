@@ -52,7 +52,8 @@
     "pages/view/swiper/swiper",
     "pages/view/scroll-view/scroll-view",
     "pages/view/view/view",
-    "pages/api/index/index"
+    "pages/api/index/index",
+    "pages/view/zujian/zujian"
   ],
   "window":{
     "color":"#7A7E83",
