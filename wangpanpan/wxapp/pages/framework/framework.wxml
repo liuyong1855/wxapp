@@ -1,0 +1,52 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <block>
+    <text class="log-item">框架练习</text>
+  </block>
+</view>
+<!-- <view>{{text}}</view>
+ <button bindtap="changeText">Change normal data</button>
+ <view>{{num}}</view>
+ <button bindtap="changeNum">Change normal num</button>
+ <view>{{array[0].text}}</view>
+ <button bindtap="changeItemInArray">Change Array data</button>
+ <view>{{object.text}}</view>
+ <button bindtap="changeItemInObject">Change object data</button>
+ <view>{{newField.text}}</view>
+ <button bindtap="addNewField">Add new data</button> -->
+<!-- <view wx:for="{{arr}}">{{item}}</view> -->
+<!-- <view wx:if="{{view=='webview'}}">webview</view>
+<view wx:elif="{{view=='app'}}">app</view>
+<view wx:else="{{view=='mina'}}">mina</view> -->
+<template name="staffName">
+	<view>
+		FirstName: {{firstName}}, LastName: {{lastName}}
+	</view>
+</template>
+<template is="staffName" data="{{...staffA}}"></template>
+<template is="staffName" data="{{...staffB}}"></template>
+<template is="staffName" data="{{...staffC}}"></template>
+<block wx:for="{{[1,2,3]}}">
+	<view>{{index}}:</view>
+	<view>{{item}}</view>
+</block>
+<switch wx:for="{{objectArray}}" wx:key="unique" style="display:block">{{item.id}}</switch>
+<button bindtap="switch">Switch</button>
+<button bindtap="addToFront">Add to front</button>
+<switch wx:for="{{numberArray}}" wx:key="*this" style="display:block">{{item}}</switch>
+<button bindtap="addNumberToFront">Add to the front</button>
+<wxs module="m1">
+	var msg = "hello word";
+	module.exports.message = msg;
+</wxs>
+<view>{{m1.message}}</view>
+<view>
+	<tip inner-text="Some text"></tip>
+</view>
+<view class="container">
+	<dialog id="dialog" title="我是标题" content="恭喜你，学会了小程序组件" cancelText="知道了" confirm="谢谢你" bind:cancelEvent="_cancelEvent" bind:confirmEvent="_confirmEvent"></dialog>
+	<button type="primary" bindtap="showDialog">ClickMe!</button>
+</view>
+
+
+

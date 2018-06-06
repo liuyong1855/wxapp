@@ -1,0 +1,37 @@
+Page({
+	data:{
+		src:''
+	},
+	onReady:function(){
+		this.cameraContext = wx.createCameraContext();
+	},
+	photo:function(){
+		var _this = this;
+		this.cameraContext.takePhoto({
+			quality:'normal',
+			success:function(d){
+				console.log(d);
+				_this.setData({
+					src:d.tempImagePath
+				})
+			}
+		});
+	},
+	start:function(){
+		this.cameraContext.startRecord({
+			success:function(d){
+				console.log(d)
+			},
+			timeoutCallback:function(e){
+				console.log(e)
+			}
+		})
+	},
+	end:function(){
+		this.cameraContext.stopRecord({
+			success:function(d){
+				console.log(d)
+			}
+		})
+	}
+})

@@ -1,0 +1,16 @@
+page{background:#ebebeb;}
+.cityinput{position:fixed;top:0;left:0;right:0;padding:20rpx;background:#fff url(http://10.9.0.149/wxapp/liuyong/7lk/img/drugIcon.png) no-repeat 15px center;background-size:16px 16px;z-index:1;}
+.cityinput input{border:1rpx solid #ddd;line-height:80rpx;font-size:32rpx;padding-left:27px;height:80rpx;}
+.scrollview{position:absolute;top:122rpx;bottom:0;left:0;right:0;}
+.cityCur{padding:20rpx;line-height:80rpx;border-bottom:1rpx solid #ddd;}
+.cityposit{background:url(http://10.9.0.149/wxapp/liuyong/7lk/img/drugIcon30.png) no-repeat center center;width:80rpx; height:80rpx;background-size:40rpx 40rpx;}
+.title{padding:20rpx;line-height:60rpx;height:60rpx;}
+/*.citybox{overflow:auto;background:#fff;}
+.citybox>view{width:250rpx;text-align:center;border-bottom:1rpx solid #ebebeb;border-right:1rpx solid #ebebeb;padding:10rpx 0;box-sizing:border-box;float:left;line-height:80rpx;}*/
+.citybox>view:nth-child(3n){border-right:none;}
+.charselectr{position:absolute;right:0;height:900rpx;width:80rpx;font-size:26rpx;margin-top:-400rpx;top:50%;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:100;}
+.charselectr>view{flex:1;justify-content:center;align-items:center;display:flex;width:80rpx;opacity:.5}
+
+
+.citybox{display:flex;background:#fff;flex-wrap:wrap;}
+.citybox>view{text-align:center;border-bottom:1rpx solid #ebebeb;border-right:1rpx solid #ebebeb;padding:10rpx 0;box-sizing:border-box;line-height:80rpx;width:250rpx;}

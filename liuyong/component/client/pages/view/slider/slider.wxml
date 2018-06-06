@@ -1,0 +1,2 @@
+<view class="title"><text>slider</text></view>
+<slider min="10" max="20" bindchange="slider" bindchanging="changing" show-value="true" block-color="#f00" step="2" block-size="20" backgroundColor="#0ff" activeColor="#00f" value="15" />

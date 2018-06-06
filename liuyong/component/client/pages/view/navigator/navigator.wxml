@@ -1,0 +1,5 @@
+<view class="title"><text>navigator</text></view>
+
+<navigator url="../view/view" open-type="navigate">跳转</navigator>
+<navigator url="../view/view" open-type="redirect">跳转</navigator>
+<navigator url="../view/view" open-type="reLaunch">跳转</navigator>

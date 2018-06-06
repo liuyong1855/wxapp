@@ -1,0 +1,57 @@
+/**index.wxss**/
+.content{
+  width: 750rpx;
+  color: #000000;
+  text-align: center;
+  font-size: 14px;
+}
+.user{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-detail{
+  margin: 0 25rpx;
+}
+
+.user image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  display: block;
+}
+.user text{
+  display: block;
+  line-height: 100rpx;
+}
+.editUser{
+  width: 750rpx;
+  margin: 50rpx auto ;
+  display: flex;
+}
+.user-button{
+  width: 200rpx;
+  padding: 30rpx 0;
+  background: #2394da;
+  border-radius: 30rpx;
+  margin-left: 38rpx;
+}
+.editUser text{
+  color: #fff;
+}
+.user-button icon{
+  margin-right: 3px;
+}
+.boundary{
+  font-size: 16px;
+  border-top: 2px solid #e87816;
+  border-bottom: 2px solid #e87816;
+  padding : 10px 0;
+  display: block;
+  background: #481c87;
+  color: #fff;
+  margin-bottom: 20rpx;
+}
+.condition{
+  padding: 10px 0;
+}

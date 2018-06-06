@@ -1,0 +1,7 @@
+.scrolly{padding:20rpx;display:flex;box-sizing:border-box;height:300rpx;}
+.scrolly view{height:200rpx;text-align:center;line-height:200rpx;}
+.scrolly view:nth-child(1),.scrollx view:nth-child(1){background:#f00;}
+.scrolly view:nth-child(2),.scrollx view:nth-child(2){background:#f0f;}
+.scrolly view:nth-child(3),.scrollx view:nth-child(3){background:#0ff;}
+.scrollx{padding:20rpx;box-sizing:border-box;height:300rpx;white-space:nowrap;background:#ccc;}
+.scrollx view{display:inline-block;width:80%;height:200rpx;text-align:center;line-height:200rpx;}

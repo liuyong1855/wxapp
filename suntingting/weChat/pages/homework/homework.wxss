@@ -1,0 +1,84 @@
+/* pages/homework/homework.wxss */
+.topBox{
+  position: fixed;
+  border-bottom:1px solid #eee;
+  background-color: #f8f8f8;
+  width: 100%;
+  padding:4px 15px;
+  box-sizing: border-box;
+}
+.topBoxBg{
+  width: 100%;
+  font-size: 30px;
+}
+.topface{
+  width:30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #eee;
+  display:inline-block;
+  vertical-align:middle;
+}
+.contentB{
+  padding:0 10px;
+  box-sizing: border-box;
+}
+.topBox text{
+  vertical-align: middle;
+  padding-left:10px;
+}
+
+.boxC text{
+  font-size: 14px;
+  line-height: 36px;
+}
+.imgaLL{
+  width: 30px;
+  height:30px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.btnRemove{
+  float:right;
+  line-height:30px;
+  color:#bbb;
+}
+
+.btnBox{
+  padding:0 10px;
+  box-sizing: border-box;
+  display: flex;
+  margin-top: 40px;
+}
+.btnBox button{
+  flex:1;
+  margin:0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

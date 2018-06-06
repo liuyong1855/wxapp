@@ -1,0 +1,11 @@
+Page({
+	data:{
+		flag:false
+	},
+	switch:function(e){
+		console.log(e.detail)
+		this.setData({
+			flag:!this.data.flag
+		})
+	}
+})

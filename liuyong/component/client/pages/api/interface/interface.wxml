@@ -1,0 +1,17 @@
+<view class="title"><text>界面</text></view>
+<view>showToast</view>
+<button type="primary" bindtap="showToast">showToast</button>
+<button type="primary" data-type="success" bindtap="showToast">showToast-success</button>
+<button type="primary" data-type="loading" bindtap="showToast">showToast-loading</button>
+<button type="primary" data-type="none" bindtap="showToast">showToast-none</button>
+<button type="primary" bindtap="toastimg">showToast-image</button>
+<button type="primary" bindtap="toastmask">showToast-mask</button>
+<view>showLoading</view>
+<button type="primary" bindtap="load">showLoading</button>
+<button type="primary" bindtap="loadmask">showLoading-mask</button>
+<view>showModal</view>
+<button type="primary" bindtap="modal">showModal</button>
+<button type="primary" bindtap="modalcanel">showModal-没有取消</button>
+<button type="primary" bindtap="modalcolor">showModal-文字颜色</button>
+<view>showActionSheet</view>
+<button type="primary" bindtap="action">showActionSheet</button>

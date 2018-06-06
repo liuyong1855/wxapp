@@ -1,0 +1,30 @@
+Page({
+	set:function(e){
+		console.log(e);
+		wx.setNavigationBarTitle({
+			title:'set Title',
+			success:function(d){
+				console.log(d)
+			}
+		})
+	},
+	show:function(){
+		wx.showNavigationBarLoading()
+	},
+	hide:function(){
+		wx.hideNavigationBarLoading()
+	},
+	setcolor:function(){
+		wx.setNavigationBarColor({
+			frontColor:'#ffffff',
+			backgroundColor:'#ff0000',
+			animation:{
+				duration:500,
+				timingFunc:'easeIn'
+			},
+			success:function(d){
+				console.log(d)
+			}
+		})
+	}
+})

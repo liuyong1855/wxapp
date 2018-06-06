@@ -1,0 +1,51 @@
+<view class="utx">
+	<image class="tx" src="http://thirdwx.qlogo.cn/mmopen/0nn3FBrD9a0N1UdZg0PHt2HRvKRE9nSiay7qTY1oic1HUcMY95BX1exczWViczhaWRWsUGRm3Mr67iaEKwUKmCU7TA/132" />
+</view>
+<view class="inforBox">
+	<view class="inforLow disflex">
+		<view class="inforL">真实姓名<text>*</text></view>
+		<view class="inforR flex">{{userInfo.name}}</view>
+		<view class="forIcon"></view>
+	</view>
+	<view class="inforLow disflex">
+		<view class="inforL">性别<text>*</text></view>
+		<view class="inforR flex">
+			<picker mode="selector" range="{{gender}}" value="{{index}}"  bindchange="changgender">
+				<view>{{gender[index]}}</view>
+			</picker>
+		</view>
+		<view class="forIcon"></view>
+	</view>
+	<view class="inforLow disflex">
+		<view class="inforL">出生日期<text>*</text></view>
+		<view class="inforR flex">
+			<picker mode="date" bindchange="changedate">
+				<view>{{birthday?birthday:'请选择'}}</view>
+			</picker>
+		</view>
+		<view class="forIcon"></view>
+	</view>
+	<view class="inforLow disflex">
+		<view class="inforL">手机号码</view>
+		<view class="inforR flex">姓名</view>
+		<view class="forIcon"></view>
+	</view>
+	<view class="inforLow disflex">
+		<view class="inforL">省市区</view>
+		<view class="inforR flex">
+			<picker mode="region" bindchange="changecity">
+				<view>{{citys?citys:'请选择'}}</view>
+			</picker>
+		</view>
+		<view class="forIcon"></view>
+	</view>
+	<view class="inforLow disflex">
+		<view class="inforL">地区</view>
+		<view class="inforR flex">
+			<picker mode="multiSelector" range="{{rangeData}}" value="{{rangeIndex}}" range-key="name" bindchange="changedata" bindcolumnchange="changemul">
+				<view>{{rangeText?rangeText:'请选择'}}</view>
+			</picker>
+		</view>
+		<view class="forIcon"></view>
+	</view>
+</view>

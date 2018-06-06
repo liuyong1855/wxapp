@@ -1,0 +1,419 @@
+
+*{
+	margin:0;padding:0;list-style: none;
+}
+body {
+	font-size: 14px;
+	background-color: #f5f5f5;
+	margin: 0 auto;
+	outline: 0;
+	min-width: 320px;
+	max-width: 640px;
+	padding-bottom: 62px; 
+	/*position: relative;*/
+}
+head{
+	display: none;
+}
+section{
+	display: block;
+}
+.main{
+	margin: 0 auto;
+}
+.top-search-content{
+	padding: 20px 10px;
+	background: url(../images/headBg.jpg) center top no-repeat;
+}
+
+.top-search-content .top-logo-img{
+	width: 40%;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.top-search-content .top-search-input{
+	width: 90%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border: 0;
+	color: #333;
+	background: url(../images/top_search.png) 10px center no-repeat #fff;
+	background-size: auto 55%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.radius{
+	border-radius: 3px;
+}
+
+div{
+	display: block;
+}
+.top-search-content ul{
+	overflow: hidden;
+}
+
+.top-search-content ul li{
+   width: 25%;
+   float: left;
+   font-size: 16px;
+   text-shadow: 1px 1px 5px #000;
+   text-align: center;
+}
+.top-search-content ul li img{
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.top-search-content ul li a{
+	color: #fff;
+}
+h2,img,li,p,ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.my-rx-content {
+	overflow: hidden;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.my-rx-content a {
+	width: 50%;
+	padding-top:10px;
+	padding-bottom: 10px;
+	display: block;
+	float: left;
+	font-size: 16px;
+	color: #2394da;
+}
+
+.my-rx-content a i.my-rx-icon{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: bottom;
+	background: url(../images/chufangLeftIcon.png) center center no-repeat;
+	background-size: 100% auto;
+}
+
+.my-rx-content a i {
+	margin-right: 5px;
+}
+
+.my-rx-content a:nth-child(2){
+	text-align: right;
+}
+.my-rx-content a i.my-rx-update-icon{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	border: 1px dashed #2394da;
+	vertical-align: bottom;
+}
+
+.my-rx-content .floatLeft{
+	float: left;
+}
+.my-rx-content .floatRight .{
+  float:right;
+}
+
+.brandBox{
+	padding:0;
+	border-bottom: 0;
+}
+.commentBox{
+	margin-bottom: 10px;
+/*	padding: 10px 0;*/
+	border-top: 1px solid #d4d4d4;
+	border-bottom: 1px solid #d4d4d4;
+	background: #fff;
+}
+.titleBox{
+	padding:10px;
+	position: relative;
+	border-bottom: 1px solid #dcdcdc;
+}
+.titleBox i{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	display: block;
+	height: 27px;
+	width: 27px;
+}
+.titleBox a{
+	display: block;
+}
+.titleBox h2{
+	display: inline-block;
+	font-weight: 400;
+	color: #444;
+	vertical-align: middle;
+	margin-right: 6px;
+}
+.titleBox i :after ,:before{
+	box-sizing: border-box;
+}
+
+a {
+	color: #000;
+}
+a:-webkit-any-link {
+	cursor: pointer;
+}
+
+.brandBox ul{
+   padding: 3%;
+}
+
+
+.clearfix{
+	display: flex;
+	flex-wrap: wrap;
+	background: #fff;
+
+}
+.clearfix .li{
+	list-style-type: none;
+    flex: 1;
+}
+
+.brandBox ul li{
+	float: left;
+	width: 32%;
+	margin-right: 1%;
+	margin-bottom: 1%;
+	overflow: hidden;
+}
+.brandBox ul li a{
+	display: block;
+}
+
+ul{
+	/*display: block;*/
+	-webkit-margin-before:1em;
+	-webkit-margin-after:1em;
+	-webkit-margin-start:0px;
+	-webkit-margin-end:0px;
+	-webkit-padding-start:40px;
+	margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+.flashSalesBox{
+	padding: 0;
+}
+.titleBox .countdownBox {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 15px;
+	margin-top: 2px;
+}
+.titleBox .countdownBox .cbIcon{
+	display: inline-block;
+	margin-right: 5px;
+}
+.titleBox .countdownBox .cbIcon img{
+	width: auto;
+	height: 24px;
+	vertical-align: middle;
+}
+.titleBox .countdownBox span{
+	vertical-align: middle;
+}
+.titleBox .countdownBox .cbBg{
+	background-color: #999;
+	color: #fff;
+	padding: 0 5px;
+}
+
+.flashSalesBox .fsbListBox ul {
+	clear: both;
+	overflow: hidden;
+	border-bottom: 1px solid #c6c6c6;
+	display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+.flashSalesBox .fsbListBox ul li {
+/*	width: 33%;
+	float: left;
+	position: relative;
+	border-right: 1px solid #dcdcdc;
+	text-align: center;
+	overflow: hidden;
+	padding: 5px;*/
+	list-style-type: none;
+    flex: 1;
+}
+.flashSalesBox .fsbListBox ul li a{
+	display: block;
+}
+.flashSalesBox .fsbListBox ul li img{
+	width: 100%;
+	display: block;
+	max-width: 202px;
+	max-height: 202px;
+}
+.diseaseBox{
+	padding: 0;
+}
+.diseaseBox .dbContentBox{
+	padding: 10px 10px 0;
+}
+.diseaseBox .dbContentBox .dcbMainBox{
+	position: relative;
+	padding-left: 110px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	clear:both;
+}
+
+
+.diseaseBox .dbContentBox .dcbMainBox .title{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100px;
+   height: 100px;
+   text-align: center;
+   line-height: 100px;
+   font-size: 18px;
+   overflow: hidden;
+}
+.diseaseBox .dbContentBox .dcbMainBox .title a{
+	color: #e87816;
+	display: block;
+}
+.diseaseBox .dcbMainBox .title a{
+   position: relative;
+   z-index: 11;
+}
+.diseaseBox .dbContentBox .dcbMainBox .contentDisease{
+height: 100px;
+width: 100%;
+}
+
+.dbContentBox {
+	padding: 10px 10px 0;
+	background: #fff;
+	display: flex;
+}
+
+.dbContentBox .imgfloatLeft{
+	width: 100px;
+	height: 100px;
+	position: relative;
+}
+.dbContentBox .imgfloatLeft img{
+	width: 100%;
+}
+.dbContentBox .imgfloatLeft span{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 41px;
+	line-height: 38px;
+	color: #f58c3b;
+	font-size: 18px;
+	text-align: center;
+}
+
+.dbContentBox  .contentDisease{
+	flex: 1;
+	margin-left: 10px;
+}
+.dbContentBox  .contentDisease a:first-child{
+	margin-bottom: 10px;
+}
+.dbContentBox  .contentDisease a{
+	background-color: #f5f5db;
+	color: #f58c3b;
+	line-height: 45px;
+	text-align: center;
+	display: block;
+}
+a {
+	text-decoration: none;
+}
+a:-webkit-any-link{
+	cursor: pointer;
+}
+.bottomTelView{
+    margin: 20px 10px;
+    background: #481c87;
+    border-radius: 5px;
+
+}
+.bottomTelView a{
+	display: block;
+	line-height: 36px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+.bottomTelView a img{
+	vertical-align: -7px;
+	margin-right: 5px;
+	width: 20px;
+	height: 20px;
+}
+
+.footerView{
+  line-height: 14px;
+  padding: 0px;
+  font-size: 12px;
+  text-align: center;
+/*  height: 28px;
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;*/
+}
+.bottomNavBar{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-top: 1px solid #c6c6c6;
+	background-color: #eee;
+	color: #707070;
+	padding: 5px 0 5px;
+	text-align: center;
+	display: flex;
+}
+.bottomNavBar a{
+	flex: 1;
+	text-decoration: none;
+	color: #333;
+}
+.bottomNavBar a i{
+	background: url(../images/bottom.png) no-repeat -2px 0;
+	background-size: 130px 50px;
+
+}
+.bottomNavBar i{
+	display: block;
+	width: 20;
+	height: 20;
+	margin: 0 auto 2px;
+	font-size: 12px;
+}
+

@@ -1,0 +1,4 @@
+.zidingyi{position:fixed;bottom:0;left:0;right:0;height:500rpx;background:#fff;}
+.zidingyi view{text-align:center;line-height:80rpx;}
+.linestyle{background:rgba(0,0,0,.1);line-height:80rpx;height:80rpx;}
+.mask{background:rgba(0,0,0,.3);}

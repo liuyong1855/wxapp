@@ -1,0 +1,23 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+.bdinput{
+  border: 1px solid #eee;
+  width: 680rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  margin-bottom: 50rpx;
+}
+.bdinput input{
+  height: 70rpx;
+  padding-left:20rpx;
+}
+.primary{
+  width: 500rpx;
+  margin-bottom: 50rpx;
+}

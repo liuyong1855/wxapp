@@ -1,0 +1,5 @@
+<view class="title"><text>progress</text></view>
+
+<view class="probox" bindtap="addPre">
+	<progress percent="{{percent}}" show-info stroke-width="10" color="#000" activeColor="#000" backgroundColor="#f00" active active-mode="forwards"/>
+</view>

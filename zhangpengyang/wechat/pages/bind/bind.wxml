@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="content">
+    <view class="boundary">数据绑定、渲染</view>
+    <view class="user">
+        <view class="user-detail">
+            <image src="{{userInfo.avatarUrl}}"></image>
+            <text>{{userInfo.nickName}}</text>
+        </view>
+        <view class="user-detail" wx:for="{{list}}" wx:item="item" wx:key="index">
+            <image src="{{item.avatarUrl}}"></image>
+            <text>{{item.nickName}}</text>
+        </view>
+    </view>
+    <view class="editUser">
+        <view class="user-button" bindtap="editUserTab" data-method="add">
+            <icon type="success" size="14"/>
+            <text>添加用户</text>
+        </view>
+        <view class="user-button" bindtap="editUserTab"  data-method="edit">
+            <icon type="clear" size="14"/>
+            <text>修改用户</text>
+        </view>
+        <view class="user-button" bindtap="editUserTab" data-method="del">
+            <icon type="cancel" size="14"/>
+            <text>删除用户</text>
+        </view>
+    </view>
+    <view class="boundary">条件判断</view>
+    <view class="condition" wx:if="{{flag}}">flag=true</view>
+    <view class="condition" wx:elif="{{elflag}}">elflag=true</view>
+    <view class="condition" wx:else="{{flag}}">elseflag=true</view>
+</view>

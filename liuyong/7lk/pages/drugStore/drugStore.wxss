@@ -1,0 +1,24 @@
+.drugheader{position:fixed;display:flex;padding:20rpx;left:0;right:0;top:0;background:#fff;z-index:1;border-bottom:1rpx solid #ddd;height:70rpx;overflow:hidden;}
+.city{display:inline-block;width:120rpx;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;text-align:center;background:url(http://10.9.0.149/wxapp/liuyong/7lk/img/drugIcon29.png) no-repeat right center;background-size:15px 8px;padding-right:20px;margin-right:15px;line-height:70rpx;height:70rpx;}
+.searchbox{flex:1;background:url(http://10.9.0.149/wxapp/liuyong/7lk/img/drugIcon.png) no-repeat 5px center;background-size:16px 16px;border:1rpx solid #ddd;padding-left:25px;}
+.searchbox input{width:100%;line-height:118rpx;height:68rpx;font-size:32rpx;}
+.scrollview{position:absolute;top:110rpx;left:0;width:100%;bottom:0;color:#666;background:#fff;}
+.drugview{display:flex;-webkit-box-sizing: border-box;box-sizing:border-box;padding:10rpx 0 0 20rpx;}
+.drugicon{width:60rpx;margin-right:20rpx;display:flex;align-items:center;}
+.drugicon image{width:100%;}
+.drugcom{border-bottom:1rpx solid #ddd;flex:1;padding-bottom:10rpx;}
+.title{font-size:36rpx;font-weight:900;line-height:60rpx;height:60rpx;}
+.viewone{display:inline-block;line-height:60rpx;height:60rpx;}
+.viewone .type{padding:0 20rpx;}
+.drugli .viewone:first-child .type{padding-left:0;}
+.drugli .viewone:last-child .line{display:none;}
+.drugview:last-child .drugcom{border-bottom:none;}
+.searchBtn{display:inline-block;width:120rpx;text-align:center;line-height:70rpx;}
+.searchview{padding:20rpx;font-size:32rpx;}
+.history{overflow:hidden;}
+.historytitle{line-height:60rpx;margin-bottom:20rpx;color:#777;}
+.history text{float:left;padding:10rpx 30rpx;background:#eee;border-radius:2rpx;margin:0 16rpx 16rpx 0;line-height:66rpx;color:#999;}
+.history{margin-bottom:30rpx;}
+.hide{display:none;}
+.hintList view{border-bottom:1rpx dashed #ddd;line-height:80rpx;color:#999;height:80rpx;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.hintList view text{display:inline-block;padding-left:10rpx;}

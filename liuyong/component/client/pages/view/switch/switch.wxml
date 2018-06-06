@@ -1,0 +1,2 @@
+<view class="title"><text>switch</text></view>
+	<switch checked="{{flag}}" type="switch" color="#f00" bindchange="switch"></switch><switch checked="{{flag}}" type="checkbox" color="#f00" bindchange="switch"></switch>

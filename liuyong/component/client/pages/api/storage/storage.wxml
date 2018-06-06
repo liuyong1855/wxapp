@@ -1,0 +1,7 @@
+<view class="title"><text>数据存储</text></view>
+
+<button type="primary" bindtap="save">存储</button>
+<button type="primary" bindtap="get">获取</button>
+<button type="primary" bindtap="gets">获取storage</button>
+<button type="primary" bindtap="remove">移除</button>
+<button type="primary" bindtap="clear">清空</button>

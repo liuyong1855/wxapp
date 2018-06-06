@@ -1,0 +1,4 @@
+<view class="title"><text>audio</text></view>
+
+<audio id="audio" poster="{{poster}}" src="{{src}}" name="{{name}}" author="{{author}}" loop="true" controls="true" bindplay="play" bindpause="pause" bindended="end" bindtimeupdate="update"></audio>
+<audio id="audio1" src="{{src}}"></audio>

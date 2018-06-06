@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<scroll-view    class='scrollerContainer' scroll-y>
+  <view wx:for="{{array}}"  class='itemView' wx:key="">
+      <image src='{{item}}' id='imageItem'></image>
+       <text>{{index}}</text>
+       <view class='delItem' bindtap='removeData' data-index='{{index}}'>删除</view>
+  
+  </view>
+  
+  <view class='bottomItem'>
+  <button type='{{typeBtn}}' bindtap='addData'>添加</button>
+ </view>
+</scroll-view>
+
+

@@ -1,0 +1,4 @@
+<view class="title"><text>swiper</text></view>
+<swiper class="swiper" indicator-dots="true" indicator-color="rgba(0,255,0,.4)" indicator-active-color="rgba(255,255,0,.5)" interval="5000" duration="1000" circular="true" previous-margin="50rpx" next-margin="50rpx" bindchange="change" bindanimationfinish="changeend">
+	<swiper-item wx:for="{{swiper}}">{{item}}</swiper-item>
+</swiper>

@@ -1,0 +1,18 @@
+<!--logs.wxml-->
+<view class="container log-list">
+ <view>
+     <image src="../../images/logo.png" style="width:100px;height:100px;border:1px solid #eee;margin-bottom:150rpx;" alt=""></image>
+ </view>
+ <view class="bdinput">
+    <input type="text" bindinput="emailInput" placeholder="邮箱" auto-focus />
+ </view>
+ <view class="bdinput">
+    <input type="password" bindinput="passwordInput" placeholder="密码" />
+ </view>
+ <view>
+     <button class="primary" bindtap="login">登录</button>
+ </view>
+ <view>
+    <button class="primary" bindtap="goto">新用户注册</button>
+</view>
+</view>

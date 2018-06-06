@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+  <text class="hTitle">我是首页，我在宝能中心</text>
+  <map id="map" longitude="116.478641" latitude="39.987867"  scale="18" markers="{{markers}}" style="width:100%;height:300rpx;"></map>
+  <view class="listShow" wx:for="{{list}}" wx:key="unique">{{item}}</view>
+  <input type="text" bindinput="getColor" value="{{myColor}}" class="colorInput" placeholder='输入你喜欢的颜色'></input>
+  <button class="btnColor" bindtap="addColor">添加</button>
+  <input class="text" bindinput="getDel" value="{{myDel}}" class="colorInput" placeholder='你想删除哪一个？'></input>
+  <button class="btnColor" value="{{myDel}}" bindtap="delColor">删除</button>
+</view>

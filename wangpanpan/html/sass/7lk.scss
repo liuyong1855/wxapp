@@ -8,6 +8,7 @@ body{
 	padding:px2rem(30) px2rem(20);
 	background:url(../images/new-index_01.jpg) center 0 no-repeat;
 	box-sizing:border-box;
+	background-size:cover;
 }
 .logo-img{
 	display:block;
@@ -164,4 +165,55 @@ body{
 }
 .qlkCompany div:last-child{
 	border-right:0;
+}
+.diseaseBox{
+	padding:3% 3% 0;
+}
+.department{
+	width:px2rem(170);
+	height:px2rem(170);
+	line-height:px2rem(170);
+	background:url(../images/01190_20150421101949358190000037773.png) 0 0/cover no-repeat;
+	text-align:center;
+	color:#e87816;
+	margin-right:3%;
+}
+.disease{
+	font-size:0px;
+}
+.disease span{
+	display:inline-block;
+	width:48%;
+	height:px2rem(75);
+	line-height:px2rem(75);
+	font-size:px2rem(24);
+	text-align:center;
+	color:#f58c3b;
+	background:#f5f5db;
+	margin-right:4%;
+	margin-bottom:px2rem(20);
+}
+.disease span:nth-child(2n){
+	margin-right:0;
+}
+.qlk-footer{
+	margin-top:px2rem(40);
+}
+.telephone{
+	font-size:0px;
+}
+.telephone a{
+	display:block;
+	width:95%;
+	text-align:center;
+	font-size:px2rem(36);
+	color:#fff;
+	background:#481c87;
+	margin:0 auto;
+	border-radius:px2rem(6);
+	line-height:px2rem(60);
+	text-decoration:none;
+}
+.telephone cite{
+	display:inline-block;
 }

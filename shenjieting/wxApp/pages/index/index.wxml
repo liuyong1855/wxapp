@@ -1,0 +1,33 @@
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots="true">
+  <block wx:for="{{imgUrls}}" wx:key="imgUrlsId" >
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='mainHead'>
+  <button bindtap='addDetail'  class='caozuo'>增加   </button>
+  <button bindtap='delectDetail' class='caozuo'>减少    </button>
+   <button bindtap='updataDetail' class='caozuo'>更新</button>
+     <button bindtap='selectDetail' class='caozuo'>查找</button>
+     <button bindtap='copy' class='caozuo'>复制</button>
+</view>  
+<view class='items-list'>
+  <view class='pro-item' wx:for="{{proList}}" wx:key="proListId" bindtap='toDetail' data-index="{{index}}">
+    <image class='pro-logo' src='{{item.logoImage}}'></image>
+    <view class='pro-body'>
+      <view class='pro-title'>{{item.title}}</view>
+      <text class='pro-desc'>{{item.desc}}</text>
+      <view class='pro-footer'>
+        <image class='btn-detail' src='{{item.detailImage}}'></image>
+        <button open-type='contact' class='btn-ask'> 
+          <image  src='{{item.detailImage}}'>
+          </image> 
+        </button>
+      </view> 
+    </view>
+  </view>
+</view>
+
+

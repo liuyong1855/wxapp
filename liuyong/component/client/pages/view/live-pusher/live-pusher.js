@@ -1,0 +1,27 @@
+Page({
+	data:{
+		beauty:10,
+		whiteness:10
+	},
+	schange:function(e){
+		console.log(e.detail.value);
+		this.setData({
+			beauty:e.detail.value
+		})
+	},
+	wchange:function(e){
+		console.log(e.detail.value);
+		this.setData({
+			whiteness:e.detail.value
+		})
+	},
+	change:function(e){
+		console.log('change',e)
+	},
+	status:function(e){
+		console.log('status',e)
+	},
+	error:function(e){
+		console.log('error',e)
+	}
+})
