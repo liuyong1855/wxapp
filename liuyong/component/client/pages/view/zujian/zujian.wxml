@@ -1,2 +1,11 @@
 <button bindtap="tap">点击</button>
 <dialog id="dialog" title="组件标题" content="组件内容" sure="确定btn" canel="取消btn" bindsureEvent="onsureEvent" bindcanelEvent="oncanelEvent"></dialog>
+
+<form report-submit="true" bindsubmit='userSubmit'>
+	<input maxlength="10" type="text" name="input1"  />
+	<button class='button' bindtap='copy'
+          form-type='submit'>提交</button>
+</form>
+	<button open-type="share">转发</button>
+	<button bindtap="setClipboardData">设置系统剪贴板的内容</button>
+	<button bindtap="getClipboardData">获取系统剪贴板内容</button>

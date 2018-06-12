@@ -28,6 +28,7 @@ Page({
         }]
     },
     onLoad: function(){
+        wx.showLoading({title:'loading'})
         // 查看是否授权
         wx.getSetting({
             success: res => {
@@ -44,6 +45,9 @@ Page({
                 }
             }
         })
+    },
+    onReady: function(){
+        wx.hideLoading();
     },
     getUserInfo: function(e) {
         if(e.detail.userInfo){

@@ -1,6 +1,8 @@
 {
   "pages":[
+    "pages/api/getphone/getphone",
     "pages/view/index/index",
+    "pages/view/zujian/zujian",
     "pages/api/login/login",
     "pages/api/tabbar/tabbar",
     "pages/api/system/system",
@@ -52,8 +54,8 @@
     "pages/view/swiper/swiper",
     "pages/view/scroll-view/scroll-view",
     "pages/view/view/view",
-    "pages/api/index/index",
-    "pages/view/zujian/zujian"
+    "pages/api/index/index"
+
   ],
   "window":{
     "color":"#7A7E83",
@@ -84,5 +86,15 @@
     "selectedColor":"#3cc51f",
     "borderStyle":"black",
     "backgroundColor":"#fff"
+  },
+  "plugins": {
+    "WechatSI": {
+      "version": "0.0.6",
+      "provider": "wx069ba97219f66d99"
+    },
+    "zhixiaoyun": {
+      "version": "1.4.0",
+      "provider": "wxc6b86e382a1e3294"
+    }
   }
 }
