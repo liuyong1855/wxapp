@@ -208,6 +208,41 @@ class Welcome extends CI_Controller {
         exit;
     }
 
+    public function decrypt(){
+        if($_POST['encryptedData']&&$_POST['iv']){
+            $sessionkey = $_POST['three_session'];
+            $session_key = $this->session->userdata[$sessionkey]['session_key'];
+            $appid = $this->appid;
+            $appsecret = $this->appsecret;
+            $encryptedData = $_POST['encryptedData'];
+            $iv = $_POST['iv'];
+            $this->load->library('wxbizdatacrypt', array('appid'=>$appid,'sessionKey'=>$session_key));
+            $errCode = $this->wxbizdatacrypt->decryptData($encryptedData, $iv, $data );
+            if ($errCode == 0) {
+                // var_dump(json_decode($data));exit;
+                $result = array(
+                    'code'=>0,
+                    'msg'=>'操作成功',
+                    'data' => json_decode($data)
+                );
+                echo json_encode($result);
+            } else {
+                // var_dump($errCode);
+                $result = array(
+                    'code'=>1,
+                    'msg'=>$errCode
+                );
+                echo json_encode($result);
+            }
+        }else{
+            $result = array(
+                'code'=>1,
+                'msg'=>'参数错误'
+            );
+            echo json_encode($result);
+        }
+    }
+
     private function randomFromDev($len) {
         $fp = @fopen('/dev/urandom','rb');
         $result = '';
