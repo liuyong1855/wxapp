@@ -5,6 +5,9 @@ class Welcome extends CI_Controller {
 
     public function __construct()
     {
+        if(!empty($_COOKIE['ci_session'])){
+            setcookie('ci_session',$_COOKIE['ci_session'],time()+60*60*24*30);
+        }
         parent::__construct();
         $this->appid = $this->config->config['appkey']['appid'];
         $this->appsecret = $this->config->config['appkey']['appsecret'];
@@ -138,6 +141,8 @@ class Welcome extends CI_Controller {
     }
 
     public function login_v2(){
+
+        // var_dump($_COOKIE,$_COOKIE['ci_session'],$_COOKIE['expires']);exit;
         if($_POST['code']){
             // $rawData = json_decode($_POST['rawData']);
             $params_api = $this->config->config['apis']['session_key'];
@@ -148,10 +153,10 @@ class Welcome extends CI_Controller {
             //获取用户openid和session_key
             $result=json_decode($this->api->get_data($params_api),true);
             if($result){
-                // var_dump($result);
                 $three_session = $this->randomFromDev(16);
-                $sessionid = session_id();
-                $this->session->$three_session = $result;
+                // $sessionid = session_id();
+                $this->session->three_session = $result;
+                // var_dump($this->session->three_session,$result);
                 //查询用户是否存在
                 $query = $this->db->query("select * from user where openid='".$result["openid"]."'");
                 $row = $query->row();
@@ -169,8 +174,9 @@ class Welcome extends CI_Controller {
                 }
                 $data = array();
                 $data['three_session'] = $three_session;
-                $data['sessionid'] = $sessionid;
-                // $data['session_key'] = $result;
+                // $data['sessionid'] = $sessionid;
+                $data['data'] = $result;
+                $data['session_key'] = $result;
                 $result = array(
                     'code'=>0,
                     'msg'=>'操作成功',
@@ -210,14 +216,62 @@ class Welcome extends CI_Controller {
 
     public function decrypt(){
         if($_POST['encryptedData']&&$_POST['iv']){
-            $sessionkey = $_POST['three_session'];
-            $session_key = $this->session->userdata[$sessionkey]['session_key'];
+            // $sessionkey = $_POST['three_session'];
+            $session_key = $this->session->userdata['three_session']['session_key'];
             $appid = $this->appid;
             $appsecret = $this->appsecret;
             $encryptedData = $_POST['encryptedData'];
             $iv = $_POST['iv'];
             $this->load->library('wxbizdatacrypt', array('appid'=>$appid,'sessionKey'=>$session_key));
             $errCode = $this->wxbizdatacrypt->decryptData($encryptedData, $iv, $data );
+            if ($errCode == 0) {
+                // var_dump(json_decode($data));exit;
+                $result = array(
+                    'code'=>0,
+                    'msg'=>'操作成功',
+                    'data' => json_decode($data)
+                );
+                echo json_encode($result);
+            } else {
+                // var_dump($errCode);
+                $result = array(
+                    'code'=>1,
+                    'msg'=>$errCode
+                );
+                echo json_encode($result);
+            }
+        }else{
+            $result = array(
+                'code'=>1,
+                'msg'=>'参数错误'
+            );
+            echo json_encode($result);
+        }
+    }
+
+    public function decryptUser(){
+        if($_POST['encryptedData']&&$_POST['iv']){
+            // $sessionkey = $_POST['three_session'];
+            // $session_key = $this->session->userdata['three_session']['session_key'];
+            // $appid = $this->appid;
+            // $appsecret = $this->appsecret;
+            // $encryptedData = $_POST['encryptedData'];
+            // $iv = $_POST['iv'];
+            // var_dump($result);
+
+            // $sessionkey = $_POST['three_session'];
+            $session_key = $this->session->userdata['three_session']['session_key'];
+            $appid = $this->appid;
+            $appsecret = $this->appsecret;
+            $rawData = $_POST['rawData'];
+            $signature_str = sha1($_POST['rawData'].$session_key);
+            $signature = $_POST['signature'];
+            $iv = $_POST['iv'];
+            $encryptedData = $_POST['encryptedData'];
+            $this->load->library('wxbizdatacrypt', array('appid'=>$appid,'sessionKey'=>$session_key));
+            $errCode = $this->wxbizdatacrypt->decryptData($encryptedData, $iv, $data );
+            // $this->load->library('wxbizdatacrypt', array('appid'=>$appid,'sessionKey'=>$session_key));
+            // $errCode = $this->wxbizdatacrypt->decryptData($encryptedData, $iv, $data );
             if ($errCode == 0) {
                 // var_dump(json_decode($data));exit;
                 $result = array(

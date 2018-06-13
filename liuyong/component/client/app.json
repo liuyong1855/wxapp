@@ -1,7 +1,10 @@
 {
   "pages":[
-    "pages/api/getphone/getphone",
     "pages/view/index/index",
+    "pages/other/charts/charts",
+    "pages/other/calendar/calendar",
+    "pages/other/index/index",
+    "pages/api/getphone/getphone",
     "pages/view/zujian/zujian",
     "pages/api/login/login",
     "pages/api/tabbar/tabbar",
@@ -80,6 +83,11 @@
     },{
       "pagePath":"pages/api/tabbar/tabbar",
       "text":"tabBar",
+      "iconPath":"./img/icon_API.png",
+      "selectedIconPath":"./img/icon_API_HL.png"
+    },{
+      "pagePath":"pages/other/index/index",
+      "text":"other",
       "iconPath":"./img/icon_API.png",
       "selectedIconPath":"./img/icon_API_HL.png"
     }],

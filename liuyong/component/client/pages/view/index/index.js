@@ -25,6 +25,9 @@ Page({
     	},{
             name:"开发能力",icon:'../resources/kind/canvas.png',opened:false,
             viewitem:['open-data','web-view']
+        },{
+            name:"其他",icon:'../resources/kind/canvas.png',opened:false,
+            viewitem:['zujian']
         }]
     },
     onLoad: function(){
