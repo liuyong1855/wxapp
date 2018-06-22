@@ -2,13 +2,22 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/homework/homework"
+    "pages/homework/homework",
+    "pages/view/index/index",
+    "pages/view/cover-view/cover-view",
+    "pages/view/icon/icon",
+    "pages/view/movable-view/movable-view",
+    "pages/view/progress/progress",
+    "pages/view/rich-text/rich-text",
+    "pages/view/scroll-view/scroll-view",
+    "pages/view/swiper/swiper",
+    "pages/view/text/text",
+    "pages/view/view/view"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#c13086"
   },
   "tabBar": {
     "color": "#dddddd",
@@ -22,22 +31,22 @@
       },
       {
   
-        "pagePath": "pages/homework/homework",
+        "pagePath": "pages/view/index/index",
         "iconPath": "pages/image/2.png",
         "selectedIconPath": "pages/image/6.png",
-        "text": "作业"
+        "text": "组件"
       },
       {
         "pagePath": "pages/index/index",
         "iconPath": "pages/image/3.png",
         "selectedIconPath": "pages/image/7.png",
-        "text": "首页"
+        "text": "API"
       },
       {
         "pagePath": "pages/index/index",
         "iconPath": "pages/image/4.png",
         "selectedIconPath": "pages/image/6.png",
-        "text": "首页"
+        "text": "乱七八糟"
       }
     ]
   }
