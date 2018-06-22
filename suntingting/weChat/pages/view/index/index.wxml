@@ -1,0 +1,12 @@
+<!--pages/view/index/index.wxml-->
+<view class='contentB'>
+  <view class='boxlist' wx:for="{{viewTit}}" wx:key="viewTit">
+      <view class='listTit' data-index="{{index}}" bindtap='viewTit' >
+        <text>{{item.name}}</text>
+        <image mode='aspectFit' src='{{item.src}}'></image> 
+      </view>
+      <view class='listCont'hidden='{{item.hid}}'>
+        <navigator url="../{{item}}/{{item}}" wx:for='{{item.list}}' wx:key="this" >{{item}}</navigator>
+      </view>
+  </view>
+</view>
