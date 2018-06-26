@@ -18,6 +18,9 @@ Page({
         },{
             name:"设备",icon:'../resources/kind/content.png',opened:false,
             viewitem:['system']
+        },{
+            name:"其他",icon:'../resources/kind/content.png',opened:false,
+            viewitem:['getphone']
         }]
     },
     viewtap:function(e){

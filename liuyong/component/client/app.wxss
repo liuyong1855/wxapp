@@ -1,4 +1,10 @@
 /**app.wxss**/
-page{font-size:32rpx;background:#F6F6F6;}
+@font-face {
+    font-family: 'Bitstream';
+    src: url('http://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+page{font-size:32rpx;background:#F6F6F6;font-family:'Bitstream';}
 .title{text-align:center;padding:20rpx;}
 .title text{border-bottom:1rpx solid #ccc;line-height:60rpx;display:inline-block;}

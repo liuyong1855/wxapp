@@ -14,4 +14,6 @@ module.exports = {
   cartInfo: apiUrl + 'wxapp/cartInfo', //购物车
   userInfo: apiUrl + 'wxapp/userInfo', //个人中心
   cityList: apiUrl + 'wxapp/cityList', //省市区数据
+  srarhHot: apiUrl + 'wxapp/srarhHot', //热门搜索
+  searchHint: apiUrl + 'wxapp/searchHint', //关键字联想
 }

@@ -1,0 +1,287 @@
+/* pages/demo/index.wxss */
+page {
+    background-color: #efefef;
+}
+
+.demostyle{background-image: linear-gradient(to bottom, #6295eb 0%, #586fc2 50%, #5052a4 100%);}
+.demoheader{padding:20rpx ;line-height:60rpx;}
+.doarddemo{background-image: linear-gradient(to bottom, #6295eb 0%, #586fc2 50%, #5052a4 100%);}
+
+.calendar-box {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-image: linear-gradient(to bottom, #6295eb 0%, #586fc2 50%, #5052a4 100%);
+    box-shadow: 0px 11px 2px 1px rgba(234, 234, 229, 0.3);
+}
+
+.calendar-box .left {
+    width: 30%;
+    text-align: center;
+}
+
+.calendar-box .left .today {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ef7a82;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.calendar-box .left .today p {
+    font-size: 2rem;
+}
+
+.calendar-box .left .today .monthStr {
+    font-size: 0.8rem;
+}
+
+.calendar-box .right {
+    width: 70%;
+    font-size: 12px;
+}
+
+.calendar-box .right .box {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.demo2 {
+    background-image: linear-gradient(to bottom, #2e5d91 0%, #2f3e79 100%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.demo2-header {
+    font-size: large;
+    color: #3ed7f6;
+}
+
+
+.demo2-board {
+    color: #3ed7f6;
+}
+
+
+.demo3 {
+    background-color: #eeedff;
+    padding-top: 10px;
+}
+
+.demo3-header {
+    font-size: large;
+    color: #605eac;
+}
+
+
+.demo3-board {
+    background-color: #dddcff;
+    color: white;
+}
+
+
+.demo4-calendar {
+    background-color: #413a60;
+    padding-top: 10px;
+}
+
+.demo4-header {
+    font-size: large;
+    color: white;
+}
+
+.demo4-board {
+    color: white;
+}
+
+.demo5 {
+    padding: 15px;
+}
+
+.demo5-calendar {
+    background-color: white;
+    padding-top: 10px;
+    border-radius: 15px;
+}
+
+.demo5-header {
+    font-size: large;
+    color: #59518d;
+}
+
+.demo5-board {
+    color: #c7cbe2;
+    font-weight: bold;
+}
+
+.demo6 {
+    padding: 15px;
+}
+
+.demo6-calendar {
+    background-color: #fff043;
+    padding-top: 10px;
+    box-shadow: 5px 5px 2px 1px rgba(255, 240, 67, 0.5);
+}
+
+.demo6-header {
+    font-size: large;
+    color: black;
+}
+
+.demo6-board {
+    color: #ff8a43;
+    font-weight: bold;
+}
+
+
+
+
+/*  ------------------------pages/help/index.wxss ------------------------- */
+
+.name {
+    margin-top:10px;
+}
+
+.subname {
+    margin-top:10px;
+}
+
+.table {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.memo {
+    margin: 10px 0px;
+    font-size: 12px;
+}
+
+li {
+    list-style-position: inside;
+}
+
+table {
+  display: table; }
+
+caption {
+  display: table-caption; }
+
+thead {
+  display: table-header-group; }
+
+tbody {
+  display: table-row-group; }
+
+tr {
+  display: table-row; }
+
+td, th {
+  display: table-cell; }
+
+table {
+  font-size: 1rem;
+  border-collapse: collapse; }
+
+.table {
+  border-collapse: collapse !important;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-spacing: 0;
+  text-align: left; }
+
+.table-nowarp {
+  white-space: nowrap; }
+
+.table-round {
+  border-radius: 4px 4px 0 0; }
+
+.table.text-center tr td,
+.table.text-center tr th,
+table.text-center tr td,
+table.text-center tr th {
+  text-align: center; }
+
+tr.text-center td, tr.text-center th {
+  text-align: center; }
+
+caption {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #868e96;
+  text-align: center;
+  caption-side: top; }
+
+.table thead th, .table thead td, table thead th, table thead td {
+  vertical-align: middle;
+  border-bottom: 1px solid #e9e9e9;
+  font-weight: 500; }
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05); }
+
+.table td, .table th {
+  background-color: transparent;
+  padding: 0.5rem;
+  vertical-align: middle;
+  border-top: 1px solid #e9e9e9; }
+
+.table-bordered th, .table-bordered td {
+  border: 1px solid #e9e9e9 !important; }
+
+.table-sm td,
+.table-sm th {
+  padding: 5px; }
+
+.table-responsive {
+  width: 100%;
+  min-height: .01%;
+  margin-bottom: 15px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap; }
+
+tr.primary td, tr.primary th {
+  background-color: #b8daff; }
+
+tr.success td, tr.success th {
+  background-color: #c3e6cb; }
+
+tr.secondary td, tr.secondary th {
+  background-color: #dddfe2; }
+
+tr.info td, tr.info th {
+  background-color: #bee5eb; }
+
+tr.warning td, tr.warning th {
+  background-color: #ffeeba; }
+
+tr.danger td, tr.danger th {
+  background-color: #f5c6cb; }
+
+tr.light td, tr.light th {
+  background-color: #fdfdfe; }
+
+tr.dark td, tr.dark th {
+  background-color: #c6c8ca;
+  color: #fff; }
+
+tr.link td, tr.link th {
+  background-color: #00bcd4; }

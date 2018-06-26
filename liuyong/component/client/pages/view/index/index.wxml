@@ -12,3 +12,4 @@
 		</view>
 	</view>
 </view>
+<button type="primary" wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取用户信息</button>

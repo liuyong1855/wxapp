@@ -19,6 +19,13 @@
 .usermotto {
   margin-top: 20px;
 }
+.user-motto{
+  color:#c7388d;
+}
+
+.userinfo-nickname{
+  font-size: 14px;
+}
 
 .navigator-hover{
    color:#ff99d5;

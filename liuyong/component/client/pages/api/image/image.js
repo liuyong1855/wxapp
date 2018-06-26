@@ -1,7 +1,13 @@
 Page({
 	data:{
 		imglist:[],
-		text:''
+		text:'',
+		urlline:''
+	},
+	onLoad:function(){
+		this.setData({
+			urlline:'https://y.zdmimg.com/201806/12/5b1e9e2e068d13389.jpg_d200.jpg'
+		})
 	},
 	choose:function(e){
 		var _this = this;
@@ -44,6 +50,36 @@ Page({
 		})
 	},
 	save:function(e){
+		var _this = this;
+		wx.saveImageToPhotosAlbum({
+			filePath:_this.data.imglist[0],//图片文件路径，可以是临时文件路径也可以是永久文件路径，不支持网络图片路径
+			success:function(e){
+				console.log(e)
+				_this.setData({
+					text:JSON.stringify(e)
+				})
+			}
+		})
+	},
+	saveline:function(e){
+		wx.downloadFile({
+			url: this.data.urlline, //仅为示例，并非真实的资源
+			success: (res) => {
+				console.log(res)
+				// 只要服务器有响应数据，就会把响应内容写入文件并进入 success 回调，业务需要自行判断是否下载到了想要的内容
+				if (res.statusCode === 200) {
+					wx.saveImageToPhotosAlbum({
+						filePath:res.tempFilePath,//图片文件路径，可以是临时文件路径也可以是永久文件路径，不支持网络图片路径
+						success:(e) => {
+							console.log(e)
+							this.setData({
+								text:JSON.stringify(e)
+							})
+						}
+					})
+				}
+			}
+		})
 		var _this = this;
 		wx.saveImageToPhotosAlbum({
 			filePath:_this.data.imglist[0],//图片文件路径，可以是临时文件路径也可以是永久文件路径，不支持网络图片路径

@@ -1,15 +1,51 @@
-<view class="drugheader">
-	<view>
-		<text class="city" bindtap="changeCity">{{city}}</text>
+<view hidden="{{showSearch}}">
+	<view class="drugheader">
+		<view>
+			<text class="city" bindtap="changeCity">{{city}}</text>
+		</view>
+		<view class="searchbox" bindtap="searchPage"><input placeholder="输入药品名称/疾病名称搜索" disabled /></view>
 	</view>
-	<view class="searchbox"><input placeholder="输入药品名称/疾病名称搜索" /></view>
+	<scroll-view class="scrollview" scroll-y>
+		<view class="drugview" wx:for="{{drugList}}" data-id="{{item.id}}" bindtap="goList">
+			<view class="drugicon"><image mode='widthFix' src="{{item.pic}}" /></view>
+			<view class="drugcom">
+				<view class="title">{{item.name}}</view>
+				<view class="drugli"><view class="viewone" wx:for="{{item.subList}}"><text class="type">{{item.name}}</text><text class="line">|</text></view></view>
+			</view>
+		</view>
+	</scroll-view>
 </view>
-<scroll-view class="scrollview" scroll-y>
-	<view class="drugview" wx:for="{{drugList}}" data-id="{{item.id}}" bindtap="goList">
-		<view class="drugicon"><image mode='widthFix' src="{{item.pic}}" /></view>
-		<view class="drugcom">
-			<view class="title">{{item.name}}</view>
-			<view class="drugli"><view class="viewone" wx:for="{{item.subList}}"><text class="type">{{item.name}}</text><text class="line">|</text></view></view>
+<view hidden="{{!showSearch}}">
+	<view class="drugheader">
+		<view class="searchbox"><input focus="{{isFocus}}" bindinput="input" placeholder="输入药品名称/疾病名称搜索" /></view>
+		<view hidden="{{showBtn}}">
+			<text bindtap="canelSearch" class="searchBtn">取消</text>
+		</view>
+		<view hidden="{{!showBtn}}">
+			<text class="searchBtn" bindtap="addSearch">搜索</text>
 		</view>
 	</view>
-</scroll-view>
+	<scroll-view class="scrollview" scroll-y>
+		<view class="searchview" hidden="{{showBtn}}">
+			<view class="disflex historytitle {{history.length==0?'hide':''}}">
+				<view class="flex">最近搜索</view>
+				<view bindtap="del">删除</view>
+			</view>
+			<view class="history">
+				<text wx:for="{{history}}" bindtap="goList" data-input="{{item}}">{{item}}</text>
+			</view>
+			<view class="disflex historytitle hottitle {{hotList.length==0?'hide':''}}">
+				<view class="flex">热门搜索</view>
+			</view>
+			<view class="history">
+				<text wx:for="{{hotList}}" bindtap="goList" data-input="{{item.skuTitle}}">{{item.skuTitle}}</text>
+			</view>
+		</view>
+		<view class="searchview hintList" hidden="{{!showBtn}}">
+			<view wx:for="{{HintList}}" bindtap="goList" wx:for-item="Hint" class="disflex">
+				<view class="flex">{{Hint.commonName}}</view>
+				<view><text wx:for="{{Hint.brands}}" >{{item}}</text></view>
+			</view>
+		</view>
+	</scroll-view>
+</view>

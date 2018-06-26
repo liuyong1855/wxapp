@@ -1,0 +1,16 @@
+/* pages/view/index/index.wxss */
+
+.contentB{padding:15px;background:#F6F6F6;height:100%;}
+.boxlist{margin-bottom: 8px;}
+.listTit{height:50px;line-height: 50px;background: #fff;width:100%;display:flex;padding:0 10px;box-sizing: border-box;margin-bottom: 4px;}
+.listTit text{flex:1;font-size: 16px;color:#d689b5;}
+.listTit image{width:50rpx;height:auto;}
+.listCont navigator{background:#fff;font-size: 15px;color:#d689b5;border-bottom:1px solid #eee;padding:0 10px;box-sizing: border-box;height: 38px;line-height: 38px;}
+
+
+
+
+
+
+
+

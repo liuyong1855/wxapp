@@ -54,7 +54,7 @@ class PKCS7Encoder
 /**
  * Prpcrypt class
  *
- * 
+ *
  */
 class Prpcrypt
 {
@@ -75,9 +75,9 @@ class Prpcrypt
 	{
 
 		try {
-			
+
 			$module = mcrypt_module_open(MCRYPT_RIJNDAEL_128, '', MCRYPT_MODE_CBC, '');
-			
+
 			mcrypt_generic_init($module, $this->key, $aesIV);
 
 			//解密

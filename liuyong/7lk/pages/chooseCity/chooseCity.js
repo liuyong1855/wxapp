@@ -47,5 +47,19 @@ Page({
 		})
 		wx.navigateBack();
 		// console.log(e.currentTarget.dataset.name,getCurrentPages())
+	},
+	location:function(){
+		wx.getLocation({
+			success:data => {
+				console.log(data);
+				wx.request({
+					url:'http://apis.map.qq.com/ws/geocoder/v1/?location='+data.latitude+','+data.longitude+'&key=EJWBZ-II7K3-TDY32-YDQT3-XWTRF-HBB6E',
+					success:d => {
+						console.log(d.data.result.ad_info)
+					}
+				})
+			}
+		})
+
 	}
 })

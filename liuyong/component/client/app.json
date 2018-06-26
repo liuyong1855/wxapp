@@ -1,6 +1,11 @@
 {
   "pages":[
     "pages/view/index/index",
+    "pages/other/charts/charts",
+    "pages/other/calendar/calendar",
+    "pages/other/index/index",
+    "pages/api/getphone/getphone",
+    "pages/view/zujian/zujian",
     "pages/api/login/login",
     "pages/api/tabbar/tabbar",
     "pages/api/system/system",
@@ -53,6 +58,7 @@
     "pages/view/scroll-view/scroll-view",
     "pages/view/view/view",
     "pages/api/index/index"
+
   ],
   "window":{
     "color":"#7A7E83",
@@ -79,9 +85,24 @@
       "text":"tabBar",
       "iconPath":"./img/icon_API.png",
       "selectedIconPath":"./img/icon_API_HL.png"
+    },{
+      "pagePath":"pages/other/index/index",
+      "text":"other",
+      "iconPath":"./img/icon_API.png",
+      "selectedIconPath":"./img/icon_API_HL.png"
     }],
     "selectedColor":"#3cc51f",
     "borderStyle":"black",
     "backgroundColor":"#fff"
+  },
+  "plugins": {
+    "WechatSI": {
+      "version": "0.0.6",
+      "provider": "wx069ba97219f66d99"
+    },
+    "zhixiaoyun": {
+      "version": "1.4.0",
+      "provider": "wxc6b86e382a1e3294"
+    }
   }
 }

@@ -1,4 +1,4 @@
-.*
+﻿.*
 !.gitignore
 #工具
 /.idea
@@ -29,4 +29,5 @@ DerivedData
 *.ipa
 *.xcuserstate
 *.xcscmblueprint
+.DS_Store
 
