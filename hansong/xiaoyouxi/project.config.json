@@ -1,20 +1,16 @@
 {
 	"description": "项目配置文件。",
-	"packOptions": {
-		"ignore": []
-	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true
 	},
-	"compileType": "search",
-	"libVersion": "2.0.4",
-	"appid": "wx8b5c4109fd28d730",
-	"projectname": "zujian",
-	"isGameTourist": false,
+	"compileType": "game",
+	"libVersion": "game",
+	"appid": "touristappid",
+	"projectname": "xiaoyouxi",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -32,5 +28,6 @@
 			"current": -1,
 			"list": []
 		}
-	}
+	},
+	"isGameTourist": true
 }

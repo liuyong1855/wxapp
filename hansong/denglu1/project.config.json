@@ -10,10 +10,10 @@
 		"minified": true,
 		"newFeature": true
 	},
-	"compileType": "search",
-	"libVersion": "2.0.4",
+	"compileType": "miniprogram",
+	"libVersion": "2.1.0",
 	"appid": "wx8b5c4109fd28d730",
-	"projectname": "zujian",
+	"projectname": "denglu1",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
