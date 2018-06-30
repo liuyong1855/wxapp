@@ -1,0 +1,12 @@
+<import src="../../common/head.wxml" />
+<import src="../../common/foot.wxml" />
+
+<!--index.wxml-->
+ <view class="container">
+    <template is="head" data="{{title : 'view'}}" />
+    <view class="page-body">
+    韩松
+    </view>
+
+    <template is="foot" /> 
+</view> 

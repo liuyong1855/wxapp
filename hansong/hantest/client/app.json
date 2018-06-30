@@ -1,6 +1,12 @@
 {
   "pages":[
     "han/han/han",
+    "han/view/view",
+
+    
+    "dong/dong/dong",
+    
+    
     "pages/index/index",
     "pages/addCgi/addCgi"
   ],
@@ -10,5 +16,28 @@
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "Wafer Quick Start",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color" : "#7A7E83",
+    "selectedColor" : "#3cc51f",
+    "borderStyle" : "black",
+    "backgroundColor":"#fff",
+    "list" : [{
+      "pagePath" : "han/han/han",
+      "iconPath" : "image/icon_component.png",
+      "selectedIconPath" : "image/icon_component_HL.png",
+      "text" : "组件"
+    },
+    {
+      "pagePath": "dong/dong/dong",
+      "iconPath" : "image/icon_API.png",
+      "selectedIconPath" : "image/icon_API_HL.png",
+      "text" : "接口"
+    }],
+    "networkTimeout" : {
+      "request" : 10000,
+      "downloadFile" : 10000
+    },
+    "debug" : true
   }
 }
