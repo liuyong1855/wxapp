@@ -2,6 +2,8 @@
   "pages":[
     "han/han/han",
     "han/view/view",
+    "han/swiper/swiper",
+    "han/scroll-view/scroll-view",
 
     
     "dong/dong/dong",
