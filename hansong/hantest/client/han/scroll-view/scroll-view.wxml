@@ -1,30 +1,36 @@
-<!--index.wxml-->
+<import src="../../common/head.wxml" />
+<import src="../../common/foot.wxml" />
  <view class="container">
-    <view class="index-hd">
-    
-        <image class="index-logo" src="../image/kind/logo.png"></image>
-        <view class="index-desc">hsir将演示小程序接口能力，具体属性参数详见小程序开发文档。</view>
-    </view>
-    <view class="index-bd">
-        <view class="kind-list">
-            <block wx:for-items="{{list}}" wx:key="{{item.id}}">
-                <view class="kind-list-item">
-                    <view id="{{item.id}}" class="kind-list-item-hd {{item.open ? 'kind-list-item-hd-show' : ''}}" bindtap="kindToggle">
-                        <view class="kind-list-text">{{item.name}}</view>
-                        <image class="kind-list-img" src="../image/kind/{{item.id}}.png"></image>
-                    </view>
-                    <view class="kind-list-item-bd {{item.open ? 'kind-list-item-bd-show' : '' }}">
-                        <view class="navigator-box navigator-box-show">
-                            <block wx:for-items="{{item.pages}}" wx:for-item = "page" wx:key="*item">
-                                <navigator class="navigator" url="pages/{{page.url}}">
-                                    <view class="navigator-text">{{page.zh}}</view>
-                                    <view class="navigator-arrow"></view>
-                                </navigator>
-                            </block>
-                        </view>
-                    </view>
-                </view>
-            </block>
+    <template is="head" data="{{title:'scroll-view'}}" />
+
+    <view class="page-body">
+        <view class="page-section">
+            <view class="page-section-title">
+                <text>Vertical Scroll\n纵向滚动</text>
+            </view>
+            <view class="page-section-spacing">
+                
+                <scroll-view enable-back-to-top="true" scroll-with-animation="true" scroll-y="true" scroll-top="500rpx" style="height: 300rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+                    <view id="demo1" class="scroll-view-item demo-text-1">A</view>
+                    <view id="demo2" class="scroll-view-item demo-text-2">B</view>
+                    <view id="demo3" class="scroll-view-item demo-text-3">C</view>
+                </scroll-view>
+            </view>
+        </view>
+        <view class="page-section">
+            <view class="page-section-title">
+                <text>Vertical Scroll\n横向向滚动</text>
+            </view>
+            <view class="page-section-spacing">
+                
+                <scroll-view enable-back-to-top="true" class="scroll-view_H" scroll-with-animation="true" scroll-x="true" scroll-top="500rpx" style="height: 300rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+                    <view id="demo1" class="scroll-view-item_H demo-text-1">A</view>
+                    <view id="demo2" class="scroll-view-item_H demo-text-2">B</view>
+                    <view id="demo3" class="scroll-view-item_H demo-text-3">C</view>
+                </scroll-view>
+            </view>
         </view>
     </view>
+
+    <template is="foot" />
 </view> 

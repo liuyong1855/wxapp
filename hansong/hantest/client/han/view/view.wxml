@@ -5,7 +5,30 @@
  <view class="container">
     <template is="head" data="{{title : 'view'}}" />
     <view class="page-body">
-    韩松
+        <view class="page-section">
+            <view class="page-section-title">
+                <text>flex-direction:row \n 横向布局</text>
+            </view>
+            <view class="page-section-spaing">
+                <view class="flex-wrp" style="flex-direction:row;">
+                    <view class="flex-item demo-text-1" hover-class="none" bindtap="tapname" hover-stop-propagation="true">A</view>
+                    <view class="flex-item demo-text-2" hover-start-time="1000" bindtap="tapname">B</view>
+                    <view class="flex-item demo-text-3" hover-stay-time="1000"  bindtap="tapname">C</view>
+                </view>
+            </view>
+        </view>
+        <view class="page-section">
+            <view class="page-section-title">
+                <text>flex-direction:column \n 竖布局</text>
+            </view>
+            <view class="page-section-spaing">
+                <view class="flex-wrp" style="flex-direction:column;">
+                    <view class="flex-item demo-text-1" hover-class="none" bindtap="tapname" hover-stop-propagation="true">A</view>
+                    <view class="flex-item demo-text-2" hover-start-time="1000" bindtap="tapname">B</view>
+                    <view class="flex-item demo-text-3" hover-stay-time="1000"  bindtap="tapname">C</view>
+                </view>
+            </view>
+        </view>
     </view>
 
     <template is="foot" /> 

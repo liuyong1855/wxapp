@@ -5,3 +5,61 @@
   align-items: center;
   box-sizing: border-box; */
 } 
+.page-head {
+  padding: 60rpx 50rpx 80rpx;
+  text-align: center;
+}
+.page-head-title{
+  display: inline-block;
+  padding: 0 40rpx 20rpx 40rpx;
+  font-size: 32rpx;
+  color: #bebebe;
+}
+.page-head-line{
+  margin: 0 auto;
+  width: 150rpx;
+  height: 2rpx;
+  background-color: #d8d8d8;
+}
+.page-foot{
+  margin: 100rpx 0 30rpx 0;
+  text-align: center;
+  color: #1aad19;
+  font-size: 0;
+}
+.icon-foot{
+  width: 152rpx;
+  height: 23rpx;
+}
+.page-section{
+  margin-bottom: 60rpx; 
+  width: 100%;
+}
+.page-section-title{
+  font-size: 28rpx;
+  color: #999;
+  margin-bottom:10rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.page-section-spacing{
+  padding: 0 80rpx;
+}
+.demo-text-1{
+  background-color: #1AAD19;
+  color: #fff;
+  text-align: center;
+  line-height: 300rpx;
+}
+.demo-text-2{
+  background-color: #2782D7;
+  color: #fff;
+  text-align: center;
+  line-height: 300rpx;
+}
+.demo-text-3{
+  background-color: #F1F1F1;
+  color: #353535;
+  text-align: center;
+  line-height: 300rpx;
+}

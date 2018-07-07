@@ -1,5 +1,5 @@
 <template name="foot">
-    <navigator url="../han/han/han" redirect hover-class="className">
-        <image src="../../image/icon_foot.png" ></image>
+    <navigator url="../han/han/han"  class="page-foot" redirect hover-class="className">
+        <image src="../../image/icon_foot.png" class="icon-foot"></image>
     </navigator>  
 </template>
