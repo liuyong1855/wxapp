@@ -1,11 +1,9 @@
 {
   "pages":[
+    "han/swiper/swiper",
     "han/scroll-view/scroll-view",
     "han/view/view",
     "han/han/han",
- 
-    "han/swiper/swiper",
-    
 
     
     "dong/dong/dong",
