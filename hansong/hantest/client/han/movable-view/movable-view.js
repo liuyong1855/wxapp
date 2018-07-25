@@ -1,45 +1,18 @@
-
-// const app = getApp()
-// Page({
-//     data: {
-//         // userInfo: {},
-//         // logged: false,
-//         // takeSession: false,
-//         // requestResult: ''
-//     }
-
-
-// })
-
-
 Page({
-    data : {
-      background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
-      num : ['1','2','3'],
-      indicatorDots : true,
-      vertical : false,
-      autoplay : false,
-      interval : 2000,
-      duration : 500
-    },
-    changeIndicatorDots : function () {
-      this.setData({
-        indicatorDots : !this.data.indicatorDots
-      })
-    },
-    changeAutoplay : function(e){
-      this.setData({
-        autoplay : !this.data.autoplay
-      })
-    },
-    intervalChange : function(e){
-      this.setData({
-        interval : e.detail.value
-      })
-    },
-    durationChange : function(e){
-      this.setData({
-        duration : e.detail.value
-      })
-    }
-}) 
+  data: {
+    x: 0,
+    y: 0
+  },
+  tap: function(e) {
+    this.setData({
+      x: 30,
+      y: 30
+    });
+  },
+  onChange: function(e) {
+    console.log(e.detail)
+  },
+  onScale: function(e) {
+    console.log(e.detail)
+  }
+})

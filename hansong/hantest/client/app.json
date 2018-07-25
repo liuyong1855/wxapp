@@ -1,5 +1,12 @@
 {
   "pages":[
+    "han/button/button",
+    "han/rich-text/rich-text",
+    "han/progress/progress",
+    "han/text/text",
+    "han/icon/icon",
+    "han/cover-view/cover-view",
+    "han/movable-view/movable-view",
     "han/swiper/swiper",
     "han/scroll-view/scroll-view",
     "han/view/view",

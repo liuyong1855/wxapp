@@ -1,0 +1,49 @@
+<import src="../../common/head.wxml" />
+<import src="../../common/foot.wxml" />
+<view>
+  <template is="head" data="{{title: 'icon'}}" />
+    <view class="icon-box">
+      <icon class="icon-box-img" type="success" size="93"></icon>
+      <view class="icon-box-ctn">
+        <view class="icon-box-title">成功</view>
+        <view class="icon-box-desc">用于表示操作顺利完成</view>
+      </view>
+    </view>
+    <view class="icon-box">
+      <icon class="icon-box-img" type="info" size="93"></icon>
+      <view class="icon-box-ctn">
+        <view class="icon-box-title">成功</view>
+        <view class="icon-box-desc">用于表示操作顺利完成</view>
+      </view>
+    </view>
+    <view class="icon-box">
+      <icon class="icon-box-img" type="success" size="93"></icon>
+      <icon class="icon-box-img" type="warn" size="93" color="#ccc"></icon>
+      <view class="icon-box-ctn">
+        <view class="icon-box-title">成功</view>
+        <view class="icon-box-desc">用于表示操作顺利完成</view>
+      </view>
+    </view>
+    <view class="icon-box">
+      <icon class="icon-box-img" type="success" size="93"></icon>
+      <icon class="icon-box-img" type="waiting" size="91"></icon>
+      <view class="icon-box-ctn">
+        <view class="icon-box-title">成功</view>
+        <view class="icon-box-desc">用于表示操作顺利完成</view>
+      </view>
+    </view>
+    <view class="icon-box">
+      <icon class="icon-box-img" type="success" size="93"></icon>
+      <icon class="icon-box-img" type="circle" size="23"></icon>
+      <icon class="icon-box-img" type="success_no_circle" size="23"></icon>
+      <icon class="icon-box-img" type="download" size="23"></icon>
+      <icon class="icon-box-img" type="info_circle" size="23"></icon>
+      <icon class="icon-box-img" type="cancle" type="23"></icon>
+      <icon class="icon-box-img" type="search" type="14"></icon>
+      <view class="icon-box-ctn">
+        <view class="icon-box-title">成功</view>
+        <view class="icon-box-desc">用于表示操作顺利完成</view>
+      </view>
+    </view>
+  <template is="foot" />
+</view>

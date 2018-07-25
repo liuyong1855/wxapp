@@ -1,54 +1,41 @@
-<import src="../../common/head.wxml" />
-<import src="../../common/foot.wxml" />
- <view class="container">
-    <template is="head" data="{{title:'swiper'}}" />
+<!-- 遵循以movable-area为坐标点不动-->
+<view class="section">
+  <view class="section__title">movable-view区域小于movable-area</view>
+  <movable-area style="height: 200px; width: 200px; background: red;">
+    <movable-view style="height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y}}" direction="all">
+    </movable-view>
+  </movable-area>
+  <view class="btn-area">
+    <button size="mini" bindtap="tap">click me to move to (30px, 30px)</button>
+  </view>
+  <view class="section__title">movable-view区域大于movable-area</view>
 
-    <view class="page-body">
-        <view class="page-section page-section-spacing swiper">
-            <!--<swiper class="" indicator="{{indicator}}" autopaly="{{autopaly}}" interval="{{interval}}" duration="{{interval}}">-->
-            <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-                <block wx:for="{{background}}" wx:key="*this">
-                    <swiper-item>
-                        <view class="swiper-item {{item}}">{{item}}</view>
-                    </swiper-item>
-                </block>
-            </swiper>
-        </view>
-        <view class="page-section" style="margin-top: 40rpx; margin-bottom: 0;">
-            <view class="weui-cell weui-cell_after-title">
-                <view class="weui-cell weui-cell_switch">
-                    <view class="weui-cell__bd">指示点</view>
-                    <view class="weui-cell__ft">
-                        <switch checked="{{indicatorDots}}"  bindchange="changeIndicatorDots" />
-                    </view>
-                </view>
-            </view>
-            <view class="weui-cell weui-cell_after-title">
-                <view class="weui-cell weui-cell_switch">
-                    <view class="weui-sell__bd">自动播放</view>
-                    <view class="weui-cell__ft">
-                        <switch checked="{{autoplay}}" bindchange="changeAutoplay" />
-                    </view>
-                </view>
-            </view>
-        </view>
-        <view class="page-section page-section-spacing">
-            <view class="page-section-title">
-                <text>幻灯片切换时长(ms)</text>
-                <text>{{duration}}</text>
-            </view>
-            <slider bindchange="durationChange" value="{{duration}}" min="500" max="2000" />
-            <view class="page-section-title">
-                <text>自动播放间隔时长(ms)</text>
-                <text class="info">{{interval}}</text>
-            </view>
-            <slider bindchange="intervalChange" value="{{interval}}" min="1000" max="20000" />
-        </view>
-        
+  <movable-area style="height: 100px; width: 100px; background: red;">
+    <movable-view style="height: 200px; width: 200px; background: blue;" direction="all">
+    </movable-view>
+  </movable-area>
+  <view class="section__title">可放缩</view>
+  <movable-area style="height: 200px; width: 200px; background: red;" scale-area>
+    <movable-view style="height: 50px; width: 50px; background: blue;" direction="all" bindchange="onChange" bindscale="onScale" scale scale-min="0.5" scale-max="4" scale-value="2">
+    </movable-view>
+  </movable-area>
+</view>
+<view>
+    <view></view>
+    <movable-area  style="height: 200px; width: 200px; background: red;">
+        <movable-view style="height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y}}" direction="all"></movable-view>
+    </movable-area>
+</view>
 
+<view>
+  <movable-area  style="height: 100px; width: 100px; background: red;">
+    <movable-view style="height: 200px; width: 200px; background: blue;" direction="all"></movable-view>
+  </movable-area>
+</view>
 
-        
-    </view>
-
-    <template is="foot" />
-</view> 
+<view>
+  <movable-area  style="height: 200px; width: 200px; background: red;" scale-area>
+    <movable-view style="height: 50px; width: 50px; background: blue;" direction="all" bindchange="onChange" bindscale="onScale" scale scale-min="0.5" scale-max="4" scale-value="2">
+    </movable-view>
+  </movable-area>
+</view>

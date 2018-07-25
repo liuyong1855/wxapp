@@ -1,0 +1,27 @@
+<import src="../../common/head.wxml" />
+<import src="../../common/foot.wxml" />
+
+
+<view class="container"> 
+  <template is="head" data="{{title : 'process'}}"/>
+
+    <view class="page-body">
+      <view class="page-setion page-section-gap">
+        <view class="progress-box">
+          <progress percent = "20" show-info stroke-width="3" />
+        </view>
+        <progress  percent = "40" active stroke-width="3" />
+        <icon type="cancel"></icon> 
+  
+
+  <progress percent = "60" active stroke-width="3" />
+  <br />
+   <br />
+    <br />
+     <br />
+  <progress percent="80" color = "#10AEFF" active stroke-width="3" />
+      </view>
+    </view>
+
+  <template is="foot"/>
+</view>

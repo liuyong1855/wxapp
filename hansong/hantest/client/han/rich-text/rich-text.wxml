@@ -1,0 +1,15 @@
+<import src="../../common/head.wxml" />
+<import src="../../common/foot.wxml" />
+
+
+<view class="container"> 
+  <template is="head" data="{{title : 'process'}}"/>
+
+    <view class="page-body">
+      <rich-text nodes="{{nodes}}" bindtap="tap"></rich-text>
+    </view>
+<!--
+nodes 属性推荐使用 Array 类型，由于组件会将 String 类型转换为 Array 类型，因而性能会有所下降
+-->
+  <template is="foot"/>
+</view>
