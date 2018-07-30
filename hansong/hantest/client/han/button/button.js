@@ -42,7 +42,7 @@ for (var i = 0; i < types.length; ++i) {
         this.data[key] === 'default' ? 'mini' : 'default'
       this.setData(changedData)
     }
-    debugger
+    // debugger
   })(types[i])
 }
 

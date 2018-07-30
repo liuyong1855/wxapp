@@ -1,5 +1,9 @@
 {
   "pages":[
+    "han/form/form",
+    "han/input/input",
+
+    "han/checkbox/checkbox",
     "han/button/button",
     "han/rich-text/rich-text",
     "han/progress/progress",

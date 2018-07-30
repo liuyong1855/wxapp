@@ -3,8 +3,31 @@
 
 
 <view class="container"> 
-  <template is="head" data="{{title : 'process'}}"/>
+  <template is="head" data="{{title : 'checkbox'}}"/>
 
+  <view>
+    <label>
+      <checkbox value="cb" checked="true">选中</checkbox>
+    </label>
+    <label><checkbox value="cb" >未选中</checkbox></label>
+  </view>
+
+
+<checkbox-group bindchange="checkboxChange">
+    <label wx:for="{{items}}" wx:key="{{item.value}}">
+        <checkbox value="{{item.value}}" checked="{{item.checked}}"/>
+        <view>{{item.value}}</view>
+    </label>
+</checkbox-group>
+
+        <checkbox-group bindchange="checkboxChange">
+          <label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="{{item.value}}">
+            <view class="weui-cell__hd">
+              <checkbox value="{{item.value}}" checked="{{item.checked}}"/>
+            </view>
+            <view class="weui-cell__bd">{{item.name}}</view>
+          </label>
+        </checkbox-group>
 
 
   <template is="foot"/>

@@ -1,0 +1,49 @@
+<import src="../../common/head.wxml" />
+<import src="../../common/foot.wxml" />
+
+
+<view class="container"> 
+  <template is="head" data="{{title : 'form'}}"/>
+
+  <view>
+  <!--catchsubmit阻止冒泡事件capture-bind捕捉事件-->
+    <form catchsubmit="formSubmit" catchreset="formReset">
+      <view>switch</view>
+      <switch name="switch" checked/>
+
+      <radio-group name="radio">
+        <label>
+          <radio value="radio1">选项一</radio>
+        </label>
+        <label>
+          <radio value="radio2" checked="true"> 选项二</radio>
+        </label>
+        <lable><radio value="radio3" disabled="true">选项三</radio></lable>
+      </radio-group>
+
+
+      <checkbox-group name="checkbox">
+        <label><checkbox value="checkbox1"/>选项一</label>
+        <label><checkbox value="checkbox2"/>选项二</label>
+      </checkbox-group>
+
+
+
+      <slider value="50" name="slider" show-value></slider>
+
+      <input class="weui-niput" name="input" placeholder="第一个输入框"/>
+      <!--默认没有边框，去除了浏览器的自带的问题-->
+
+      <button type="primary" formType="submit">Submit</button>
+
+
+<!--formType=“reset” 可以直接进行回掉-->
+      <button formType="reset">Reset</button>
+
+      
+    </form>
+  </view>
+
+
+  <template is="foot"/>
+</view>

@@ -1,0 +1,11 @@
+.page-section-spacing {
+box-sizing:border-box;
+padding:0 80rpx;
+
+}
+.demo-text-1{
+    height: 100%;
+}
+slide{
+    
+}
