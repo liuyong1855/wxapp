@@ -1,0 +1,38 @@
+<import src="../../common/head.wxml" />
+<import src="../../common/foot.wxml" />
+
+
+<view class="container"> 
+  <template is="head" data="{{title : 'input'}}"/>
+
+  <view>
+    <!--目前可以绑定的控件有：<button/>, <checkbox/>, <radio/>, <switch/>。    可以点击选择框内外的文字也可以进行选择，注意label的位置与checkout的位置，  for绑定radio的id-->
+    <view class="page-section-title">表单组件在label内</view>
+    <checkbox-group class="group" bindchange="checkboxChange">
+      <view class="label-1" wx:for="{{checkboxItems}}">
+        <label>
+          <checkbox value="{{item.name}}" checked="{{item.checked}}"></checkbox>
+          <text class="label-1-text">{{item.value}}</text>
+        </label>
+      </view>
+    </checkbox-group>
+    <view class="page-section-title">label用for标识表单组件</view>
+    <radio-group class="group" bindchange="radioChange">
+      <view class="label-2" wx:for="{{radioItems}}">
+        <radio id="{{item.name}}" value="{{item.name}}" checked="{{item.checked}}"></radio>
+        <label class="label-2-text" for="{{item.name}}"><text>{{item.name}}</text></label>
+      </view>
+    </radio-group>
+    <view class="page-section-title">label内有多个时选中第一个</view>
+    <label class="label-3">
+      <checkbox class="checkbox-3">选项一</checkbox>
+      <view>中第一个</view>
+      <checkbox class="checkbox-3">选项二</checkbox>
+      <view class="label-3-text">点击该label下的文字默认选中第一个checkbox</view>
+      <view>中第一个</view>
+    </label>
+  </view>
+
+
+  <template is="foot"/>
+</view>
